@@ -25,4 +25,4 @@ jobs:
         run: vendor/bin/phpunit
 
       - name: Sources and schema
-        run: bin/build --check
+        run: php bin/build --check
