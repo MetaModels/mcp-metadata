@@ -28,7 +28,7 @@ jobs:
 
       - name: Check the addresses
         run: |
-          bin/build --urls > urls.txt
+          php bin/build --urls > urls.txt
           wc -l urls.txt
           failed=0
           while read -r url; do
