@@ -1,0 +1,19 @@
+{
+    "id": "rendersettings",
+    "kind": "topic",
+    "title": {
+        "en": "Render settings"
+    },
+    "path": "manual/component/rendersettings.html",
+    "keywords": [
+        "render settings",
+        "ausgabe",
+        "output",
+        "template",
+        "detail page",
+        "detailseite",
+        "jumpto",
+        "sorting",
+        "sortierung"
+    ]
+}

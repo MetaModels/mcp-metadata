@@ -1,0 +1,21 @@
+{
+    "name": "metamodels/filter_select",
+    "availability": "unknown",
+    "types": [
+        {
+            "kind": "filter",
+            "type": "select",
+            "summary": {
+                "en": "Frontend select box to choose one value."
+            },
+            "keywords": [
+                "dropdown",
+                "auswahl",
+                "filter form",
+                "selectbox",
+                "kategorie"
+            ],
+            "docs": "manual/component/filter/select.html"
+        }
+    ]
+}

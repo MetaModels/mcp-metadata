@@ -1,0 +1,26 @@
+{
+    "name": "metamodels/attribute_timestamp",
+    "availability": "unknown",
+    "types": [
+        {
+            "kind": "attribute",
+            "type": "timestamp",
+            "summary": {
+                "en": "Date, time or both, stored as a Unix timestamp."
+            },
+            "keywords": [
+                "date",
+                "datum",
+                "time",
+                "uhrzeit",
+                "zeit",
+                "termin",
+                "event",
+                "frist",
+                "deadline",
+                "kalender"
+            ],
+            "docs": "manual/component/attribute/timestamp.html"
+        }
+    ]
+}

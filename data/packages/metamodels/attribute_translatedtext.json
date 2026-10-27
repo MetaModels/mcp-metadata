@@ -1,0 +1,26 @@
+{
+    "name": "metamodels/attribute_translatedtext",
+    "availability": "unknown",
+    "types": [
+        {
+            "kind": "attribute",
+            "type": "translatedtext",
+            "summary": {
+                "en": "Multilingual variant: short text up to 255 characters, for names and titles."
+            },
+            "keywords": [
+                "title",
+                "titel",
+                "name",
+                "string",
+                "headline",
+                "überschrift",
+                "multilingual",
+                "mehrsprachig",
+                "translated",
+                "übersetzt"
+            ],
+            "docs": "manual/component/attribute/translatedtext.html"
+        }
+    ]
+}

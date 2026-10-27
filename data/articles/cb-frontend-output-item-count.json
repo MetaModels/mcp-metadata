@@ -1,0 +1,16 @@
+{
+    "id": "cb-frontend-output-item-count",
+    "kind": "recipe",
+    "title": {
+        "en": "Displaying the number of items"
+    },
+    "path": "cookbook/frontend/output-item-count.html",
+    "keywords": [
+        "count",
+        "anzahl",
+        "number of items",
+        "total",
+        "treffer",
+        "results"
+    ]
+}

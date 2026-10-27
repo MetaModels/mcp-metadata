@@ -1,0 +1,16 @@
+{
+    "id": "cb-filter-filter-with-static-parameter",
+    "kind": "recipe",
+    "title": {
+        "en": "Restricting items in the content element or module"
+    },
+    "path": "cookbook/filter/filter-with-static-parameter.html",
+    "keywords": [
+        "static",
+        "fixed filter",
+        "fester filter",
+        "restrict",
+        "einschränken",
+        "parameter"
+    ]
+}

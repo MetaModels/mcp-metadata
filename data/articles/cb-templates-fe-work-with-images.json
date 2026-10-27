@@ -1,0 +1,23 @@
+{
+    "id": "cb-templates-fe-work-with-images",
+    "kind": "recipe",
+    "title": {
+        "en": "Working with images in templates"
+    },
+    "path": "cookbook/templates/fe_work_with_images.html",
+    "keywords": [
+        "image",
+        "bild",
+        "images",
+        "bilder",
+        "picture",
+        "thumbnail",
+        "file"
+    ],
+    "types": [
+        {
+            "kind": "attribute",
+            "type": "file"
+        }
+    ]
+}

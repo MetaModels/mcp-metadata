@@ -1,0 +1,16 @@
+{
+    "id": "cb-templates-fe-list-sorting",
+    "kind": "recipe",
+    "title": {
+        "en": "Links for toggling the sort order of a list"
+    },
+    "path": "cookbook/templates/fe_list_sorting.html",
+    "keywords": [
+        "sorting",
+        "sortierung",
+        "sort order",
+        "toggle",
+        "ascending",
+        "descending"
+    ]
+}

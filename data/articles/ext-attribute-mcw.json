@@ -1,0 +1,20 @@
+{
+    "id": "ext-attribute-mcw",
+    "kind": "topic",
+    "title": {
+        "en": "Multi-column wizard attribute"
+    },
+    "path": "manual/extended/attribute_mcw.html",
+    "keywords": [
+        "table",
+        "tabelle",
+        "mcw",
+        "multi column wizard"
+    ],
+    "types": [
+        {
+            "kind": "attribute",
+            "type": "tablemulti"
+        }
+    ]
+}

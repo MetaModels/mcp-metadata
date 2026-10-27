@@ -1,0 +1,19 @@
+{
+    "name": "metamodels/attribute_langcode",
+    "availability": "unknown",
+    "types": [
+        {
+            "kind": "attribute",
+            "type": "langcode",
+            "summary": {
+                "en": "Selection of a language code."
+            },
+            "keywords": [
+                "language",
+                "sprache",
+                "locale"
+            ],
+            "docs": "manual/component/attribute/langcode.html"
+        }
+    ]
+}

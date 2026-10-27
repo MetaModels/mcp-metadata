@@ -1,0 +1,16 @@
+{
+    "id": "cb-specials-delete-superfluous-data",
+    "kind": "recipe",
+    "title": {
+        "en": "Deleting superfluous data"
+    },
+    "path": "cookbook/specials/delete-superfluous-data.html",
+    "keywords": [
+        "cleanup",
+        "aufräumen",
+        "delete",
+        "löschen",
+        "unused",
+        "verwaist"
+    ]
+}

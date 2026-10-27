@@ -1,0 +1,21 @@
+{
+    "name": "metamodels/attribute_geodistance",
+    "availability": "unknown",
+    "types": [
+        {
+            "kind": "attribute",
+            "type": "geodistance",
+            "summary": {
+                "en": "Distance of an item to the search point of a perimeter search."
+            },
+            "keywords": [
+                "distance",
+                "entfernung",
+                "umkreis",
+                "radius",
+                "geo"
+            ],
+            "docs": "manual/component/attribute/geodistance.html"
+        }
+    ]
+}

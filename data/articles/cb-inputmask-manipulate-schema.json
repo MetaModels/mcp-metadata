@@ -1,0 +1,16 @@
+{
+    "id": "cb-inputmask-manipulate-schema",
+    "kind": "recipe",
+    "title": {
+        "en": "Customising the schema of attributes"
+    },
+    "path": "cookbook/inputmask/manipulate-schema.html",
+    "keywords": [
+        "schema",
+        "column",
+        "spalte",
+        "database",
+        "datenbank",
+        "sql"
+    ]
+}

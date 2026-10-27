@@ -1,0 +1,21 @@
+{
+    "name": "metamodels/attribute_token",
+    "availability": "unknown",
+    "types": [
+        {
+            "kind": "attribute",
+            "type": "token",
+            "summary": {
+                "en": "Random, unchangeable string created when an item is first saved."
+            },
+            "keywords": [
+                "random",
+                "zufall",
+                "nummer",
+                "referenz",
+                "unique"
+            ],
+            "docs": "manual/component/attribute/token.html"
+        }
+    ]
+}

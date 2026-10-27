@@ -1,0 +1,76 @@
+#!/usr/bin/env php
+<?php
+
+declare(strict_types=1);
+
+use MetaModels\McpMetadata\Builder;
+
+require \dirname(__DIR__) . '/vendor/autoload.php';
+
+/*
+ * Usage: bin/build [--check] [--urls] [--output=build/metadata.json]
+ *
+ *   --check   only check the sources, write nothing
+ *   --urls    print the addresses of the handbook pages and of the access pages, one per line (for the link check)
+ *   --output  where to write the file (default build/metadata.json)
+ */
+$root   = \dirname(__DIR__);
+$output = $root . '/build/metadata.json';
+$check  = false;
+$urls   = false;
+foreach (\array_slice($argv, 1) as $argument) {
+    if ('--check' === $argument) {
+        $check = true;
+    } elseif ('--urls' === $argument) {
+        $urls = true;
+    } elseif (\str_starts_with($argument, '--output=')) {
+        $output = \substr($argument, \strlen('--output='));
+    } else {
+        \fwrite(STDERR, \sprintf("Unknown argument \"%s\".\n", $argument));
+
+        exit(2);
+    }
+}
+
+$builder = new Builder($root);
+$result  = $builder->build();
+if ([] !== $result['errors']) {
+    foreach ($result['errors'] as $error) {
+        \fwrite(STDERR, $error . "\n");
+    }
+    \fwrite(STDERR, \sprintf("%d error(s), nothing written.\n", \count($result['errors'])));
+
+    exit(1);
+}
+
+if ($urls) {
+    echo \implode("\n", $builder->urls($result['metadata'])), "\n";
+
+    exit(0);
+}
+
+$metadata = $result['metadata'];
+if ($check) {
+    \printf(
+        "OK: %d packages, %d types, %d articles.\n",
+        \count($metadata['packages']),
+        \count($metadata['types']),
+        \count($metadata['articles'])
+    );
+
+    exit(0);
+}
+
+$json = \json_encode($metadata, JSON_THROW_ON_ERROR | JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) . "\n";
+if (!\is_dir(\dirname($output)) && !\mkdir(\dirname($output), 0777, true) && !\is_dir(\dirname($output))) {
+    \fwrite(STDERR, \sprintf("Cannot create the directory of \"%s\".\n", $output));
+
+    exit(1);
+}
+if (false === \file_put_contents($output, $json)) {
+    \fwrite(STDERR, \sprintf("Cannot write \"%s\".\n", $output));
+
+    exit(1);
+}
+
+\printf("Wrote %s (%d packages, %d types, %d articles).\n", $output, \count($metadata['packages']), \count($metadata['types']), \count($metadata['articles']));

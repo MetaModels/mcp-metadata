@@ -1,0 +1,16 @@
+{
+    "name": "metamodels/changelanguage-bridge",
+    "availability": "unknown",
+    "summary": {
+        "en": "Language switcher links to the same item in the other language on detail pages."
+    },
+    "keywords": [
+        "changelanguage",
+        "sprachwechsel",
+        "language switcher",
+        "mehrsprachig",
+        "multilingual",
+        "detailseite"
+    ],
+    "docs": "manual/extended/changelanguage-bridge.html"
+}

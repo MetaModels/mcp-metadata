@@ -1,0 +1,24 @@
+{
+    "name": "metamodels/attribute_decimal",
+    "availability": "unknown",
+    "types": [
+        {
+            "kind": "attribute",
+            "type": "decimal",
+            "summary": {
+                "en": "Decimal number, for example a price or an amount of money."
+            },
+            "keywords": [
+                "price",
+                "preis",
+                "betrag",
+                "kommazahl",
+                "float",
+                "money",
+                "geld",
+                "dezimal"
+            ],
+            "docs": "manual/component/attribute/decimal.html"
+        }
+    ]
+}

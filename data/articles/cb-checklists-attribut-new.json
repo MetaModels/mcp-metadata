@@ -1,0 +1,15 @@
+{
+    "id": "cb-checklists-attribut-new",
+    "kind": "recipe",
+    "title": {
+        "en": "Adding an attribute to an existing MetaModel"
+    },
+    "path": "cookbook/checklists/attribut-new.html",
+    "keywords": [
+        "new attribute",
+        "neues attribut",
+        "add attribute",
+        "database update",
+        "datenbank"
+    ]
+}

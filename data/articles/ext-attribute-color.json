@@ -1,0 +1,18 @@
+{
+    "id": "ext-attribute-color",
+    "kind": "topic",
+    "title": {
+        "en": "Color attribute"
+    },
+    "path": "manual/extended/attribute_color.html",
+    "keywords": [
+        "color",
+        "farbe"
+    ],
+    "types": [
+        {
+            "kind": "attribute",
+            "type": "color"
+        }
+    ]
+}

@@ -1,0 +1,15 @@
+{
+    "id": "workflow",
+    "kind": "topic",
+    "title": {
+        "en": "Workflow for working with MetaModels"
+    },
+    "path": "manual/component/workflow.html",
+    "keywords": [
+        "workflow",
+        "ablauf",
+        "steps",
+        "schritte",
+        "vorgehen"
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "id": "cb-frontend-array-helper",
+    "kind": "recipe",
+    "title": {
+        "en": "Array helper"
+    },
+    "path": "cookbook/frontend/array-helper.html",
+    "keywords": [
+        "array",
+        "template",
+        "helper"
+    ]
+}

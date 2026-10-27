@@ -1,0 +1,15 @@
+{
+    "id": "cb-tips-set-route-priority",
+    "kind": "recipe",
+    "title": {
+        "en": "Setting the route priority"
+    },
+    "path": "cookbook/tips/set-route-priority.html",
+    "keywords": [
+        "route",
+        "priority",
+        "priorität",
+        "routing",
+        "url"
+    ]
+}

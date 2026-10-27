@@ -1,0 +1,16 @@
+{
+    "name": "metamodels/erd-viewer",
+    "availability": "unknown",
+    "summary": {
+        "en": "Entity-relationship diagram of all MetaModels tables and their relations in the backend."
+    },
+    "keywords": [
+        "erd",
+        "diagram",
+        "diagramm",
+        "relationen",
+        "datenbankstruktur",
+        "übersicht"
+    ],
+    "docs": "manual/extended/erd-viewer.html"
+}

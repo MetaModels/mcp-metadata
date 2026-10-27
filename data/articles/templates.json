@@ -1,0 +1,15 @@
+{
+    "id": "templates",
+    "kind": "topic",
+    "title": {
+        "en": "Templates in MetaModels"
+    },
+    "path": "manual/component/templates.html",
+    "keywords": [
+        "templates",
+        "twig",
+        "html5",
+        "layout",
+        "ausgabe"
+    ]
+}

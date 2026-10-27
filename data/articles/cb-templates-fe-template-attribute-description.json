@@ -1,0 +1,14 @@
+{
+    "id": "cb-templates-fe-template-attribute-description",
+    "kind": "recipe",
+    "title": {
+        "en": "Outputting the attribute description in a template"
+    },
+    "path": "cookbook/templates/fe_template_attribute_description.html",
+    "keywords": [
+        "description",
+        "beschreibung",
+        "template",
+        "label"
+    ]
+}

@@ -1,0 +1,21 @@
+{
+    "name": "metamodels/attribute_tablemulti",
+    "availability": "unknown",
+    "docs": "manual/extended/attribute_mcw.html",
+    "types": [
+        {
+            "kind": "attribute",
+            "type": "tablemulti",
+            "summary": {
+                "en": "Table with a widget per column, such as select or checkbox."
+            },
+            "keywords": [
+                "table",
+                "tabelle",
+                "repeater",
+                "multi column"
+            ],
+            "docs": "manual/component/attribute/tablemulti.html"
+        }
+    ]
+}

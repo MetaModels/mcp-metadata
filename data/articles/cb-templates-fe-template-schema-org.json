@@ -1,0 +1,15 @@
+{
+    "id": "cb-templates-fe-template-schema-org",
+    "kind": "recipe",
+    "title": {
+        "en": "Outputting structured data (schema.org)"
+    },
+    "path": "cookbook/templates/fe_template_schema_org.html",
+    "keywords": [
+        "schema.org",
+        "structured data",
+        "strukturierte daten",
+        "json-ld",
+        "seo"
+    ]
+}

@@ -1,0 +1,41 @@
+name: Links
+
+# The handbook pages of every language have to exist. Anchors are not part of the paths, so a renamed heading does not
+# break anything; a moved page does.
+on:
+  pull_request:
+    paths:
+      - 'data/**'
+  schedule:
+    - cron: '17 4 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.4'
+          tools: composer
+
+      - run: composer install --prefer-dist --no-progress --no-dev
+
+      - name: Check the addresses
+        run: |
+          bin/build --urls > urls.txt
+          wc -l urls.txt
+          failed=0
+          while read -r url; do
+            code=$(curl -s -o /dev/null -L --max-time 30 -w '%{http_code}' "$url" || true)
+            if [ "$code" != "200" ]; then
+              echo "::error::$code $url"
+              failed=1
+            fi
+          done < urls.txt
+          exit $failed

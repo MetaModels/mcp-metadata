@@ -1,0 +1,25 @@
+{
+    "name": "metamodels/filter_perimetersearch",
+    "availability": "unknown",
+    "docs": "manual/extended/perimetersearch.html",
+    "types": [
+        {
+            "kind": "filter",
+            "type": "perimetersearch",
+            "summary": {
+                "en": "Search by address and radius."
+            },
+            "keywords": [
+                "umkreissuche",
+                "radius",
+                "distance",
+                "entfernung",
+                "geo",
+                "map",
+                "plz",
+                "ort"
+            ],
+            "docs": "manual/component/filter/perimeter-search.html"
+        }
+    ]
+}

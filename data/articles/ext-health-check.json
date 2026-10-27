@@ -1,0 +1,14 @@
+{
+    "id": "ext-health-check",
+    "kind": "topic",
+    "title": {
+        "en": "MetaModels health check"
+    },
+    "path": "manual/extended/health-check.html",
+    "keywords": [
+        "health check",
+        "diagnose",
+        "check",
+        "prüfung"
+    ]
+}

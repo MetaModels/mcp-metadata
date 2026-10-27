@@ -1,0 +1,40 @@
+{
+    "name": "metamodels/attribute_checkbox",
+    "availability": "unknown",
+    "types": [
+        {
+            "kind": "attribute",
+            "type": "checkbox",
+            "summary": {
+                "en": "Yes/no value, for example published or featured."
+            },
+            "keywords": [
+                "boolean",
+                "yes no",
+                "published",
+                "ja nein",
+                "veröffentlicht",
+                "aktiv",
+                "häkchen"
+            ],
+            "docs": "manual/component/attribute/checkbox.html"
+        },
+        {
+            "kind": "filter",
+            "type": "checkbox_published",
+            "summary": {
+                "en": "Fixed filter: shows only items whose checkbox is set (formerly called \"published\"). Has no frontend widget."
+            },
+            "keywords": [
+                "published",
+                "veröffentlicht",
+                "fixed",
+                "fest",
+                "aktiv",
+                "status",
+                "publish"
+            ],
+            "docs": "manual/component/filter/checkbox.html"
+        }
+    ]
+}

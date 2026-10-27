@@ -1,0 +1,16 @@
+{
+    "id": "cb-specials-export-excel",
+    "kind": "recipe",
+    "title": {
+        "en": "Importing data into a spreadsheet"
+    },
+    "path": "cookbook/specials/export-excel.html",
+    "keywords": [
+        "excel",
+        "export",
+        "import",
+        "spreadsheet",
+        "csv",
+        "tabelle"
+    ]
+}

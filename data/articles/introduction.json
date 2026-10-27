@@ -1,0 +1,14 @@
+{
+    "id": "introduction",
+    "kind": "topic",
+    "title": {
+        "en": "Introduction to MetaModels"
+    },
+    "path": "manual/introduction.html",
+    "keywords": [
+        "introduction",
+        "einführung",
+        "basics",
+        "grundlagen"
+    ]
+}

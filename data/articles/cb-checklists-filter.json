@@ -1,0 +1,16 @@
+{
+    "id": "cb-checklists-filter",
+    "kind": "recipe",
+    "title": {
+        "en": "Filter not displayed"
+    },
+    "path": "cookbook/checklists/filter.html",
+    "keywords": [
+        "filter not displayed",
+        "filter zeigt nichts",
+        "troubleshooting",
+        "fehlersuche",
+        "no items",
+        "keine einträge"
+    ]
+}

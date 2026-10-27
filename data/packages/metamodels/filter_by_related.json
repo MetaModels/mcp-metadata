@@ -1,0 +1,28 @@
+{
+    "name": "metamodels/filter_by_related",
+    "availability": "early-access",
+    "access": {
+        "url": {
+            "en": "https://metamodels.readthedocs.io/en/latest/manual/extended/filter-by-related.html"
+        }
+    },
+    "docs": "manual/extended/filter-by-related.html",
+    "types": [
+        {
+            "kind": "filter",
+            "type": "related",
+            "summary": {
+                "en": "Filters items by properties of a related MetaModel."
+            },
+            "keywords": [
+                "relation",
+                "relationen",
+                "parent",
+                "child",
+                "verknüpft",
+                "by related"
+            ],
+            "docs": "manual/component/filter/by-related.html"
+        }
+    ]
+}

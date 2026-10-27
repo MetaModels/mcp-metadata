@@ -1,0 +1,16 @@
+{
+    "id": "cb-checklists-mm-start",
+    "kind": "recipe",
+    "title": {
+        "en": "Getting started with MetaModels"
+    },
+    "path": "cookbook/checklists/mm-start.html",
+    "keywords": [
+        "start",
+        "getting started",
+        "einstieg",
+        "first metamodel",
+        "erstes metamodel",
+        "checklist"
+    ]
+}

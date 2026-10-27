@@ -1,0 +1,16 @@
+{
+    "id": "ext-erd-viewer",
+    "kind": "topic",
+    "title": {
+        "en": "MetaModels ERD (entity relationship diagram)"
+    },
+    "path": "manual/extended/erd-viewer.html",
+    "keywords": [
+        "erd",
+        "diagram",
+        "diagramm",
+        "relations",
+        "relationen",
+        "overview"
+    ]
+}

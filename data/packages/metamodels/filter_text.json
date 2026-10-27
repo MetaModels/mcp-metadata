@@ -1,0 +1,21 @@
+{
+    "name": "metamodels/filter_text",
+    "availability": "unknown",
+    "types": [
+        {
+            "kind": "filter",
+            "type": "text",
+            "summary": {
+                "en": "Frontend text search over attributes."
+            },
+            "keywords": [
+                "search",
+                "suche",
+                "textsuche",
+                "keyword",
+                "volltext"
+            ],
+            "docs": "manual/component/filter/text.html"
+        }
+    ]
+}

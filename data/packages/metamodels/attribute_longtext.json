@@ -1,0 +1,25 @@
+{
+    "name": "metamodels/attribute_longtext",
+    "availability": "unknown",
+    "types": [
+        {
+            "kind": "attribute",
+            "type": "longtext",
+            "summary": {
+                "en": "Long text, optionally with a rich text editor."
+            },
+            "keywords": [
+                "description",
+                "beschreibung",
+                "text",
+                "rte",
+                "tinymce",
+                "richtext",
+                "editor",
+                "inhalt",
+                "teaser"
+            ],
+            "docs": "manual/component/attribute/longtext.html"
+        }
+    ]
+}

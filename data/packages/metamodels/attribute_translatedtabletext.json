@@ -1,0 +1,26 @@
+{
+    "name": "metamodels/attribute_translatedtabletext",
+    "availability": "unknown",
+    "types": [
+        {
+            "kind": "attribute",
+            "type": "translatedtabletext",
+            "summary": {
+                "en": "Multilingual variant: table of text values with configured columns and any number of rows."
+            },
+            "keywords": [
+                "table",
+                "tabelle",
+                "rows",
+                "zeilen",
+                "spalten",
+                "öffnungszeiten",
+                "multilingual",
+                "mehrsprachig",
+                "translated",
+                "übersetzt"
+            ],
+            "docs": "manual/component/attribute/translatedtabletext.html"
+        }
+    ]
+}

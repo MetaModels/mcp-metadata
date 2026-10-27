@@ -1,0 +1,27 @@
+{
+    "name": "metamodels/attribute_translatedfile",
+    "availability": "unknown",
+    "types": [
+        {
+            "kind": "attribute",
+            "type": "translatedfile",
+            "summary": {
+                "en": "Multilingual variant: file or image picker for one or several files of the Contao file manager."
+            },
+            "keywords": [
+                "image",
+                "bild",
+                "datei",
+                "upload",
+                "gallery",
+                "galerie",
+                "pdf",
+                "multilingual",
+                "mehrsprachig",
+                "translated",
+                "übersetzt"
+            ],
+            "docs": "manual/component/attribute/translatedfile.html"
+        }
+    ]
+}

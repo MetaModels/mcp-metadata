@@ -1,0 +1,22 @@
+{
+    "name": "metamodels/attribute_alias",
+    "availability": "unknown",
+    "types": [
+        {
+            "kind": "attribute",
+            "type": "alias",
+            "summary": {
+                "en": "Unique URL-friendly identifier built from other attributes, used in links to detail pages."
+            },
+            "keywords": [
+                "slug",
+                "url",
+                "link",
+                "detail",
+                "kurzname",
+                "adresse"
+            ],
+            "docs": "manual/component/attribute/alias.html"
+        }
+    ]
+}

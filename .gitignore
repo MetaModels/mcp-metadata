@@ -1,0 +1,17 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# IDEs
+.idea/
+.phpcq/
+nbproject/
+
+# composer related
+vendor/
+composer.lock
+
+# build
+build/
+.phpunit.result.cache
+.phpunit.cache/

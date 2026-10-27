@@ -1,0 +1,21 @@
+{
+    "name": "metamodels/attribute_contentarticle",
+    "availability": "unknown",
+    "types": [
+        {
+            "kind": "attribute",
+            "type": "contentarticle",
+            "summary": {
+                "en": "Contao content elements per item, like the content of an article."
+            },
+            "keywords": [
+                "content elements",
+                "inhaltselemente",
+                "article",
+                "artikel",
+                "page builder"
+            ],
+            "docs": "manual/component/attribute/contentarticle.html"
+        }
+    ]
+}

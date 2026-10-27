@@ -1,0 +1,19 @@
+{
+    "id": "multi-language",
+    "kind": "topic",
+    "title": {
+        "en": "Multilingual MetaModels"
+    },
+    "path": "manual/component/multi-language.html",
+    "keywords": [
+        "multilingual",
+        "mehrsprachig",
+        "languages",
+        "sprachen",
+        "translation",
+        "übersetzung",
+        "fallback",
+        "variants",
+        "varianten"
+    ]
+}

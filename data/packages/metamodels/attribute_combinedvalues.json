@@ -1,0 +1,22 @@
+{
+    "name": "metamodels/attribute_combinedvalues",
+    "availability": "unknown",
+    "types": [
+        {
+            "kind": "attribute",
+            "type": "combinedvalues",
+            "summary": {
+                "en": "Text composed from several other attributes, for example first and last name."
+            },
+            "keywords": [
+                "combine",
+                "compose",
+                "concatenate",
+                "kombinieren",
+                "zusammensetzen",
+                "name"
+            ],
+            "docs": "manual/component/attribute/combinedvalues.html"
+        }
+    ]
+}

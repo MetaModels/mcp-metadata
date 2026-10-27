@@ -1,0 +1,13 @@
+{
+    "id": "ext-translator-bridge",
+    "kind": "topic",
+    "title": {
+        "en": "Translator bridge"
+    },
+    "path": "manual/extended/translator-bridge.html",
+    "keywords": [
+        "translator",
+        "übersetzung",
+        "translation"
+    ]
+}

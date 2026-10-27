@@ -1,0 +1,21 @@
+{
+    "id": "cb-inputmask-checkbox-negation",
+    "kind": "recipe",
+    "title": {
+        "en": "Display condition: show when a checkbox is not checked"
+    },
+    "path": "cookbook/inputmask/checkbox-negation.html",
+    "keywords": [
+        "checkbox",
+        "condition",
+        "bedingung",
+        "negation",
+        "not checked"
+    ],
+    "types": [
+        {
+            "kind": "attribute",
+            "type": "checkbox"
+        }
+    ]
+}

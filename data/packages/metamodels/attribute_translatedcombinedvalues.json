@@ -1,0 +1,26 @@
+{
+    "name": "metamodels/attribute_translatedcombinedvalues",
+    "availability": "unknown",
+    "types": [
+        {
+            "kind": "attribute",
+            "type": "translatedcombinedvalues",
+            "summary": {
+                "en": "Multilingual variant: text composed from several other attributes, for example first and last name."
+            },
+            "keywords": [
+                "combine",
+                "compose",
+                "concatenate",
+                "kombinieren",
+                "zusammensetzen",
+                "name",
+                "multilingual",
+                "mehrsprachig",
+                "translated",
+                "übersetzt"
+            ],
+            "docs": "manual/component/attribute/translatedcombinedvalues.html"
+        }
+    ]
+}

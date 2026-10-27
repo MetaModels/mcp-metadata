@@ -1,0 +1,93 @@
+{
+    "name": "metamodels/core",
+    "availability": "public",
+    "types": [
+        {
+            "kind": "filter",
+            "type": "conditionand",
+            "summary": {
+                "en": "Container: an item has to match all rules inside."
+            },
+            "keywords": [
+                "and",
+                "und",
+                "combine",
+                "verknüpfen",
+                "group",
+                "gruppe"
+            ],
+            "docs": "manual/component/filter/condition-and.html"
+        },
+        {
+            "kind": "filter",
+            "type": "conditionor",
+            "summary": {
+                "en": "Container: an item has to match at least one rule inside."
+            },
+            "keywords": [
+                "or",
+                "oder",
+                "alternative"
+            ],
+            "docs": "manual/component/filter/condition-or.html"
+        },
+        {
+            "kind": "filter",
+            "type": "customsql",
+            "summary": {
+                "en": "Filters with your own SQL query that returns item ids."
+            },
+            "keywords": [
+                "sql",
+                "query",
+                "abfrage"
+            ],
+            "docs": "manual/component/filter/customsql.html"
+        },
+        {
+            "kind": "filter",
+            "type": "expression_rule",
+            "summary": {
+                "en": "Runs further rules only if a condition is met."
+            },
+            "keywords": [
+                "condition",
+                "bedingung",
+                "expression",
+                "if"
+            ],
+            "docs": "manual/component/filter/expression-rule.html"
+        },
+        {
+            "kind": "filter",
+            "type": "idlist",
+            "summary": {
+                "en": "Fixed list of item ids as the basis of the filter."
+            },
+            "keywords": [
+                "ids",
+                "fixed",
+                "festlegen",
+                "vordefiniert"
+            ],
+            "docs": "manual/component/filter/idlist.html"
+        },
+        {
+            "kind": "filter",
+            "type": "simplelookup",
+            "summary": {
+                "en": "Filters by the value of one attribute, taken from the URL or fixed. The usual rule for detail pages."
+            },
+            "keywords": [
+                "detail",
+                "alias",
+                "url parameter",
+                "lookup",
+                "einzelansicht",
+                "parameter",
+                "id"
+            ],
+            "docs": "manual/component/filter/simplelookup.html"
+        }
+    ]
+}

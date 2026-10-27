@@ -1,0 +1,34 @@
+{
+    "id": "cb-templates-flatpickr-integration",
+    "kind": "recipe",
+    "title": {
+        "en": "Date picker for the from-to filter rule (Flatpickr)"
+    },
+    "path": "cookbook/templates/flatpickr-integration.html",
+    "keywords": [
+        "date picker",
+        "datepicker",
+        "flatpickr",
+        "datum",
+        "kalender",
+        "calendar"
+    ],
+    "types": [
+        {
+            "kind": "filter",
+            "type": "fromto"
+        },
+        {
+            "kind": "filter",
+            "type": "fromtodate"
+        },
+        {
+            "kind": "filter",
+            "type": "range"
+        },
+        {
+            "kind": "filter",
+            "type": "rangedate"
+        }
+    ]
+}

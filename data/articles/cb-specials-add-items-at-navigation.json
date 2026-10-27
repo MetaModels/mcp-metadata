@@ -1,0 +1,16 @@
+{
+    "id": "cb-specials-add-items-at-navigation",
+    "kind": "recipe",
+    "title": {
+        "en": "Displaying detail pages in the Contao navigation"
+    },
+    "path": "cookbook/specials/add_items_at_navigation.html",
+    "keywords": [
+        "navigation",
+        "sitemap",
+        "detail pages",
+        "detailseiten",
+        "menu",
+        "menü"
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "id": "install",
+    "kind": "topic",
+    "title": {
+        "en": "Installing and updating MetaModels"
+    },
+    "path": "manual/install.html",
+    "keywords": [
+        "install",
+        "installation",
+        "update",
+        "composer"
+    ]
+}

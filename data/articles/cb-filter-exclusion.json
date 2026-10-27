@@ -1,0 +1,15 @@
+{
+    "id": "cb-filter-exclusion",
+    "kind": "recipe",
+    "title": {
+        "en": "Filter rule as exclusion"
+    },
+    "path": "cookbook/filter/exclusion.html",
+    "keywords": [
+        "exclude",
+        "ausschließen",
+        "exclusion",
+        "not",
+        "nicht"
+    ]
+}

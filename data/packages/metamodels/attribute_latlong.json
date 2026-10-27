@@ -1,0 +1,25 @@
+{
+    "name": "metamodels/attribute_latlong",
+    "availability": "unknown",
+    "types": [
+        {
+            "kind": "attribute",
+            "type": "latlong",
+            "summary": {
+                "en": "Coordinates (latitude and longitude) in one column."
+            },
+            "keywords": [
+                "coordinates",
+                "koordinaten",
+                "map",
+                "karte",
+                "gps",
+                "geo",
+                "position",
+                "standort",
+                "location"
+            ],
+            "docs": "manual/component/attribute/latlong.html"
+        }
+    ]
+}

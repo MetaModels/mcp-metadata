@@ -1,0 +1,24 @@
+{
+    "id": "cb-specials-helper-models",
+    "kind": "recipe",
+    "title": {
+        "en": "Helper model: consolidating selection data in one MetaModel"
+    },
+    "path": "cookbook/specials/helper-models.html",
+    "keywords": [
+        "helper model",
+        "hilfsmodell",
+        "select",
+        "auswahl",
+        "lookup",
+        "selection data",
+        "relation",
+        "relationen"
+    ],
+    "types": [
+        {
+            "kind": "attribute",
+            "type": "select"
+        }
+    ]
+}

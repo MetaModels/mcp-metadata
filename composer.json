@@ -1,0 +1,43 @@
+{
+  "name": "metamodels/mcp-metadata",
+  "description": "Facts about the MetaModels packages, their attribute and filter types and the handbook pages, for the MCP server of MetaModels (metamodels/mcp-admin). Data and the tools that build it.",
+  "license": "LGPL-3.0-or-later",
+  "type": "project",
+  "keywords": [
+    "contao",
+    "metamodels",
+    "mcp",
+    "metadata"
+  ],
+  "authors": [
+    {
+      "name": "Ingolf Steinhardt",
+      "email": "info@e-spin.de",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": "^8.4",
+    "ext-json": "*",
+    "opis/json-schema": "^2.3"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^12.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "MetaModels\\McpMetadata\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "MetaModels\\McpMetadata\\Test\\": "tests/"
+    }
+  },
+  "bin": [
+    "bin/build"
+  ],
+  "config": {
+    "sort-packages": true
+  }
+}

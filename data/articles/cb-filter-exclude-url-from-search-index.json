@@ -1,0 +1,15 @@
+{
+    "id": "cb-filter-exclude-url-from-search-index",
+    "kind": "recipe",
+    "title": {
+        "en": "Excluding filter URLs from the Contao search index"
+    },
+    "path": "cookbook/filter/exclude-url-from-search-index.html",
+    "keywords": [
+        "search index",
+        "suchindex",
+        "noindex",
+        "exclude",
+        "seo"
+    ]
+}

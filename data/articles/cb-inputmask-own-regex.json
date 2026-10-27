@@ -1,0 +1,14 @@
+{
+    "id": "cb-inputmask-own-regex",
+    "kind": "recipe",
+    "title": {
+        "en": "Input mask: custom regex validation"
+    },
+    "path": "cookbook/inputmask/own-regex.html",
+    "keywords": [
+        "regex",
+        "validation",
+        "validierung",
+        "pattern"
+    ]
+}

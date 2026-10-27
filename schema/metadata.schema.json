@@ -1,0 +1,349 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://metamodels.github.io/mcp-metadata/schema/1/metadata.schema.json",
+    "title": "MetaModels MCP metadata",
+    "description": "Facts about MetaModels packages, their attribute and filter types and the pages of the handbook. Data only, no instructions.",
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+        "schema",
+        "handbook",
+        "packages",
+        "types",
+        "articles"
+    ],
+    "properties": {
+        "schema": {
+            "const": 1,
+            "description": "Format version. A reader that does not know the number ignores the file."
+        },
+        "generated": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "packages": {
+            "type": "array",
+            "items": {
+                "$ref": "#/$defs/package"
+            }
+        },
+        "types": {
+            "type": "array",
+            "items": {
+                "$ref": "#/$defs/type"
+            }
+        },
+        "articles": {
+            "type": "array",
+            "items": {
+                "$ref": "#/$defs/article"
+            }
+        },
+        "handbook": {
+            "$ref": "#/$defs/handbook"
+        }
+    },
+    "$defs": {
+        "handbook": {
+            "description": "Where the handbook is, per language. Pages have the same path in every language, so pages are named by path (docs, articles) and only the base address differs.",
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+                "base_language",
+                "urls"
+            ],
+            "properties": {
+                "base_language": {
+                    "type": "string",
+                    "pattern": "^[a-z]{2}$",
+                    "description": "The language the handbook is written in first and translated from. Must be a key of urls."
+                },
+                "urls": {
+                    "type": "object",
+                    "minProperties": 1,
+                    "propertyNames": {
+                        "pattern": "^[a-z]{2}$"
+                    },
+                    "additionalProperties": {
+                        "type": "string",
+                        "pattern": "^https://.*/$",
+                        "maxLength": 300
+                    }
+                }
+            }
+        },
+        "path": {
+            "description": "Path of a page inside the handbook, without a leading slash, with an optional anchor.",
+            "type": "string",
+            "pattern": "^[a-z0-9][a-z0-9_./-]{0,198}(#[a-z0-9_-]{1,80})?$",
+            "not": {
+                "pattern": "\\.\\."
+            }
+        },
+        "text": {
+            "description": "Short plain text by language code, English is required. No markup, no instructions.",
+            "type": "object",
+            "required": [
+                "en"
+            ],
+            "propertyNames": {
+                "pattern": "^[a-z]{2}$"
+            },
+            "additionalProperties": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 240,
+                "pattern": "^[^<>]*$"
+            }
+        },
+        "url": {
+            "description": "Link by language code, English is required.",
+            "type": "object",
+            "required": [
+                "en"
+            ],
+            "propertyNames": {
+                "pattern": "^[a-z]{2}$"
+            },
+            "additionalProperties": {
+                "type": "string",
+                "format": "uri",
+                "pattern": "^https://",
+                "maxLength": 300
+            }
+        },
+        "keywords": {
+            "type": "array",
+            "maxItems": 12,
+            "uniqueItems": true,
+            "items": {
+                "type": "string",
+                "pattern": "^[^<>\\n]{2,40}$"
+            }
+        },
+        "version": {
+            "type": "string",
+            "pattern": "^\\d+(\\.\\d+){0,2}$"
+        },
+        "constraints": {
+            "description": "Composer package name => version constraint.",
+            "type": "object",
+            "propertyNames": {
+                "pattern": "^[a-z0-9_.-]+/[a-z0-9_.-]+$"
+            },
+            "additionalProperties": {
+                "type": "string",
+                "maxLength": 60
+            }
+        },
+        "typeRef": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+                "kind",
+                "type"
+            ],
+            "properties": {
+                "kind": {
+                    "enum": [
+                        "attribute",
+                        "filter"
+                    ]
+                },
+                "type": {
+                    "type": "string",
+                    "pattern": "^[a-z0-9_]+$"
+                }
+            }
+        },
+        "package": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+                "name",
+                "availability"
+            ],
+            "properties": {
+                "name": {
+                    "type": "string",
+                    "pattern": "^[a-z0-9_.-]+/[a-z0-9_.-]+$"
+                },
+                "summary": {
+                    "$ref": "#/$defs/text"
+                },
+                "keywords": {
+                    "$ref": "#/$defs/keywords"
+                },
+                "availability": {
+                    "description": "public: composer require works for everybody. early-access: only for supporters, see access. planned: does not exist yet. unknown: not stated, used by generated skeletons.",
+                    "enum": [
+                        "public",
+                        "early-access",
+                        "planned",
+                        "unknown"
+                    ]
+                },
+                "access": {
+                    "description": "How to get a package that is not public. A page for humans, never credentials.",
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                        "url"
+                    ],
+                    "properties": {
+                        "url": {
+                            "$ref": "#/$defs/url"
+                        },
+                        "repository": {
+                            "type": "string",
+                            "format": "uri",
+                            "pattern": "^https://",
+                            "description": "Public URL of the Composer repository, if it is meant to be shown."
+                        }
+                    }
+                },
+                "since": {
+                    "$ref": "#/$defs/version",
+                    "description": "First release of the package."
+                },
+                "requires": {
+                    "$ref": "#/$defs/constraints",
+                    "description": "What the current release needs, for example metamodels/core and contao/core-bundle."
+                },
+                "docs": {
+                    "$ref": "#/$defs/path"
+                }
+            },
+            "allOf": [
+                {
+                    "if": {
+                        "properties": {
+                            "availability": {
+                                "const": "early-access"
+                            }
+                        }
+                    },
+                    "then": {
+                        "required": [
+                            "access"
+                        ]
+                    }
+                }
+            ]
+        },
+        "type": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+                "kind",
+                "type",
+                "package"
+            ],
+            "properties": {
+                "kind": {
+                    "enum": [
+                        "attribute",
+                        "filter"
+                    ]
+                },
+                "type": {
+                    "type": "string",
+                    "pattern": "^[a-z0-9_]+$",
+                    "description": "The type name as the factory registers it."
+                },
+                "package": {
+                    "type": "string",
+                    "pattern": "^[a-z0-9_.-]+/[a-z0-9_.-]+$",
+                    "description": "Must name an entry of packages."
+                },
+                "summary": {
+                    "$ref": "#/$defs/text"
+                },
+                "keywords": {
+                    "$ref": "#/$defs/keywords"
+                },
+                "since": {
+                    "$ref": "#/$defs/version",
+                    "description": "First version of the package that has the type."
+                },
+                "docs": {
+                    "$ref": "#/$defs/path"
+                },
+                "features": {
+                    "description": "Abilities that came later than the type itself.",
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                            "id",
+                            "since",
+                            "summary"
+                        ],
+                        "properties": {
+                            "id": {
+                                "type": "string",
+                                "pattern": "^[a-z0-9_]+$",
+                                "description": "Normally the name of the setting."
+                            },
+                            "since": {
+                                "$ref": "#/$defs/version"
+                            },
+                            "summary": {
+                                "$ref": "#/$defs/text"
+                            }
+                        }
+                    }
+                },
+                "deprecated": {
+                    "type": "boolean"
+                },
+                "replaced_by": {
+                    "$ref": "#/$defs/typeRef"
+                }
+            }
+        },
+        "article": {
+            "description": "A page of the handbook about a topic (kind topic, a page of the manual such as relations or several languages) or about a task (kind recipe, a page of the cookbook). Only a pointer, the text stays in the handbook.",
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+                "id",
+                "kind",
+                "title",
+                "path"
+            ],
+            "properties": {
+                "id": {
+                    "type": "string",
+                    "pattern": "^[a-z0-9][a-z0-9-]*$"
+                },
+                "kind": {
+                    "enum": [
+                        "topic",
+                        "recipe"
+                    ]
+                },
+                "title": {
+                    "$ref": "#/$defs/text"
+                },
+                "path": {
+                    "$ref": "#/$defs/path"
+                },
+                "keywords": {
+                    "$ref": "#/$defs/keywords"
+                },
+                "types": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/$defs/typeRef"
+                    },
+                    "description": "Types the page is about."
+                },
+                "requires": {
+                    "$ref": "#/$defs/constraints"
+                }
+            }
+        }
+    }
+}

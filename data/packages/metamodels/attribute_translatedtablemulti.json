@@ -1,0 +1,25 @@
+{
+    "name": "metamodels/attribute_translatedtablemulti",
+    "availability": "unknown",
+    "docs": "manual/extended/attribute_mcw.html",
+    "types": [
+        {
+            "kind": "attribute",
+            "type": "translatedtablemulti",
+            "summary": {
+                "en": "Multilingual variant: table with a widget per column, such as select or checkbox."
+            },
+            "keywords": [
+                "table",
+                "tabelle",
+                "repeater",
+                "multi column",
+                "multilingual",
+                "mehrsprachig",
+                "translated",
+                "übersetzt"
+            ],
+            "docs": "manual/component/attribute/translatedtablemulti.html"
+        }
+    ]
+}

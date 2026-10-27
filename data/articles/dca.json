@@ -1,0 +1,17 @@
+{
+    "id": "dca",
+    "kind": "topic",
+    "title": {
+        "en": "Input screens (input forms)"
+    },
+    "path": "manual/component/dca.html",
+    "keywords": [
+        "input screen",
+        "eingabemaske",
+        "backend form",
+        "formular",
+        "fields",
+        "legend",
+        "palette"
+    ]
+}

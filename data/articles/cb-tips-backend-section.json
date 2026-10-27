@@ -1,0 +1,16 @@
+{
+    "id": "cb-tips-backend-section",
+    "kind": "recipe",
+    "title": {
+        "en": "Custom section in the backend navigation"
+    },
+    "path": "cookbook/tips/backend-section.html",
+    "keywords": [
+        "backend navigation",
+        "navigation",
+        "section",
+        "bereich",
+        "menu",
+        "menü"
+    ]
+}

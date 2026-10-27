@@ -1,0 +1,21 @@
+{
+    "name": "metamodels/filter_register",
+    "availability": "unknown",
+    "types": [
+        {
+            "kind": "filter",
+            "type": "register",
+            "summary": {
+                "en": "Initial letters as a clickable A-Z navigation."
+            },
+            "keywords": [
+                "alphabet",
+                "a-z",
+                "initial",
+                "anfangsbuchstabe",
+                "glossar"
+            ],
+            "docs": "manual/component/filter/register.html"
+        }
+    ]
+}

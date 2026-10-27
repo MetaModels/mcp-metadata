@@ -1,0 +1,14 @@
+{
+    "id": "ext-file-usage",
+    "kind": "topic",
+    "title": {
+        "en": "File usage integration"
+    },
+    "path": "manual/extended/file-usage.html",
+    "keywords": [
+        "file usage",
+        "dateiverwendung",
+        "files",
+        "dateien"
+    ]
+}

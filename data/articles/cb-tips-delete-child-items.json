@@ -1,0 +1,15 @@
+{
+    "id": "cb-tips-delete-child-items",
+    "kind": "recipe",
+    "title": {
+        "en": "Automatic deletion of records in child tables"
+    },
+    "path": "cookbook/tips/delete-child-items.html",
+    "keywords": [
+        "delete",
+        "löschen",
+        "child",
+        "cascade",
+        "kindeinträge"
+    ]
+}

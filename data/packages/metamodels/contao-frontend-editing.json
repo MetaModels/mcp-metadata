@@ -1,0 +1,39 @@
+{
+    "name": "metamodels/contao-frontend-editing",
+    "availability": "unknown",
+    "summary": {
+        "en": "Frontend editing: members create, edit, duplicate and delete items in the frontend."
+    },
+    "keywords": [
+        "frontend editing",
+        "frontend bearbeiten",
+        "mitglied",
+        "member",
+        "fee",
+        "eingeben"
+    ],
+    "docs": "manual/extended/frontend_editing.html",
+    "types": [
+        {
+            "kind": "filter",
+            "type": "member_filter",
+            "summary": {
+                "en": "Filter rule \"Member permissions\": the list shows only the items of the logged-in member, taken from a select attribute on tl_member (alias username). Needs the permission check in the FEE input screen."
+            },
+            "keywords": [
+                "member",
+                "mitglied",
+                "member permissions",
+                "eigene einträge",
+                "own items",
+                "ersteller",
+                "berechtigung",
+                "rechteprüfung",
+                "tl_member",
+                "frontend editing",
+                "fee"
+            ],
+            "docs": "manual/extended/frontend_editing.html"
+        }
+    ]
+}

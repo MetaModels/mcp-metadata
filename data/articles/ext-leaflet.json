@@ -1,0 +1,14 @@
+{
+    "id": "ext-leaflet",
+    "kind": "topic",
+    "title": {
+        "en": "Leaflet maps integration"
+    },
+    "path": "manual/extended/leaflet.html",
+    "keywords": [
+        "leaflet",
+        "map",
+        "karte",
+        "marker"
+    ]
+}

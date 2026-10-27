@@ -1,0 +1,24 @@
+{
+    "name": "metamodels/filter_checkbox",
+    "availability": "unknown",
+    "types": [
+        {
+            "kind": "filter",
+            "type": "checkbox",
+            "summary": {
+                "en": "Filter with a frontend widget: visitors choose yes or no and so change the list themselves."
+            },
+            "keywords": [
+                "yes no",
+                "ja nein",
+                "widget",
+                "besucher",
+                "frontend",
+                "schalter",
+                "toggle",
+                "checkbox"
+            ],
+            "docs": "manual/component/filter/yes-no.html"
+        }
+    ]
+}

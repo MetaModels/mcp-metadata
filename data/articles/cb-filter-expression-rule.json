@@ -1,0 +1,20 @@
+{
+    "id": "cb-filter-expression-rule",
+    "kind": "recipe",
+    "title": {
+        "en": "Expression filter rule"
+    },
+    "path": "cookbook/filter/expression-rule.html",
+    "keywords": [
+        "expression",
+        "condition",
+        "bedingung",
+        "if"
+    ],
+    "types": [
+        {
+            "kind": "filter",
+            "type": "expression_rule"
+        }
+    ]
+}

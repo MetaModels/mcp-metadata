@@ -1,0 +1,31 @@
+{
+    "id": "ext-perimetersearch",
+    "kind": "topic",
+    "title": {
+        "en": "Perimeter search"
+    },
+    "path": "manual/extended/perimetersearch.html",
+    "keywords": [
+        "umkreissuche",
+        "radius",
+        "distance",
+        "entfernung",
+        "geo",
+        "map",
+        "karte"
+    ],
+    "types": [
+        {
+            "kind": "filter",
+            "type": "perimetersearch"
+        },
+        {
+            "kind": "attribute",
+            "type": "geodistance"
+        },
+        {
+            "kind": "attribute",
+            "type": "latlong"
+        }
+    ]
+}

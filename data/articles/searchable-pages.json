@@ -1,0 +1,15 @@
+{
+    "id": "searchable-pages",
+    "kind": "topic",
+    "title": {
+        "en": "Search settings (searchable pages)"
+    },
+    "path": "manual/component/searchable-pages.html",
+    "keywords": [
+        "search index",
+        "suchindex",
+        "sitemap",
+        "searchable",
+        "durchsuchbar"
+    ]
+}

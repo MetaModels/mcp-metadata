@@ -1,0 +1,21 @@
+{
+    "name": "metamodels/attribute_color",
+    "availability": "unknown",
+    "docs": "manual/extended/attribute_color.html",
+    "types": [
+        {
+            "kind": "attribute",
+            "type": "color",
+            "summary": {
+                "en": "Color picker for web colors with opacity."
+            },
+            "keywords": [
+                "colour",
+                "farbe",
+                "hex",
+                "rgb"
+            ],
+            "docs": "manual/component/attribute/color.html"
+        }
+    ]
+}

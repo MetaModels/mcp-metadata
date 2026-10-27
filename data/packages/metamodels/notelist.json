@@ -1,0 +1,33 @@
+{
+    "name": "metamodels/notelist",
+    "availability": "unknown",
+    "summary": {
+        "en": "Note lists (wishlist, comparison list, cart) for items in the frontend, with a filter rule and a form widget."
+    },
+    "keywords": [
+        "merkliste",
+        "wishlist",
+        "watchlist",
+        "favoriten",
+        "warenkorb",
+        "cart",
+        "vergleichsliste"
+    ],
+    "docs": "manual/extended/notelist.html",
+    "types": [
+        {
+            "kind": "filter",
+            "type": "notelist",
+            "summary": {
+                "en": "Filters a list by the items on a note list."
+            },
+            "keywords": [
+                "notelist",
+                "merkliste",
+                "wishlist",
+                "favoriten"
+            ],
+            "docs": "manual/extended/notelist.html"
+        }
+    ]
+}

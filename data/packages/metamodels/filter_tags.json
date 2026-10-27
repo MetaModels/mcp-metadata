@@ -1,0 +1,21 @@
+{
+    "name": "metamodels/filter_tags",
+    "availability": "unknown",
+    "types": [
+        {
+            "kind": "filter",
+            "type": "tags",
+            "summary": {
+                "en": "Frontend checkboxes to choose several values."
+            },
+            "keywords": [
+                "multiselect",
+                "checkboxes",
+                "schlagworte",
+                "mehrfachauswahl",
+                "tags"
+            ],
+            "docs": "manual/component/filter/tags.html"
+        }
+    ]
+}

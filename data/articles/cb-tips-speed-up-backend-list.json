@@ -1,0 +1,16 @@
+{
+    "id": "cb-tips-speed-up-backend-list",
+    "kind": "recipe",
+    "title": {
+        "en": "Speeding up the backend view with many records"
+    },
+    "path": "cookbook/tips/speed-up-backend-list.html",
+    "keywords": [
+        "performance",
+        "speed",
+        "geschwindigkeit",
+        "backend list",
+        "large",
+        "viele einträge"
+    ]
+}

@@ -1,0 +1,20 @@
+{
+    "id": "contentelements",
+    "kind": "topic",
+    "title": {
+        "en": "Content elements and modules for the frontend output"
+    },
+    "path": "manual/component/contentelements.html",
+    "keywords": [
+        "content element",
+        "inhaltselement",
+        "module",
+        "modul",
+        "frontend",
+        "list",
+        "liste",
+        "filter form",
+        "sorting",
+        "pagination"
+    ]
+}

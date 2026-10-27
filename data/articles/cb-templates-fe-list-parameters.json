@@ -1,0 +1,15 @@
+{
+    "id": "cb-templates-fe-list-parameters",
+    "kind": "recipe",
+    "title": {
+        "en": "Custom parameters for the list output"
+    },
+    "path": "cookbook/templates/fe_list_parameters.html",
+    "keywords": [
+        "parameters",
+        "parameter",
+        "template",
+        "list",
+        "liste"
+    ]
+}

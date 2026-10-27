@@ -1,0 +1,37 @@
+{
+    "name": "metamodels/attribute_levenshtein",
+    "availability": "unknown",
+    "types": [
+        {
+            "kind": "attribute",
+            "type": "levenshtein",
+            "summary": {
+                "en": "Full-text index over attributes for a typo-tolerant similarity search."
+            },
+            "keywords": [
+                "search",
+                "suche",
+                "fulltext",
+                "volltext",
+                "fuzzy"
+            ],
+            "docs": "manual/component/attribute/levenshtein.html"
+        },
+        {
+            "kind": "filter",
+            "type": "levenshtein",
+            "summary": {
+                "en": "Typo-tolerant full-text search with autocomplete."
+            },
+            "keywords": [
+                "fuzzy",
+                "similarity",
+                "fulltext",
+                "volltext",
+                "suche",
+                "search"
+            ],
+            "docs": "manual/component/filter/levenshtein.html"
+        }
+    ]
+}

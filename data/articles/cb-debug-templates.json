@@ -1,0 +1,14 @@
+{
+    "id": "cb-debug-templates",
+    "kind": "recipe",
+    "title": {
+        "en": "Debug templates"
+    },
+    "path": "cookbook/debug/templates.html",
+    "keywords": [
+        "debug",
+        "template",
+        "fehlersuche",
+        "twig"
+    ]
+}

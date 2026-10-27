@@ -1,0 +1,16 @@
+{
+    "id": "cb-specials-ce-element-for-editors",
+    "kind": "recipe",
+    "title": {
+        "en": "Predefined content element for editors"
+    },
+    "path": "cookbook/specials/ce_element_for_editors.html",
+    "keywords": [
+        "editors",
+        "redakteure",
+        "content element",
+        "inhaltselement",
+        "predefined",
+        "vorgefertigt"
+    ]
+}

@@ -1,0 +1,23 @@
+{
+    "name": "metamodels/filter_loupe",
+    "availability": "unknown",
+    "docs": "manual/extended/loupe.html",
+    "types": [
+        {
+            "kind": "filter",
+            "type": "loupe",
+            "summary": {
+                "en": "Full-text search with fuzzy matching and ranking in an SQLite index."
+            },
+            "keywords": [
+                "fulltext",
+                "volltext",
+                "search",
+                "suche",
+                "fuzzy",
+                "autocomplete"
+            ],
+            "docs": "manual/component/filter/loupe.html"
+        }
+    ]
+}

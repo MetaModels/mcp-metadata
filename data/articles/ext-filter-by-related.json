@@ -1,0 +1,22 @@
+{
+    "id": "ext-filter-by-related",
+    "kind": "topic",
+    "title": {
+        "en": "Filter by related MetaModels"
+    },
+    "path": "manual/extended/filter-by-related.html",
+    "keywords": [
+        "relation",
+        "relationen",
+        "related",
+        "verknüpft",
+        "parent",
+        "child"
+    ],
+    "types": [
+        {
+            "kind": "filter",
+            "type": "related"
+        }
+    ]
+}

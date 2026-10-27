@@ -1,0 +1,25 @@
+{
+    "name": "metamodels/attribute_file",
+    "availability": "unknown",
+    "types": [
+        {
+            "kind": "attribute",
+            "type": "file",
+            "summary": {
+                "en": "File or image picker for one or several files of the Contao file manager."
+            },
+            "keywords": [
+                "image",
+                "bild",
+                "datei",
+                "upload",
+                "gallery",
+                "galerie",
+                "pdf",
+                "download",
+                "foto"
+            ],
+            "docs": "manual/component/attribute/file.html"
+        }
+    ]
+}

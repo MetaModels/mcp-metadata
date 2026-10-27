@@ -1,0 +1,44 @@
+{
+    "name": "metamodels/attribute_translatedcheckbox",
+    "availability": "unknown",
+    "types": [
+        {
+            "kind": "attribute",
+            "type": "translatedcheckbox",
+            "summary": {
+                "en": "Multilingual variant: yes/no value, for example published or featured."
+            },
+            "keywords": [
+                "boolean",
+                "yes no",
+                "published",
+                "ja nein",
+                "veröffentlicht",
+                "aktiv",
+                "häkchen",
+                "multilingual",
+                "mehrsprachig",
+                "translated",
+                "übersetzt"
+            ],
+            "docs": "manual/component/attribute/translatedcheckbox.html"
+        },
+        {
+            "kind": "filter",
+            "type": "translatedcheckbox_published",
+            "summary": {
+                "en": "Fixed filter like the checkbox status, for a translated checkbox. Has no frontend widget."
+            },
+            "keywords": [
+                "published",
+                "veröffentlicht",
+                "fixed",
+                "fest",
+                "aktiv",
+                "multilingual",
+                "mehrsprachig"
+            ],
+            "docs": "manual/component/filter/translated-checkbox.html"
+        }
+    ]
+}

@@ -1,0 +1,20 @@
+{
+    "name": "metamodels/attribute_country",
+    "availability": "unknown",
+    "types": [
+        {
+            "kind": "attribute",
+            "type": "country",
+            "summary": {
+                "en": "Selection of a country from the list of all countries."
+            },
+            "keywords": [
+                "land",
+                "länder",
+                "nation",
+                "iso"
+            ],
+            "docs": "manual/component/attribute/country.html"
+        }
+    ]
+}

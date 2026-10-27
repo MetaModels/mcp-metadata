@@ -1,0 +1,16 @@
+{
+    "name": "metamodels/health-check",
+    "availability": "unknown",
+    "summary": {
+        "en": "Finds and cleans up inconsistent or orphaned MetaModels data in the backend."
+    },
+    "keywords": [
+        "health check",
+        "aufräumen",
+        "cleanup",
+        "verwaist",
+        "orphaned",
+        "inkonsistent"
+    ],
+    "docs": "manual/extended/health-check.html"
+}

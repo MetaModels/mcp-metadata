@@ -1,0 +1,14 @@
+{
+    "id": "cb-checklists-attribut-change",
+    "kind": "recipe",
+    "title": {
+        "en": "Attribute not displayed after a change"
+    },
+    "path": "cookbook/checklists/attribut-change.html",
+    "keywords": [
+        "attribute not displayed",
+        "attribut fehlt",
+        "troubleshooting",
+        "cache"
+    ]
+}

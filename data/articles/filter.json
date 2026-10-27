@@ -1,0 +1,16 @@
+{
+    "id": "filter",
+    "kind": "topic",
+    "title": {
+        "en": "Filter sets and filter rules"
+    },
+    "path": "manual/component/filter.html",
+    "keywords": [
+        "filter",
+        "filter rules",
+        "filterregeln",
+        "filter sets",
+        "url parameter",
+        "detail"
+    ]
+}

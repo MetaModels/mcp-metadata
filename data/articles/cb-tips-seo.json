@@ -1,0 +1,15 @@
+{
+    "id": "cb-tips-seo",
+    "kind": "recipe",
+    "title": {
+        "en": "Search engine optimisation (SEO)"
+    },
+    "path": "cookbook/tips/seo.html",
+    "keywords": [
+        "seo",
+        "meta",
+        "title",
+        "description",
+        "canonical"
+    ]
+}

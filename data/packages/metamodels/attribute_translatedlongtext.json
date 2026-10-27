@@ -1,0 +1,27 @@
+{
+    "name": "metamodels/attribute_translatedlongtext",
+    "availability": "unknown",
+    "types": [
+        {
+            "kind": "attribute",
+            "type": "translatedlongtext",
+            "summary": {
+                "en": "Multilingual variant: long text, optionally with a rich text editor."
+            },
+            "keywords": [
+                "description",
+                "beschreibung",
+                "text",
+                "rte",
+                "tinymce",
+                "richtext",
+                "editor",
+                "multilingual",
+                "mehrsprachig",
+                "translated",
+                "übersetzt"
+            ],
+            "docs": "manual/component/attribute/translatedlongtext.html"
+        }
+    ]
+}

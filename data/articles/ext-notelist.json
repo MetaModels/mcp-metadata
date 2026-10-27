@@ -1,0 +1,21 @@
+{
+    "id": "ext-notelist",
+    "kind": "topic",
+    "title": {
+        "en": "Note list (wishlist)"
+    },
+    "path": "manual/extended/notelist.html",
+    "keywords": [
+        "merkliste",
+        "wishlist",
+        "notelist",
+        "favorites",
+        "favoriten"
+    ],
+    "types": [
+        {
+            "kind": "filter",
+            "type": "notelist"
+        }
+    ]
+}

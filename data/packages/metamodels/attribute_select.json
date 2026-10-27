@@ -1,0 +1,25 @@
+{
+    "name": "metamodels/attribute_select",
+    "availability": "unknown",
+    "types": [
+        {
+            "kind": "attribute",
+            "type": "select",
+            "summary": {
+                "en": "Single choice from another MetaModel or a Contao table (1:n relation)."
+            },
+            "keywords": [
+                "relation",
+                "relationen",
+                "category",
+                "kategorie",
+                "dropdown",
+                "auswahl",
+                "reference",
+                "verknüpfung",
+                "1:n"
+            ],
+            "docs": "manual/component/attribute/select.html"
+        }
+    ]
+}

@@ -1,0 +1,24 @@
+{
+    "id": "cb-specials-display-markers-on-map",
+    "kind": "recipe",
+    "title": {
+        "en": "Displaying locations as markers on a map"
+    },
+    "path": "cookbook/specials/display-markers-on-map.html",
+    "keywords": [
+        "map",
+        "karte",
+        "marker",
+        "location",
+        "standort",
+        "google maps",
+        "coordinates",
+        "koordinaten"
+    ],
+    "types": [
+        {
+            "kind": "attribute",
+            "type": "latlong"
+        }
+    ]
+}

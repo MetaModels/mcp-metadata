@@ -1,0 +1,17 @@
+{
+    "id": "cb-specials-picker-for-tinymce",
+    "kind": "recipe",
+    "title": {
+        "en": "jumpTo picker (detail page) for TinyMCE"
+    },
+    "path": "cookbook/specials/picker-for-tinymce.html",
+    "keywords": [
+        "jumpto",
+        "picker",
+        "tinymce",
+        "detail page",
+        "detailseite",
+        "link",
+        "dcapicker"
+    ]
+}

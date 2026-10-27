@@ -1,0 +1,21 @@
+{
+    "id": "cb-inputmask-manipulate-select-values",
+    "kind": "recipe",
+    "title": {
+        "en": "Input mask: adding more values to a single select"
+    },
+    "path": "cookbook/inputmask/manipulate-select-values.html",
+    "keywords": [
+        "select",
+        "values",
+        "werte",
+        "options",
+        "optionen"
+    ],
+    "types": [
+        {
+            "kind": "attribute",
+            "type": "select"
+        }
+    ]
+}

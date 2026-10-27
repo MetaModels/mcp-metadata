@@ -1,0 +1,22 @@
+{
+    "name": "metamodels/attribute_numeric",
+    "availability": "unknown",
+    "types": [
+        {
+            "kind": "attribute",
+            "type": "numeric",
+            "summary": {
+                "en": "Whole number, for example a quantity or a stock level."
+            },
+            "keywords": [
+                "number",
+                "integer",
+                "zahl",
+                "anzahl",
+                "menge",
+                "bestand"
+            ],
+            "docs": "manual/component/attribute/numeric.html"
+        }
+    ]
+}

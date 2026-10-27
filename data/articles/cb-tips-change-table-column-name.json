@@ -1,0 +1,16 @@
+{
+    "id": "cb-tips-change-table-column-name",
+    "kind": "recipe",
+    "title": {
+        "en": "Renaming tables or columns"
+    },
+    "path": "cookbook/tips/change-table-column-name.html",
+    "keywords": [
+        "rename",
+        "umbenennen",
+        "table name",
+        "column name",
+        "tabellenname",
+        "spaltenname"
+    ]
+}

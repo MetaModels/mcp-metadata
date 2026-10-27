@@ -1,0 +1,37 @@
+{
+    "name": "metamodels/filter_fromto",
+    "availability": "unknown",
+    "types": [
+        {
+            "kind": "filter",
+            "type": "fromto",
+            "summary": {
+                "en": "Value range from/to for one attribute, entered by visitors."
+            },
+            "keywords": [
+                "range",
+                "bereich",
+                "from to",
+                "von bis",
+                "price",
+                "preis"
+            ],
+            "docs": "manual/component/filter/fromto.html"
+        },
+        {
+            "kind": "filter",
+            "type": "fromtodate",
+            "summary": {
+                "en": "Date range from/to for one date attribute, entered by visitors."
+            },
+            "keywords": [
+                "date range",
+                "zeitraum",
+                "datum",
+                "von bis",
+                "kalender"
+            ],
+            "docs": "manual/component/filter/fromto-date.html"
+        }
+    ]
+}

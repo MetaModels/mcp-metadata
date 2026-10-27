@@ -1,0 +1,16 @@
+{
+    "id": "cb-filter-filter-with-forwarding",
+    "kind": "recipe",
+    "title": {
+        "en": "Filter with forwarding"
+    },
+    "path": "cookbook/filter/filter-with-forwarding.html",
+    "keywords": [
+        "forwarding",
+        "weiterleitung",
+        "redirect",
+        "filter form",
+        "target page",
+        "zielseite"
+    ]
+}

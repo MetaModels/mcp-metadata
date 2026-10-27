@@ -1,0 +1,8 @@
+{
+    "base_language": "de",
+    "urls": {
+        "de": "https://metamodels.readthedocs.io/de/latest/",
+        "en": "https://metamodels.readthedocs.io/en/latest/",
+        "fr": "https://metamodels.readthedocs.io/fr/latest/"
+    }
+}

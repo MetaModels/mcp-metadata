@@ -1,0 +1,20 @@
+{
+    "id": "cb-specials-picker-for-icons",
+    "kind": "recipe",
+    "title": {
+        "en": "Icon picker"
+    },
+    "path": "cookbook/specials/picker-for-icons.html",
+    "keywords": [
+        "icon",
+        "picker",
+        "symbol",
+        "icons"
+    ],
+    "types": [
+        {
+            "kind": "attribute",
+            "type": "text"
+        }
+    ]
+}

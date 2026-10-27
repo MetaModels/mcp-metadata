@@ -1,0 +1,25 @@
+{
+    "name": "metamodels/attribute_translatedurl",
+    "availability": "unknown",
+    "types": [
+        {
+            "kind": "attribute",
+            "type": "translatedurl",
+            "summary": {
+                "en": "Multilingual variant: link with a title and a URL."
+            },
+            "keywords": [
+                "link",
+                "website",
+                "adresse",
+                "extern",
+                "homepage",
+                "multilingual",
+                "mehrsprachig",
+                "translated",
+                "übersetzt"
+            ],
+            "docs": "manual/component/attribute/translatedurl.html"
+        }
+    ]
+}

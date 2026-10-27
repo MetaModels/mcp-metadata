@@ -1,0 +1,21 @@
+{
+    "name": "metamodels/attribute_url",
+    "availability": "unknown",
+    "types": [
+        {
+            "kind": "attribute",
+            "type": "url",
+            "summary": {
+                "en": "Link with a title and a URL."
+            },
+            "keywords": [
+                "link",
+                "website",
+                "adresse",
+                "extern",
+                "homepage"
+            ],
+            "docs": "manual/component/attribute/url.html"
+        }
+    ]
+}

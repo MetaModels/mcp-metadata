@@ -1,0 +1,14 @@
+{
+    "id": "cb-debug-sql-tips",
+    "kind": "recipe",
+    "title": {
+        "en": "SQL tips"
+    },
+    "path": "cookbook/debug/sql-tips.html",
+    "keywords": [
+        "sql",
+        "debug",
+        "query",
+        "fehlersuche"
+    ]
+}

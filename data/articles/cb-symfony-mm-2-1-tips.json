@@ -1,0 +1,16 @@
+{
+    "id": "cb-symfony-mm-2-1-tips",
+    "kind": "recipe",
+    "title": {
+        "en": "Symfony and MetaModels 2.x tips"
+    },
+    "path": "cookbook/symfony/mm-2-1-tips.html",
+    "keywords": [
+        "symfony",
+        "cache",
+        "composer update",
+        "versions",
+        "debug",
+        "toolbar"
+    ]
+}

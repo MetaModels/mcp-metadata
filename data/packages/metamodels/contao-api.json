@@ -1,0 +1,14 @@
+{
+    "name": "metamodels/contao-api",
+    "availability": "unknown",
+    "summary": {
+        "en": "Exposes MetaModels items through the Contao API and thereby MCP."
+    },
+    "keywords": [
+        "api",
+        "rest",
+        "mcp",
+        "schnittstelle",
+        "items"
+    ]
+}

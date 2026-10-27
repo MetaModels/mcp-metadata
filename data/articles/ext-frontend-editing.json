@@ -1,0 +1,29 @@
+{
+    "id": "ext-frontend-editing",
+    "kind": "topic",
+    "title": {
+        "en": "Frontend editing (FEE)"
+    },
+    "path": "manual/extended/frontend_editing.html",
+    "keywords": [
+        "frontend editing",
+        "frontend bearbeiten",
+        "member",
+        "mitglied",
+        "rechteverwaltung",
+        "permissions",
+        "eigene datensätze",
+        "own items",
+        "fee"
+    ],
+    "types": [
+        {
+            "kind": "filter",
+            "type": "member_filter"
+        },
+        {
+            "kind": "attribute",
+            "type": "select"
+        }
+    ]
+}

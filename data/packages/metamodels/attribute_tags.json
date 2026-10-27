@@ -1,0 +1,25 @@
+{
+    "name": "metamodels/attribute_tags",
+    "availability": "unknown",
+    "types": [
+        {
+            "kind": "attribute",
+            "type": "tags",
+            "summary": {
+                "en": "Several choices from another MetaModel or a Contao table (m:n relation)."
+            },
+            "keywords": [
+                "relation",
+                "relationen",
+                "tags",
+                "schlagworte",
+                "schlagwort",
+                "multiselect",
+                "mehrfachauswahl",
+                "kategorien",
+                "m:n"
+            ],
+            "docs": "manual/component/attribute/tags.html"
+        }
+    ]
+}

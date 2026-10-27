@@ -1,0 +1,22 @@
+{
+    "id": "cb-specials-geocode-address-on-save",
+    "kind": "recipe",
+    "title": {
+        "en": "Automatically generating and storing coordinates"
+    },
+    "path": "cookbook/specials/geocode-address-on-save.html",
+    "keywords": [
+        "geocode",
+        "geocoding",
+        "coordinates",
+        "koordinaten",
+        "address",
+        "adresse"
+    ],
+    "types": [
+        {
+            "kind": "attribute",
+            "type": "latlong"
+        }
+    ]
+}

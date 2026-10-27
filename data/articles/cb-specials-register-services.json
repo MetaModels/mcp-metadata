@@ -1,0 +1,16 @@
+{
+    "id": "cb-specials-register-services",
+    "kind": "recipe",
+    "title": {
+        "en": "Registering services"
+    },
+    "path": "cookbook/specials/register-services.html",
+    "keywords": [
+        "services",
+        "symfony",
+        "event",
+        "listener",
+        "extension",
+        "erweiterung"
+    ]
+}

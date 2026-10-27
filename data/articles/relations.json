@@ -1,0 +1,29 @@
+{
+    "id": "relations",
+    "kind": "topic",
+    "title": {
+        "en": "Relations between MetaModels"
+    },
+    "path": "manual/component/relations.html",
+    "keywords": [
+        "relation",
+        "relationen",
+        "beziehung",
+        "verknüpfung",
+        "1:n",
+        "m:n",
+        "parent",
+        "child",
+        "foreign key"
+    ],
+    "types": [
+        {
+            "kind": "attribute",
+            "type": "select"
+        },
+        {
+            "kind": "attribute",
+            "type": "tags"
+        }
+    ]
+}

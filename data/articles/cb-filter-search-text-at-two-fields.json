@@ -1,0 +1,22 @@
+{
+    "id": "cb-filter-search-text-at-two-fields",
+    "kind": "recipe",
+    "title": {
+        "en": "Text search across two fields"
+    },
+    "path": "cookbook/filter/search-text-at-two-fields.html",
+    "keywords": [
+        "search",
+        "suche",
+        "two fields",
+        "zwei felder",
+        "text search",
+        "textsuche"
+    ],
+    "types": [
+        {
+            "kind": "filter",
+            "type": "text"
+        }
+    ]
+}

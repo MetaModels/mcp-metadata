@@ -1,0 +1,20 @@
+{
+    "name": "metamodels/attribute_rating",
+    "availability": "unknown",
+    "types": [
+        {
+            "kind": "attribute",
+            "type": "rating",
+            "summary": {
+                "en": "Star rating by visitors in the frontend."
+            },
+            "keywords": [
+                "stars",
+                "sterne",
+                "bewertung",
+                "vote"
+            ],
+            "docs": "manual/component/attribute/rating.html"
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "name": "metamodels/dropzone_file_upload",
+    "availability": "unknown",
+    "summary": {
+        "en": "Dropzone upload for the file attribute."
+    },
+    "keywords": [
+        "dropzone",
+        "upload",
+        "hochladen",
+        "drag and drop",
+        "datei"
+    ]
+}

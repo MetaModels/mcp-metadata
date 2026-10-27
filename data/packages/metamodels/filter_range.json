@@ -1,0 +1,39 @@
+{
+    "name": "metamodels/filter_range",
+    "availability": "unknown",
+    "types": [
+        {
+            "kind": "filter",
+            "type": "range",
+            "summary": {
+                "en": "Visitor value lies between two attributes (start and end)."
+            },
+            "keywords": [
+                "range",
+                "zeitraum",
+                "von bis",
+                "between",
+                "overlap",
+                "laufzeit",
+                "period"
+            ],
+            "docs": "manual/component/filter/range.html"
+        },
+        {
+            "kind": "filter",
+            "type": "rangedate",
+            "summary": {
+                "en": "Visitor date lies between two date attributes, for example events with a start and an end."
+            },
+            "keywords": [
+                "period",
+                "zeitraum",
+                "event",
+                "termin",
+                "start",
+                "ende"
+            ],
+            "docs": "manual/component/filter/range-date.html"
+        }
+    ]
+}

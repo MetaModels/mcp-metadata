@@ -1,0 +1,20 @@
+{
+    "id": "cb-filter-custom-sql",
+    "kind": "recipe",
+    "title": {
+        "en": "Custom SQL filter rule"
+    },
+    "path": "cookbook/filter/custom-sql.html",
+    "keywords": [
+        "sql",
+        "custom sql",
+        "query",
+        "abfrage"
+    ],
+    "types": [
+        {
+            "kind": "filter",
+            "type": "customsql"
+        }
+    ]
+}

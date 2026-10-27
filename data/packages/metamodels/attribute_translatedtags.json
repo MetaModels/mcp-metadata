@@ -1,0 +1,27 @@
+{
+    "name": "metamodels/attribute_translatedtags",
+    "availability": "unknown",
+    "types": [
+        {
+            "kind": "attribute",
+            "type": "translatedtags",
+            "summary": {
+                "en": "Multilingual variant: several choices from another MetaModel or a Contao table (m:n relation)."
+            },
+            "keywords": [
+                "relation",
+                "relationen",
+                "tags",
+                "schlagworte",
+                "schlagwort",
+                "multiselect",
+                "mehrfachauswahl",
+                "multilingual",
+                "mehrsprachig",
+                "translated",
+                "übersetzt"
+            ],
+            "docs": "manual/component/attribute/translatedtags.html"
+        }
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "name": "metamodels/attribute_translatedselect",
+    "availability": "unknown",
+    "types": [
+        {
+            "kind": "attribute",
+            "type": "translatedselect",
+            "summary": {
+                "en": "Multilingual variant: single choice from another MetaModel or a Contao table (1:n relation)."
+            },
+            "keywords": [
+                "relation",
+                "relationen",
+                "category",
+                "kategorie",
+                "dropdown",
+                "auswahl",
+                "reference",
+                "multilingual",
+                "mehrsprachig",
+                "translated",
+                "übersetzt"
+            ],
+            "docs": "manual/component/attribute/translatedselect.html"
+        }
+    ]
+}
