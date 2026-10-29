@@ -1,9 +1,17 @@
 {
     "name": "metamodels/dropzone_file_upload",
-    "availability": "unknown",
+    "availability": "early-access",
     "summary": {
         "en": "Dropzone upload for the file attribute."
     },
+    "access": {
+        "url": {
+            "en": "https://now.metamodel.me/en/supporters/fundraising"
+        }
+    },
+    "plans": [
+        "eap"
+    ],
     "keywords": [
         "dropzone",
         "upload",

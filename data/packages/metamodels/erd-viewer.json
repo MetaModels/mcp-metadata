@@ -1,9 +1,17 @@
 {
     "name": "metamodels/erd-viewer",
-    "availability": "unknown",
+    "availability": "early-access",
     "summary": {
         "en": "Entity-relationship diagram of all MetaModels tables and their relations in the backend."
     },
+    "access": {
+        "url": {
+            "en": "https://now.metamodel.me/en/supporters/fundraising"
+        }
+    },
+    "plans": [
+        "eap"
+    ],
     "keywords": [
         "erd",
         "diagram",

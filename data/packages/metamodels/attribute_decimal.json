@@ -1,6 +1,15 @@
 {
     "name": "metamodels/attribute_decimal",
-    "availability": "unknown",
+    "availability": "early-access",
+    "access": {
+        "url": {
+            "en": "https://now.metamodel.me/en/supporters/fundraising"
+        }
+    },
+    "plans": [
+        "basic-1",
+        "eap"
+    ],
     "types": [
         {
             "kind": "attribute",

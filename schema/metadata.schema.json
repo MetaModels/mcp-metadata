@@ -202,6 +202,17 @@
                         }
                     }
                 },
+                "plans": {
+                    "description": "The supporter plans that include the package: basic-1 is the reduced plan for small projects, eap is the full Early Adopter Program. Left out if the package has a fundraising of its own, see access.",
+                    "type": "array",
+                    "uniqueItems": true,
+                    "items": {
+                        "enum": [
+                            "basic-1",
+                            "eap"
+                        ]
+                    }
+                },
                 "since": {
                     "$ref": "#/$defs/version",
                     "description": "First release of the package."

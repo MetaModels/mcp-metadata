@@ -1,9 +1,17 @@
 {
     "name": "metamodels/health-check",
-    "availability": "unknown",
+    "availability": "early-access",
     "summary": {
         "en": "Finds and cleans up inconsistent or orphaned MetaModels data in the backend."
     },
+    "access": {
+        "url": {
+            "en": "https://now.metamodel.me/en/supporters/fundraising"
+        }
+    },
+    "plans": [
+        "eap"
+    ],
     "keywords": [
         "health check",
         "aufräumen",

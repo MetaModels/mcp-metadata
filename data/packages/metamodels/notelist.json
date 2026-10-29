@@ -1,8 +1,13 @@
 {
     "name": "metamodels/notelist",
-    "availability": "unknown",
+    "availability": "early-access",
     "summary": {
         "en": "Note lists (wishlist, comparison list, cart) for items in the frontend, with a filter rule and a form widget."
+    },
+    "access": {
+        "url": {
+            "en": "https://metamodels.readthedocs.io/en/latest/manual/extended/notelist.html"
+        }
     },
     "keywords": [
         "merkliste",

@@ -1,14 +1,23 @@
 {
     "name": "metamodels/contao-api",
-    "availability": "unknown",
+    "availability": "early-access",
     "summary": {
         "en": "Exposes MetaModels items through the Contao API and thereby MCP."
     },
+    "access": {
+        "url": {
+            "en": "https://now.metamodel.me/en/supporters/fundraising"
+        }
+    },
+    "plans": [
+        "eap"
+    ],
     "keywords": [
         "api",
         "rest",
         "mcp",
         "schnittstelle",
         "items"
-    ]
+    ],
+    "docs": "manual/extended/contao-api.html"
 }

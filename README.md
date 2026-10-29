@@ -33,6 +33,12 @@ markup, the links are `https`, and the schema does not allow other fields.
 | `planned` | Does not exist yet. |
 | `unknown` | Not stated yet. The AI suggests `composer require` and says that many extensions are still part of the Early Adopter Program (EAP): if Composer cannot find the package or refuses access, the user has to ask about access. |
 
+### Plans
+
+`plans` names the supporter plans that include an `early-access` package: `basic-1` (the reduced plan for small
+projects) and `eap` (the full Early Adopter Program). Both are described on the fundraising page that `access.url`
+points to. A package with a fundraising of its own has no `plans`, its `access.url` is the page in the handbook.
+
 ## Layout
 
 ```

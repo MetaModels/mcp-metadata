@@ -1,0 +1,26 @@
+{
+    "name": "metamodels/mcp-admin",
+    "availability": "early-access",
+    "summary": {
+        "en": "Lets an AI agent read and set up MetaModels through the Contao MCP server."
+    },
+    "access": {
+        "url": {
+            "en": "https://now.metamodel.me/en/supporters/fundraising"
+        }
+    },
+    "plans": [
+        "eap"
+    ],
+    "keywords": [
+        "mcp",
+        "ki",
+        "ai",
+        "agent",
+        "claude",
+        "administration",
+        "einrichten",
+        "metamodel anlegen"
+    ],
+    "docs": "manual/extended/mcp-admin.html"
+}

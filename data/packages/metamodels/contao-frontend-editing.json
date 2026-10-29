@@ -1,9 +1,17 @@
 {
     "name": "metamodels/contao-frontend-editing",
-    "availability": "unknown",
+    "availability": "early-access",
     "summary": {
         "en": "Frontend editing: members create, edit, duplicate and delete items in the frontend."
     },
+    "access": {
+        "url": {
+            "en": "https://now.metamodel.me/en/supporters/fundraising"
+        }
+    },
+    "plans": [
+        "eap"
+    ],
     "keywords": [
         "frontend editing",
         "frontend bearbeiten",
