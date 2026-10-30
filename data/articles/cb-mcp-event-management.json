@@ -1,0 +1,22 @@
+{
+    "id": "cb-mcp-event-management",
+    "kind": "recipe",
+    "title": {
+        "en": "Event management with an AI agent"
+    },
+    "path": "cookbook/mcp/event-management.html",
+    "keywords": [
+        "mcp",
+        "ki",
+        "agent",
+        "prompt",
+        "eventverwaltung",
+        "event management",
+        "beispiel",
+        "example",
+        "mehrsprachig",
+        "multilingual",
+        "ansichtsbedingung",
+        "detailseite"
+    ]
+}
