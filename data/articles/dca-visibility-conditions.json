@@ -9,9 +9,14 @@
         "visibility",
         "bedingung",
         "condition",
+        "ansichtsbedingung",
+        "visibility condition",
+        "conditional field",
+        "abhängiges feld",
         "sub palette",
         "subpalette",
-        "show hide",
-        "anzeigen"
+        "submitOnChange",
+        "absenden bei änderungen",
+        "conditionpropertyvalueis"
     ]
 }
