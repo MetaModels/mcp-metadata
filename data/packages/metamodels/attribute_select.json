@@ -14,7 +14,7 @@
             "kind": "attribute",
             "type": "select",
             "summary": {
-                "en": "Single choice from another MetaModel or a Contao table (1:n relation)."
+                "en": "Single choice from another MetaModel or a Contao table (1:n relation). Works in multilingual MetaModels too and follows the language by itself."
             },
             "keywords": [
                 "relation",

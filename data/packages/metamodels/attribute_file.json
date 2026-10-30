@@ -15,7 +15,7 @@
             "kind": "attribute",
             "type": "file",
             "summary": {
-                "en": "File or image picker for one or several files of the Contao file manager."
+                "en": "File or image picker for one or several files of the Contao file manager. The same files for every language of a multilingual MetaModel."
             },
             "keywords": [
                 "image",

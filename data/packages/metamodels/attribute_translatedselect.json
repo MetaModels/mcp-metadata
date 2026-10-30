@@ -14,20 +14,14 @@
             "kind": "attribute",
             "type": "translatedselect",
             "summary": {
-                "en": "Multilingual variant: single choice from another MetaModel or a Contao table (1:n relation)."
+                "en": "Special case: single choice from a table with its own language column (1:n relation). Not needed for a multilingual MetaModel, use select there."
             },
             "keywords": [
                 "relation",
                 "relationen",
-                "category",
-                "kategorie",
-                "dropdown",
-                "auswahl",
                 "reference",
-                "multilingual",
-                "mehrsprachig",
-                "translated",
-                "übersetzt"
+                "language column",
+                "sprachspalte"
             ],
             "docs": "manual/component/attribute/translatedselect.html"
         }

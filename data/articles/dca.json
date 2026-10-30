@@ -12,6 +12,10 @@
         "formular",
         "fields",
         "legend",
-        "palette"
+        "palette",
+        "table view",
+        "tabellenansicht",
+        "tabellenform",
+        "showColumns"
     ]
 }

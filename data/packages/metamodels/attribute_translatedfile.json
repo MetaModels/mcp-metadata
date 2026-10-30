@@ -14,7 +14,7 @@
             "kind": "attribute",
             "type": "translatedfile",
             "summary": {
-                "en": "Multilingual variant: file or image picker for one or several files of the Contao file manager."
+                "en": "Multilingual variant: a file or image picker per language, only for files that differ by language (image with text, data sheet). Files that are the same in every language use file."
             },
             "keywords": [
                 "image",

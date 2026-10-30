@@ -14,7 +14,7 @@
             "kind": "attribute",
             "type": "tags",
             "summary": {
-                "en": "Several choices from another MetaModel or a Contao table (m:n relation)."
+                "en": "Several choices from another MetaModel or a Contao table (m:n relation). Works in multilingual MetaModels too and follows the language by itself."
             },
             "keywords": [
                 "relation",

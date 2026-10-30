@@ -14,20 +14,13 @@
             "kind": "attribute",
             "type": "translatedtags",
             "summary": {
-                "en": "Multilingual variant: several choices from another MetaModel or a Contao table (m:n relation)."
+                "en": "Special case: several choices from a table with its own language column (m:n relation). Not needed for a multilingual MetaModel, use tags there."
             },
             "keywords": [
                 "relation",
                 "relationen",
-                "tags",
-                "schlagworte",
-                "schlagwort",
-                "multiselect",
-                "mehrfachauswahl",
-                "multilingual",
-                "mehrsprachig",
-                "translated",
-                "übersetzt"
+                "language column",
+                "sprachspalte"
             ],
             "docs": "manual/component/attribute/translatedtags.html"
         }
