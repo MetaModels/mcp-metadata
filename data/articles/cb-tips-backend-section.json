@@ -11,6 +11,10 @@
         "section",
         "bereich",
         "menu",
-        "menü"
+        "menü",
+        "be_sections",
+        "backendsection",
+        "config.yaml",
+        "navigationsgruppe"
     ]
 }
