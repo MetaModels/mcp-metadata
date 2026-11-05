@@ -3,7 +3,8 @@
     "availability": "early-access",
     "access": {
         "url": {
-            "en": "https://now.metamodel.me/en/supporters/fundraising"
+            "en": "https://now.metamodel.me/en/supporters/fundraising",
+            "de": "https://now.metamodel.me/de/unterstuetzer/fundraising"
         }
     },
     "plans": [
