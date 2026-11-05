@@ -16,11 +16,16 @@
             "summary": {
                 "en": "Selection of a language code."
             },
-            "keywords": [
-                "language",
-                "sprache",
-                "locale"
-            ],
+            "keywords": {
+                "en": [
+                    "language",
+                    "locale"
+                ],
+                "de": [
+                    "sprache",
+                    "locale"
+                ]
+            },
             "docs": "manual/component/attribute/langcode.html"
         }
     ]

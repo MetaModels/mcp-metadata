@@ -5,12 +5,18 @@
         "en": "MetaModels ERD (entity relationship diagram)"
     },
     "path": "manual/extended/erd-viewer.html",
-    "keywords": [
-        "erd",
-        "diagram",
-        "diagramm",
-        "relations",
-        "relationen",
-        "overview"
-    ]
+    "keywords": {
+        "en": [
+            "erd",
+            "diagram",
+            "relations",
+            "overview"
+        ],
+        "de": [
+            "erd",
+            "diagram",
+            "diagramm",
+            "relationen"
+        ]
+    }
 }

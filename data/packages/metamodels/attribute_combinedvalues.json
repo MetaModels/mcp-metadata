@@ -16,14 +16,19 @@
             "summary": {
                 "en": "Text composed from several other attributes, for example first and last name."
             },
-            "keywords": [
-                "combine",
-                "compose",
-                "concatenate",
-                "kombinieren",
-                "zusammensetzen",
-                "name"
-            ],
+            "keywords": {
+                "en": [
+                    "combine",
+                    "compose",
+                    "concatenate",
+                    "name"
+                ],
+                "de": [
+                    "kombinieren",
+                    "zusammensetzen",
+                    "name"
+                ]
+            },
             "docs": "manual/component/attribute/combinedvalues.html"
         }
     ]

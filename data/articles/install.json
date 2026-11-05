@@ -5,10 +5,15 @@
         "en": "Installing and updating MetaModels"
     },
     "path": "manual/install.html",
-    "keywords": [
-        "install",
-        "installation",
-        "update",
-        "composer"
-    ]
+    "keywords": {
+        "en": [
+            "install",
+            "installation",
+            "update",
+            "composer"
+        ],
+        "de": [
+            "composer"
+        ]
+    }
 }

@@ -5,18 +5,24 @@
         "en": "Display conditions for input fields"
     },
     "path": "manual/component/dca-visibility-conditions.html",
-    "keywords": [
-        "visibility",
-        "bedingung",
-        "condition",
-        "ansichtsbedingung",
-        "visibility condition",
-        "conditional field",
-        "abhängiges feld",
-        "sub palette",
-        "subpalette",
-        "submitOnChange",
-        "absenden bei änderungen",
-        "conditionpropertyvalueis"
-    ]
+    "keywords": {
+        "en": [
+            "visibility",
+            "condition",
+            "visibility condition",
+            "conditional field",
+            "sub palette",
+            "subpalette",
+            "submitOnChange",
+            "conditionpropertyvalueis"
+        ],
+        "de": [
+            "bedingung",
+            "ansichtsbedingung",
+            "abhängiges feld",
+            "submitOnChange",
+            "absenden bei änderungen",
+            "conditionpropertyvalueis"
+        ]
+    }
 }

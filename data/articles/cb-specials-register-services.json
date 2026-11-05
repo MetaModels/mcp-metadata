@@ -5,12 +5,18 @@
         "en": "Registering services"
     },
     "path": "cookbook/specials/register-services.html",
-    "keywords": [
-        "services",
-        "symfony",
-        "event",
-        "listener",
-        "extension",
-        "erweiterung"
-    ]
+    "keywords": {
+        "en": [
+            "services",
+            "symfony",
+            "event",
+            "listener",
+            "extension"
+        ],
+        "de": [
+            "symfony",
+            "event",
+            "erweiterung"
+        ]
+    }
 }

@@ -5,11 +5,19 @@
         "en": "Templates in MetaModels"
     },
     "path": "manual/component/templates.html",
-    "keywords": [
-        "templates",
-        "twig",
-        "html5",
-        "layout",
-        "ausgabe"
-    ]
+    "keywords": {
+        "en": [
+            "templates",
+            "twig",
+            "html5",
+            "layout"
+        ],
+        "de": [
+            "templates",
+            "twig",
+            "html5",
+            "layout",
+            "ausgabe"
+        ]
+    }
 }

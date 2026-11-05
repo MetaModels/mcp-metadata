@@ -16,14 +16,18 @@
             "summary": {
                 "en": "Value range from/to for one attribute, entered by visitors."
             },
-            "keywords": [
-                "range",
-                "bereich",
-                "from to",
-                "von bis",
-                "price",
-                "preis"
-            ],
+            "keywords": {
+                "en": [
+                    "range",
+                    "from to",
+                    "price"
+                ],
+                "de": [
+                    "bereich",
+                    "von bis",
+                    "preis"
+                ]
+            },
             "docs": "manual/component/filter/fromto.html"
         },
         {
@@ -32,13 +36,17 @@
             "summary": {
                 "en": "Date range from/to for one date attribute, entered by visitors."
             },
-            "keywords": [
-                "date range",
-                "zeitraum",
-                "datum",
-                "von bis",
-                "kalender"
-            ],
+            "keywords": {
+                "en": [
+                    "date range"
+                ],
+                "de": [
+                    "zeitraum",
+                    "datum",
+                    "von bis",
+                    "kalender"
+                ]
+            },
             "docs": "manual/component/filter/fromto-date.html"
         }
     ]

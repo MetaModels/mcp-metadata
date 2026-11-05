@@ -16,13 +16,17 @@
             "summary": {
                 "en": "Contao content elements per item, like the content of an article."
             },
-            "keywords": [
-                "content elements",
-                "inhaltselemente",
-                "article",
-                "artikel",
-                "page builder"
-            ],
+            "keywords": {
+                "en": [
+                    "content elements",
+                    "article",
+                    "page builder"
+                ],
+                "de": [
+                    "inhaltselemente",
+                    "artikel"
+                ]
+            },
             "docs": "manual/component/attribute/contentarticle.html"
         }
     ]

@@ -12,15 +12,24 @@
     "plans": [
         "eap"
     ],
-    "keywords": [
-        "mcp",
-        "ki",
-        "ai",
-        "agent",
-        "claude",
-        "administration",
-        "einrichten",
-        "metamodel anlegen"
-    ],
+    "keywords": {
+        "en": [
+            "mcp",
+            "ai",
+            "agent",
+            "claude",
+            "administration"
+        ],
+        "de": [
+            "mcp",
+            "ki",
+            "ai",
+            "agent",
+            "claude",
+            "administration",
+            "einrichten",
+            "metamodel anlegen"
+        ]
+    },
     "docs": "manual/extended/mcp-admin.html"
 }

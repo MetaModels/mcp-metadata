@@ -5,13 +5,18 @@
         "en": "Loupe-based full-text search"
     },
     "path": "manual/extended/loupe.html",
-    "keywords": [
-        "fulltext",
-        "volltext",
-        "search",
-        "suche",
-        "fuzzy"
-    ],
+    "keywords": {
+        "en": [
+            "fulltext",
+            "search",
+            "fuzzy"
+        ],
+        "de": [
+            "volltext",
+            "suche",
+            "fuzzy"
+        ]
+    },
     "types": [
         {
             "kind": "filter",

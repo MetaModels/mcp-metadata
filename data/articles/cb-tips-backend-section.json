@@ -5,16 +5,25 @@
         "en": "Custom section in the backend navigation"
     },
     "path": "cookbook/tips/backend-section.html",
-    "keywords": [
-        "backend navigation",
-        "navigation",
-        "section",
-        "bereich",
-        "menu",
-        "menü",
-        "be_sections",
-        "backendsection",
-        "config.yaml",
-        "navigationsgruppe"
-    ]
+    "keywords": {
+        "en": [
+            "backend navigation",
+            "navigation",
+            "section",
+            "menu",
+            "be_sections",
+            "backendsection",
+            "config.yaml"
+        ],
+        "de": [
+            "navigation",
+            "bereich",
+            "menu",
+            "menü",
+            "be_sections",
+            "backendsection",
+            "config.yaml",
+            "navigationsgruppe"
+        ]
+    }
 }

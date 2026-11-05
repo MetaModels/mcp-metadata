@@ -17,15 +17,20 @@
             "summary": {
                 "en": "Yes/no value, for example published or featured."
             },
-            "keywords": [
-                "boolean",
-                "yes no",
-                "published",
-                "ja nein",
-                "veröffentlicht",
-                "aktiv",
-                "häkchen"
-            ],
+            "keywords": {
+                "en": [
+                    "boolean",
+                    "yes no",
+                    "published"
+                ],
+                "de": [
+                    "boolean",
+                    "ja nein",
+                    "veröffentlicht",
+                    "aktiv",
+                    "häkchen"
+                ]
+            },
             "docs": "manual/component/attribute/checkbox.html"
         },
         {
@@ -34,15 +39,20 @@
             "summary": {
                 "en": "Fixed filter: shows only items whose checkbox is set (formerly called \"published\"). Has no frontend widget."
             },
-            "keywords": [
-                "published",
-                "veröffentlicht",
-                "fixed",
-                "fest",
-                "aktiv",
-                "status",
-                "publish"
-            ],
+            "keywords": {
+                "en": [
+                    "published",
+                    "fixed",
+                    "status",
+                    "publish"
+                ],
+                "de": [
+                    "veröffentlicht",
+                    "fest",
+                    "aktiv",
+                    "status"
+                ]
+            },
             "docs": "manual/component/filter/checkbox.html"
         }
     ]

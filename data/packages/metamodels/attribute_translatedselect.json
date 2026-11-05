@@ -16,13 +16,17 @@
             "summary": {
                 "en": "Special case: single choice from a table with its own language column (1:n relation). Not needed for a multilingual MetaModel, use select there."
             },
-            "keywords": [
-                "relation",
-                "relationen",
-                "reference",
-                "language column",
-                "sprachspalte"
-            ],
+            "keywords": {
+                "en": [
+                    "relation",
+                    "reference",
+                    "language column"
+                ],
+                "de": [
+                    "relationen",
+                    "sprachspalte"
+                ]
+            },
             "docs": "manual/component/attribute/translatedselect.html"
         }
     ]

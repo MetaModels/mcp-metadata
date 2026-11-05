@@ -16,17 +16,21 @@
             "summary": {
                 "en": "Multilingual variant: contao content elements per item, like the content of an article."
             },
-            "keywords": [
-                "content elements",
-                "inhaltselemente",
-                "article",
-                "artikel",
-                "page builder",
-                "multilingual",
-                "mehrsprachig",
-                "translated",
-                "übersetzt"
-            ],
+            "keywords": {
+                "en": [
+                    "content elements",
+                    "article",
+                    "page builder",
+                    "multilingual",
+                    "translated"
+                ],
+                "de": [
+                    "inhaltselemente",
+                    "artikel",
+                    "mehrsprachig",
+                    "übersetzt"
+                ]
+            },
             "docs": "manual/component/attribute/translatedcontentarticle.html"
         }
     ]

@@ -5,12 +5,16 @@
         "en": "Displaying the number of items"
     },
     "path": "cookbook/frontend/output-item-count.html",
-    "keywords": [
-        "count",
-        "anzahl",
-        "number of items",
-        "total",
-        "treffer",
-        "results"
-    ]
+    "keywords": {
+        "en": [
+            "count",
+            "number of items",
+            "total",
+            "results"
+        ],
+        "de": [
+            "anzahl",
+            "treffer"
+        ]
+    }
 }

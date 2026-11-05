@@ -5,15 +5,19 @@
         "en": "Working with images in templates"
     },
     "path": "cookbook/templates/fe_work_with_images.html",
-    "keywords": [
-        "image",
-        "bild",
-        "images",
-        "bilder",
-        "picture",
-        "thumbnail",
-        "file"
-    ],
+    "keywords": {
+        "en": [
+            "image",
+            "images",
+            "picture",
+            "thumbnail",
+            "file"
+        ],
+        "de": [
+            "bild",
+            "bilder"
+        ]
+    },
     "types": [
         {
             "kind": "attribute",

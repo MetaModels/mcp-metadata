@@ -5,17 +5,24 @@
         "en": "List with detail page"
     },
     "path": "cookbook/frontend/list-with-detail-page.html",
-    "keywords": [
-        "detail page",
-        "detailseite",
-        "list with detail page",
-        "liste mit detailseite",
-        "jumpTo",
-        "weiterleitungsseite",
-        "auto_item",
-        "alias",
-        "published",
-        "veröffentlicht",
-        "checkbox status"
-    ]
+    "keywords": {
+        "en": [
+            "detail page",
+            "list with detail page",
+            "jumpTo",
+            "auto_item",
+            "alias",
+            "published",
+            "checkbox status"
+        ],
+        "de": [
+            "detailseite",
+            "liste mit detailseite",
+            "jumpTo",
+            "weiterleitungsseite",
+            "auto_item",
+            "alias",
+            "veröffentlicht"
+        ]
+    }
 }

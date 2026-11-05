@@ -16,18 +16,25 @@
             "summary": {
                 "en": "Multilingual variant: unique URL-friendly identifier built from other attributes, used in links to detail pages."
             },
-            "keywords": [
-                "slug",
-                "url",
-                "link",
-                "detail",
-                "kurzname",
-                "adresse",
-                "multilingual",
-                "mehrsprachig",
-                "translated",
-                "übersetzt"
-            ],
+            "keywords": {
+                "en": [
+                    "slug",
+                    "url",
+                    "link",
+                    "detail",
+                    "multilingual",
+                    "translated"
+                ],
+                "de": [
+                    "slug",
+                    "url",
+                    "link",
+                    "kurzname",
+                    "adresse",
+                    "mehrsprachig",
+                    "übersetzt"
+                ]
+            },
             "docs": "manual/component/attribute/translatedalias.html"
         }
     ]

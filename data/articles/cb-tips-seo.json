@@ -5,11 +5,18 @@
         "en": "Search engine optimisation (SEO)"
     },
     "path": "cookbook/tips/seo.html",
-    "keywords": [
-        "seo",
-        "meta",
-        "title",
-        "description",
-        "canonical"
-    ]
+    "keywords": {
+        "en": [
+            "seo",
+            "meta",
+            "title",
+            "description",
+            "canonical"
+        ],
+        "de": [
+            "seo",
+            "meta",
+            "canonical"
+        ]
+    }
 }

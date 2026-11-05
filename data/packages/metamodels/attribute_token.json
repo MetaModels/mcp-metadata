@@ -16,13 +16,17 @@
             "summary": {
                 "en": "Random, unchangeable string created when an item is first saved."
             },
-            "keywords": [
-                "random",
-                "zufall",
-                "nummer",
-                "referenz",
-                "unique"
-            ],
+            "keywords": {
+                "en": [
+                    "random",
+                    "unique"
+                ],
+                "de": [
+                    "zufall",
+                    "nummer",
+                    "referenz"
+                ]
+            },
             "docs": "manual/component/attribute/token.html"
         }
     ]

@@ -5,11 +5,16 @@
         "en": "ChangeLanguage bridge"
     },
     "path": "manual/extended/changelanguage-bridge.html",
-    "keywords": [
-        "changelanguage",
-        "language switch",
-        "sprachwechsel",
-        "multilingual",
-        "mehrsprachig"
-    ]
+    "keywords": {
+        "en": [
+            "changelanguage",
+            "language switch",
+            "multilingual"
+        ],
+        "de": [
+            "changelanguage",
+            "sprachwechsel",
+            "mehrsprachig"
+        ]
+    }
 }

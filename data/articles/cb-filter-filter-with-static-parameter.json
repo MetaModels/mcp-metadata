@@ -5,12 +5,17 @@
         "en": "Restricting items in the content element or module"
     },
     "path": "cookbook/filter/filter-with-static-parameter.html",
-    "keywords": [
-        "static",
-        "fixed filter",
-        "fester filter",
-        "restrict",
-        "einschränken",
-        "parameter"
-    ]
+    "keywords": {
+        "en": [
+            "static",
+            "fixed filter",
+            "restrict",
+            "parameter"
+        ],
+        "de": [
+            "fester filter",
+            "einschränken",
+            "parameter"
+        ]
+    }
 }

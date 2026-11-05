@@ -12,14 +12,19 @@
     "plans": [
         "eap"
     ],
-    "keywords": [
-        "frontend editing",
-        "frontend bearbeiten",
-        "mitglied",
-        "member",
-        "fee",
-        "eingeben"
-    ],
+    "keywords": {
+        "en": [
+            "frontend editing",
+            "member",
+            "fee"
+        ],
+        "de": [
+            "frontend bearbeiten",
+            "mitglied",
+            "fee",
+            "eingeben"
+        ]
+    },
     "docs": "manual/extended/frontend_editing.html",
     "types": [
         {
@@ -28,19 +33,25 @@
             "summary": {
                 "en": "Filter rule \"Member permissions\": the list shows only the items of the logged-in member, taken from a select attribute on tl_member (alias username). Needs the permission check in the FEE input screen."
             },
-            "keywords": [
-                "member",
-                "mitglied",
-                "member permissions",
-                "eigene einträge",
-                "own items",
-                "ersteller",
-                "berechtigung",
-                "rechteprüfung",
-                "tl_member",
-                "frontend editing",
-                "fee"
-            ],
+            "keywords": {
+                "en": [
+                    "member",
+                    "member permissions",
+                    "own items",
+                    "tl_member",
+                    "frontend editing",
+                    "fee"
+                ],
+                "de": [
+                    "mitglied",
+                    "eigene einträge",
+                    "ersteller",
+                    "berechtigung",
+                    "rechteprüfung",
+                    "tl_member",
+                    "fee"
+                ]
+            },
             "docs": "manual/extended/frontend_editing.html"
         }
     ]

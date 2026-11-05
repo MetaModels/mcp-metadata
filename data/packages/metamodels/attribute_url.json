@@ -16,13 +16,20 @@
             "summary": {
                 "en": "Link with a title and a URL."
             },
-            "keywords": [
-                "link",
-                "website",
-                "adresse",
-                "extern",
-                "homepage"
-            ],
+            "keywords": {
+                "en": [
+                    "link",
+                    "website",
+                    "homepage"
+                ],
+                "de": [
+                    "link",
+                    "website",
+                    "adresse",
+                    "extern",
+                    "homepage"
+                ]
+            },
             "docs": "manual/component/attribute/url.html"
         }
     ]

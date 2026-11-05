@@ -5,15 +5,20 @@
         "en": "Render settings"
     },
     "path": "manual/component/rendersettings.html",
-    "keywords": [
-        "render settings",
-        "ausgabe",
-        "output",
-        "template",
-        "detail page",
-        "detailseite",
-        "jumpto",
-        "sorting",
-        "sortierung"
-    ]
+    "keywords": {
+        "en": [
+            "render settings",
+            "output",
+            "template",
+            "detail page",
+            "jumpto",
+            "sorting"
+        ],
+        "de": [
+            "ausgabe",
+            "template",
+            "detailseite",
+            "sortierung"
+        ]
+    }
 }

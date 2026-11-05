@@ -17,12 +17,18 @@
             "summary": {
                 "en": "Color picker for web colors with opacity."
             },
-            "keywords": [
-                "colour",
-                "farbe",
-                "hex",
-                "rgb"
-            ],
+            "keywords": {
+                "en": [
+                    "colour",
+                    "hex",
+                    "rgb"
+                ],
+                "de": [
+                    "farbe",
+                    "hex",
+                    "rgb"
+                ]
+            },
             "docs": "manual/component/attribute/color.html"
         }
     ]

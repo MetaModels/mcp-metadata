@@ -17,14 +17,20 @@
             "summary": {
                 "en": "Full-text search with fuzzy matching and ranking in an SQLite index."
             },
-            "keywords": [
-                "fulltext",
-                "volltext",
-                "search",
-                "suche",
-                "fuzzy",
-                "autocomplete"
-            ],
+            "keywords": {
+                "en": [
+                    "fulltext",
+                    "search",
+                    "fuzzy",
+                    "autocomplete"
+                ],
+                "de": [
+                    "volltext",
+                    "suche",
+                    "fuzzy",
+                    "autocomplete"
+                ]
+            },
             "docs": "manual/component/filter/loupe.html"
         }
     ]

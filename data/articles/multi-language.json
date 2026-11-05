@@ -5,15 +5,19 @@
         "en": "Multilingual MetaModels"
     },
     "path": "manual/component/multi-language.html",
-    "keywords": [
-        "multilingual",
-        "mehrsprachig",
-        "languages",
-        "sprachen",
-        "translation",
-        "übersetzung",
-        "fallback",
-        "variants",
-        "varianten"
-    ]
+    "keywords": {
+        "en": [
+            "multilingual",
+            "languages",
+            "translation",
+            "fallback",
+            "variants"
+        ],
+        "de": [
+            "mehrsprachig",
+            "sprachen",
+            "übersetzung",
+            "varianten"
+        ]
+    }
 }

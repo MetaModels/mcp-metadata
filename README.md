@@ -63,8 +63,9 @@ bin/build --urls      # the addresses of the handbook pages, for the link check
 ## Adding a package or a page
 
 1. Add or change the file in `data/` and run `bin/build --check`.
-2. Give types a short English `summary` and `keywords` in the languages the users speak (at least German and
-   English), the page in the handbook as `docs` (path without the address, without an anchor: anchors differ per
+2. Give types a short English `summary` and `keywords` per language (`{"en": [...], "de": [...]}`, `en` is
+   required, up to 12 words per language; a word can mean different things in different languages, so the lists are
+   not mixed; a term that users of both languages type goes into both lists), the page in the handbook as `docs` (path without the address, without an anchor: anchors differ per
    language).
 3. Open a pull request. The checks run the tests, the build and a check of the links; the maintainers review the
    entries.

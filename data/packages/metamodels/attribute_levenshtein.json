@@ -16,13 +16,18 @@
             "summary": {
                 "en": "Full-text index over attributes for a typo-tolerant similarity search."
             },
-            "keywords": [
-                "search",
-                "suche",
-                "fulltext",
-                "volltext",
-                "fuzzy"
-            ],
+            "keywords": {
+                "en": [
+                    "search",
+                    "fulltext",
+                    "fuzzy"
+                ],
+                "de": [
+                    "suche",
+                    "volltext",
+                    "fuzzy"
+                ]
+            },
             "docs": "manual/component/attribute/levenshtein.html"
         },
         {
@@ -31,14 +36,19 @@
             "summary": {
                 "en": "Typo-tolerant full-text search with autocomplete."
             },
-            "keywords": [
-                "fuzzy",
-                "similarity",
-                "fulltext",
-                "volltext",
-                "suche",
-                "search"
-            ],
+            "keywords": {
+                "en": [
+                    "fuzzy",
+                    "similarity",
+                    "fulltext",
+                    "search"
+                ],
+                "de": [
+                    "fuzzy",
+                    "volltext",
+                    "suche"
+                ]
+            },
             "docs": "manual/component/filter/levenshtein.html"
         }
     ]

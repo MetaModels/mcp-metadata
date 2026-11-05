@@ -5,10 +5,14 @@
         "en": "Input mask: automatic default values"
     },
     "path": "cookbook/inputmask/default-values.html",
-    "keywords": [
-        "default value",
-        "standardwert",
-        "vorbelegen",
-        "preset"
-    ]
+    "keywords": {
+        "en": [
+            "default value",
+            "preset"
+        ],
+        "de": [
+            "standardwert",
+            "vorbelegen"
+        ]
+    }
 }

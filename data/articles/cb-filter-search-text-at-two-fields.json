@@ -5,14 +5,18 @@
         "en": "Text search across two fields"
     },
     "path": "cookbook/filter/search-text-at-two-fields.html",
-    "keywords": [
-        "search",
-        "suche",
-        "two fields",
-        "zwei felder",
-        "text search",
-        "textsuche"
-    ],
+    "keywords": {
+        "en": [
+            "search",
+            "two fields",
+            "text search"
+        ],
+        "de": [
+            "suche",
+            "zwei felder",
+            "textsuche"
+        ]
+    },
     "types": [
         {
             "kind": "filter",

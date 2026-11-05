@@ -5,12 +5,21 @@
         "en": "Symfony and MetaModels 2.x tips"
     },
     "path": "cookbook/symfony/mm-2-1-tips.html",
-    "keywords": [
-        "symfony",
-        "cache",
-        "composer update",
-        "versions",
-        "debug",
-        "toolbar"
-    ]
+    "keywords": {
+        "en": [
+            "symfony",
+            "cache",
+            "composer update",
+            "versions",
+            "debug",
+            "toolbar"
+        ],
+        "de": [
+            "symfony",
+            "cache",
+            "composer update",
+            "debug",
+            "toolbar"
+        ]
+    }
 }

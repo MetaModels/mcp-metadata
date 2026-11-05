@@ -16,13 +16,20 @@
             "summary": {
                 "en": "Frontend checkboxes to choose several values."
             },
-            "keywords": [
-                "multiselect",
-                "checkboxes",
-                "schlagworte",
-                "mehrfachauswahl",
-                "tags"
-            ],
+            "keywords": {
+                "en": [
+                    "multiselect",
+                    "checkboxes",
+                    "tags"
+                ],
+                "de": [
+                    "multiselect",
+                    "checkboxes",
+                    "schlagworte",
+                    "mehrfachauswahl",
+                    "tags"
+                ]
+            },
             "docs": "manual/component/filter/tags.html"
         }
     ]

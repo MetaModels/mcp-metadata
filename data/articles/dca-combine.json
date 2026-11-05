@@ -5,12 +5,16 @@
         "en": "Assigning input screens and render settings"
     },
     "path": "manual/component/dca-combine.html",
-    "keywords": [
-        "combine",
-        "zuordnung",
-        "assignment",
-        "backend user",
-        "rights",
-        "rechte"
-    ]
+    "keywords": {
+        "en": [
+            "combine",
+            "assignment",
+            "backend user",
+            "rights"
+        ],
+        "de": [
+            "zuordnung",
+            "rechte"
+        ]
+    }
 }

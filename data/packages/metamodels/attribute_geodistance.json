@@ -16,13 +16,18 @@
             "summary": {
                 "en": "Distance of an item to the search point of a perimeter search."
             },
-            "keywords": [
-                "distance",
-                "entfernung",
-                "umkreis",
-                "radius",
-                "geo"
-            ],
+            "keywords": {
+                "en": [
+                    "distance",
+                    "radius",
+                    "geo"
+                ],
+                "de": [
+                    "entfernung",
+                    "umkreis",
+                    "geo"
+                ]
+            },
             "docs": "manual/component/attribute/geodistance.html"
         }
     ]

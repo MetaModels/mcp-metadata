@@ -5,16 +5,21 @@
         "en": "Helper model: consolidating selection data in one MetaModel"
     },
     "path": "cookbook/specials/helper-models.html",
-    "keywords": [
-        "helper model",
-        "hilfsmodell",
-        "select",
-        "auswahl",
-        "lookup",
-        "selection data",
-        "relation",
-        "relationen"
-    ],
+    "keywords": {
+        "en": [
+            "helper model",
+            "select",
+            "lookup",
+            "selection data",
+            "relation"
+        ],
+        "de": [
+            "hilfsmodell",
+            "select",
+            "auswahl",
+            "relationen"
+        ]
+    },
     "types": [
         {
             "kind": "attribute",

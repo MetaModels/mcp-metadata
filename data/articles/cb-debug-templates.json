@@ -5,10 +5,17 @@
         "en": "Debug templates"
     },
     "path": "cookbook/debug/templates.html",
-    "keywords": [
-        "debug",
-        "template",
-        "fehlersuche",
-        "twig"
-    ]
+    "keywords": {
+        "en": [
+            "debug",
+            "template",
+            "twig"
+        ],
+        "de": [
+            "debug",
+            "template",
+            "fehlersuche",
+            "twig"
+        ]
+    }
 }

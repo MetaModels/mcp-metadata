@@ -17,12 +17,17 @@
             "summary": {
                 "en": "Selection of a country from the list of all countries."
             },
-            "keywords": [
-                "land",
-                "länder",
-                "nation",
-                "iso"
-            ],
+            "keywords": {
+                "en": [
+                    "nation",
+                    "iso"
+                ],
+                "de": [
+                    "land",
+                    "länder",
+                    "iso"
+                ]
+            },
             "docs": "manual/component/attribute/country.html"
         }
     ]

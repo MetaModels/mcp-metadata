@@ -5,10 +5,15 @@
         "en": "Attribute not displayed after a change"
     },
     "path": "cookbook/checklists/attribut-change.html",
-    "keywords": [
-        "attribute not displayed",
-        "attribut fehlt",
-        "troubleshooting",
-        "cache"
-    ]
+    "keywords": {
+        "en": [
+            "attribute not displayed",
+            "troubleshooting",
+            "cache"
+        ],
+        "de": [
+            "attribut fehlt",
+            "cache"
+        ]
+    }
 }

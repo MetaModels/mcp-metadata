@@ -17,16 +17,23 @@
             "summary": {
                 "en": "Filter with a frontend widget: visitors choose yes or no and so change the list themselves."
             },
-            "keywords": [
-                "yes no",
-                "ja nein",
-                "widget",
-                "besucher",
-                "frontend",
-                "schalter",
-                "toggle",
-                "checkbox"
-            ],
+            "keywords": {
+                "en": [
+                    "yes no",
+                    "widget",
+                    "frontend",
+                    "toggle",
+                    "checkbox"
+                ],
+                "de": [
+                    "ja nein",
+                    "widget",
+                    "besucher",
+                    "schalter",
+                    "toggle",
+                    "checkbox"
+                ]
+            },
             "docs": "manual/component/filter/yes-no.html"
         }
     ]

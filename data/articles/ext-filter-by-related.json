@@ -5,14 +5,18 @@
         "en": "Filter by related MetaModels"
     },
     "path": "manual/extended/filter-by-related.html",
-    "keywords": [
-        "relation",
-        "relationen",
-        "related",
-        "verknüpft",
-        "parent",
-        "child"
-    ],
+    "keywords": {
+        "en": [
+            "relation",
+            "related",
+            "parent",
+            "child"
+        ],
+        "de": [
+            "relationen",
+            "verknüpft"
+        ]
+    },
     "types": [
         {
             "kind": "filter",

@@ -17,14 +17,21 @@
             "summary": {
                 "en": "Short text up to 255 characters, for names and titles."
             },
-            "keywords": [
-                "title",
-                "titel",
-                "name",
-                "string",
-                "headline",
-                "überschrift"
-            ],
+            "keywords": {
+                "en": [
+                    "title",
+                    "name",
+                    "string",
+                    "headline"
+                ],
+                "de": [
+                    "titel",
+                    "name",
+                    "string",
+                    "headline",
+                    "überschrift"
+                ]
+            },
             "docs": "manual/component/attribute/text.html"
         }
     ]

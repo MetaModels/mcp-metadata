@@ -5,10 +5,14 @@
         "en": "Color attribute"
     },
     "path": "manual/extended/attribute_color.html",
-    "keywords": [
-        "color",
-        "farbe"
-    ],
+    "keywords": {
+        "en": [
+            "color"
+        ],
+        "de": [
+            "farbe"
+        ]
+    },
     "types": [
         {
             "kind": "attribute",

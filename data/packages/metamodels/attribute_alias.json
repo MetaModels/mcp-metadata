@@ -17,14 +17,21 @@
             "summary": {
                 "en": "Unique URL-friendly identifier built from other attributes, used in links to detail pages."
             },
-            "keywords": [
-                "slug",
-                "url",
-                "link",
-                "detail",
-                "kurzname",
-                "adresse"
-            ],
+            "keywords": {
+                "en": [
+                    "slug",
+                    "url",
+                    "link",
+                    "detail"
+                ],
+                "de": [
+                    "slug",
+                    "url",
+                    "link",
+                    "kurzname",
+                    "adresse"
+                ]
+            },
             "docs": "manual/component/attribute/alias.html"
         }
     ]

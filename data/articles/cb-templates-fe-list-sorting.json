@@ -5,12 +5,17 @@
         "en": "Links for toggling the sort order of a list"
     },
     "path": "cookbook/templates/fe_list_sorting.html",
-    "keywords": [
-        "sorting",
-        "sortierung",
-        "sort order",
-        "toggle",
-        "ascending",
-        "descending"
-    ]
+    "keywords": {
+        "en": [
+            "sorting",
+            "sort order",
+            "toggle",
+            "ascending",
+            "descending"
+        ],
+        "de": [
+            "sortierung",
+            "toggle"
+        ]
+    }
 }

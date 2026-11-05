@@ -5,12 +5,18 @@
         "en": "Icon picker"
     },
     "path": "cookbook/specials/picker-for-icons.html",
-    "keywords": [
-        "icon",
-        "picker",
-        "symbol",
-        "icons"
-    ],
+    "keywords": {
+        "en": [
+            "icon",
+            "picker",
+            "icons"
+        ],
+        "de": [
+            "icon",
+            "symbol",
+            "icons"
+        ]
+    },
     "types": [
         {
             "kind": "attribute",

@@ -12,13 +12,17 @@
     "plans": [
         "eap"
     ],
-    "keywords": [
-        "health check",
-        "aufräumen",
-        "cleanup",
-        "verwaist",
-        "orphaned",
-        "inkonsistent"
-    ],
+    "keywords": {
+        "en": [
+            "health check",
+            "cleanup",
+            "orphaned"
+        ],
+        "de": [
+            "aufräumen",
+            "verwaist",
+            "inkonsistent"
+        ]
+    },
     "docs": "manual/extended/health-check.html"
 }

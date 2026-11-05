@@ -5,10 +5,16 @@
         "en": "Creating frontend templates via content elements"
     },
     "path": "cookbook/templates/fe_template_ce_elements.html",
-    "keywords": [
-        "content element",
-        "inhaltselement",
-        "template",
-        "twig"
-    ]
+    "keywords": {
+        "en": [
+            "content element",
+            "template",
+            "twig"
+        ],
+        "de": [
+            "inhaltselement",
+            "template",
+            "twig"
+        ]
+    }
 }

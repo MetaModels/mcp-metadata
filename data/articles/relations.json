@@ -5,17 +5,23 @@
         "en": "Relations between MetaModels"
     },
     "path": "manual/component/relations.html",
-    "keywords": [
-        "relation",
-        "relationen",
-        "beziehung",
-        "verknüpfung",
-        "1:n",
-        "m:n",
-        "parent",
-        "child",
-        "foreign key"
-    ],
+    "keywords": {
+        "en": [
+            "relation",
+            "1:n",
+            "m:n",
+            "parent",
+            "child",
+            "foreign key"
+        ],
+        "de": [
+            "relationen",
+            "beziehung",
+            "verknüpfung",
+            "1:n",
+            "m:n"
+        ]
+    },
     "types": [
         {
             "kind": "attribute",

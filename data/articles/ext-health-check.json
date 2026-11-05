@@ -5,10 +5,14 @@
         "en": "MetaModels health check"
     },
     "path": "manual/extended/health-check.html",
-    "keywords": [
-        "health check",
-        "diagnose",
-        "check",
-        "prüfung"
-    ]
+    "keywords": {
+        "en": [
+            "health check",
+            "check"
+        ],
+        "de": [
+            "diagnose",
+            "prüfung"
+        ]
+    }
 }

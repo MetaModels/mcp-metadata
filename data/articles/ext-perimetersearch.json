@@ -5,15 +5,20 @@
         "en": "Perimeter search"
     },
     "path": "manual/extended/perimetersearch.html",
-    "keywords": [
-        "umkreissuche",
-        "radius",
-        "distance",
-        "entfernung",
-        "geo",
-        "map",
-        "karte"
-    ],
+    "keywords": {
+        "en": [
+            "radius",
+            "distance",
+            "geo",
+            "map"
+        ],
+        "de": [
+            "umkreissuche",
+            "entfernung",
+            "geo",
+            "karte"
+        ]
+    },
     "types": [
         {
             "kind": "filter",

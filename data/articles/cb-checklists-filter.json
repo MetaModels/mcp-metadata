@@ -5,12 +5,16 @@
         "en": "Filter not displayed"
     },
     "path": "cookbook/checklists/filter.html",
-    "keywords": [
-        "filter not displayed",
-        "filter zeigt nichts",
-        "troubleshooting",
-        "fehlersuche",
-        "no items",
-        "keine einträge"
-    ]
+    "keywords": {
+        "en": [
+            "filter not displayed",
+            "troubleshooting",
+            "no items"
+        ],
+        "de": [
+            "filter zeigt nichts",
+            "fehlersuche",
+            "keine einträge"
+        ]
+    }
 }

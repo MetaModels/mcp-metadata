@@ -16,12 +16,16 @@
             "summary": {
                 "en": "Star rating by visitors in the frontend."
             },
-            "keywords": [
-                "stars",
-                "sterne",
-                "bewertung",
-                "vote"
-            ],
+            "keywords": {
+                "en": [
+                    "stars",
+                    "vote"
+                ],
+                "de": [
+                    "sterne",
+                    "bewertung"
+                ]
+            },
             "docs": "manual/component/attribute/rating.html"
         }
     ]

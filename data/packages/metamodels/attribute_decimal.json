@@ -17,16 +17,21 @@
             "summary": {
                 "en": "Decimal number, for example a price or an amount of money."
             },
-            "keywords": [
-                "price",
-                "preis",
-                "betrag",
-                "kommazahl",
-                "float",
-                "money",
-                "geld",
-                "dezimal"
-            ],
+            "keywords": {
+                "en": [
+                    "price",
+                    "float",
+                    "money"
+                ],
+                "de": [
+                    "preis",
+                    "betrag",
+                    "kommazahl",
+                    "float",
+                    "geld",
+                    "dezimal"
+                ]
+            },
             "docs": "manual/component/attribute/decimal.html"
         }
     ]

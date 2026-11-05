@@ -16,19 +16,24 @@
             "summary": {
                 "en": "Multilingual variant: yes/no value, for example published or featured."
             },
-            "keywords": [
-                "boolean",
-                "yes no",
-                "published",
-                "ja nein",
-                "veröffentlicht",
-                "aktiv",
-                "häkchen",
-                "multilingual",
-                "mehrsprachig",
-                "translated",
-                "übersetzt"
-            ],
+            "keywords": {
+                "en": [
+                    "boolean",
+                    "yes no",
+                    "published",
+                    "multilingual",
+                    "translated"
+                ],
+                "de": [
+                    "boolean",
+                    "ja nein",
+                    "veröffentlicht",
+                    "aktiv",
+                    "häkchen",
+                    "mehrsprachig",
+                    "übersetzt"
+                ]
+            },
             "docs": "manual/component/attribute/translatedcheckbox.html"
         },
         {
@@ -37,15 +42,19 @@
             "summary": {
                 "en": "Fixed filter like the checkbox status, for a translated checkbox. Has no frontend widget."
             },
-            "keywords": [
-                "published",
-                "veröffentlicht",
-                "fixed",
-                "fest",
-                "aktiv",
-                "multilingual",
-                "mehrsprachig"
-            ],
+            "keywords": {
+                "en": [
+                    "published",
+                    "fixed",
+                    "multilingual"
+                ],
+                "de": [
+                    "veröffentlicht",
+                    "fest",
+                    "aktiv",
+                    "mehrsprachig"
+                ]
+            },
             "docs": "manual/component/filter/translated-checkbox.html"
         }
     ]

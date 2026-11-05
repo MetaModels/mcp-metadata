@@ -16,12 +16,16 @@
             "summary": {
                 "en": "Special case: several choices from a table with its own language column (m:n relation). Not needed for a multilingual MetaModel, use tags there."
             },
-            "keywords": [
-                "relation",
-                "relationen",
-                "language column",
-                "sprachspalte"
-            ],
+            "keywords": {
+                "en": [
+                    "relation",
+                    "language column"
+                ],
+                "de": [
+                    "relationen",
+                    "sprachspalte"
+                ]
+            },
             "docs": "manual/component/attribute/translatedtags.html"
         }
     ]

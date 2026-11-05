@@ -5,10 +5,16 @@
         "en": "Outputting the attribute description in a template"
     },
     "path": "cookbook/templates/fe_template_attribute_description.html",
-    "keywords": [
-        "description",
-        "beschreibung",
-        "template",
-        "label"
-    ]
+    "keywords": {
+        "en": [
+            "description",
+            "template",
+            "label"
+        ],
+        "de": [
+            "beschreibung",
+            "template",
+            "label"
+        ]
+    }
 }

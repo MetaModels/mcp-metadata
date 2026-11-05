@@ -5,14 +5,18 @@
         "en": "Components of a MetaModel"
     },
     "path": "manual/component/index.html",
-    "keywords": [
-        "structure",
-        "aufbau",
-        "components",
-        "komponenten",
-        "building blocks",
-        "bausteine",
-        "overview",
-        "übersicht"
-    ]
+    "keywords": {
+        "en": [
+            "structure",
+            "components",
+            "building blocks",
+            "overview"
+        ],
+        "de": [
+            "aufbau",
+            "komponenten",
+            "bausteine",
+            "übersicht"
+        ]
+    }
 }

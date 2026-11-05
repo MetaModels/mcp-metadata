@@ -5,12 +5,19 @@
         "en": "XLIFF export and import"
     },
     "path": "manual/extended/xliff_ex-import.html",
-    "keywords": [
-        "xliff",
-        "translation",
-        "übersetzung",
-        "export",
-        "import",
-        "translators"
-    ]
+    "keywords": {
+        "en": [
+            "xliff",
+            "translation",
+            "export",
+            "import",
+            "translators"
+        ],
+        "de": [
+            "xliff",
+            "übersetzung",
+            "export",
+            "import"
+        ]
+    }
 }

@@ -17,13 +17,19 @@
             "summary": {
                 "en": "Frontend select box to choose one value."
             },
-            "keywords": [
-                "dropdown",
-                "auswahl",
-                "filter form",
-                "selectbox",
-                "kategorie"
-            ],
+            "keywords": {
+                "en": [
+                    "dropdown",
+                    "filter form",
+                    "selectbox"
+                ],
+                "de": [
+                    "dropdown",
+                    "auswahl",
+                    "selectbox",
+                    "kategorie"
+                ]
+            },
             "docs": "manual/component/filter/select.html"
         }
     ]

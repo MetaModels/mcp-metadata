@@ -113,12 +113,22 @@
             }
         },
         "keywords": {
-            "type": "array",
-            "maxItems": 12,
-            "uniqueItems": true,
-            "items": {
-                "type": "string",
-                "pattern": "^[^<>\\n]{2,40}$"
+            "description": "Search words by language code, English is required. One list per language because a word can mean different things in different languages.",
+            "type": "object",
+            "required": [
+                "en"
+            ],
+            "propertyNames": {
+                "pattern": "^[a-z]{2}$"
+            },
+            "additionalProperties": {
+                "type": "array",
+                "maxItems": 12,
+                "uniqueItems": true,
+                "items": {
+                    "type": "string",
+                    "pattern": "^[^<>\\n]{2,40}$"
+                }
             }
         },
         "version": {

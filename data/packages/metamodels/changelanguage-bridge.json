@@ -12,13 +12,18 @@
     "plans": [
         "eap"
     ],
-    "keywords": [
-        "changelanguage",
-        "sprachwechsel",
-        "language switcher",
-        "mehrsprachig",
-        "multilingual",
-        "detailseite"
-    ],
+    "keywords": {
+        "en": [
+            "changelanguage",
+            "language switcher",
+            "multilingual"
+        ],
+        "de": [
+            "changelanguage",
+            "sprachwechsel",
+            "mehrsprachig",
+            "detailseite"
+        ]
+    },
     "docs": "manual/extended/changelanguage-bridge.html"
 }

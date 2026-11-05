@@ -5,11 +5,18 @@
         "en": "Outputting structured data (schema.org)"
     },
     "path": "cookbook/templates/fe_template_schema_org.html",
-    "keywords": [
-        "schema.org",
-        "structured data",
-        "strukturierte daten",
-        "json-ld",
-        "seo"
-    ]
+    "keywords": {
+        "en": [
+            "schema.org",
+            "structured data",
+            "json-ld",
+            "seo"
+        ],
+        "de": [
+            "schema.org",
+            "strukturierte daten",
+            "json-ld",
+            "seo"
+        ]
+    }
 }

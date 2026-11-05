@@ -5,13 +5,19 @@
         "en": "Note list (wishlist)"
     },
     "path": "manual/extended/notelist.html",
-    "keywords": [
-        "merkliste",
-        "wishlist",
-        "notelist",
-        "favorites",
-        "favoriten"
-    ],
+    "keywords": {
+        "en": [
+            "wishlist",
+            "notelist",
+            "favorites"
+        ],
+        "de": [
+            "merkliste",
+            "wishlist",
+            "notelist",
+            "favoriten"
+        ]
+    },
     "types": [
         {
             "kind": "filter",

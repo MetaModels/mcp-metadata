@@ -5,12 +5,16 @@
         "en": "Expression filter rule"
     },
     "path": "cookbook/filter/expression-rule.html",
-    "keywords": [
-        "expression",
-        "condition",
-        "bedingung",
-        "if"
-    ],
+    "keywords": {
+        "en": [
+            "expression",
+            "condition",
+            "if"
+        ],
+        "de": [
+            "bedingung"
+        ]
+    },
     "types": [
         {
             "kind": "filter",

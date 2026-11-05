@@ -5,12 +5,20 @@
         "en": "Importing data into a spreadsheet"
     },
     "path": "cookbook/specials/export-excel.html",
-    "keywords": [
-        "excel",
-        "export",
-        "import",
-        "spreadsheet",
-        "csv",
-        "tabelle"
-    ]
+    "keywords": {
+        "en": [
+            "excel",
+            "export",
+            "import",
+            "spreadsheet",
+            "csv"
+        ],
+        "de": [
+            "excel",
+            "export",
+            "import",
+            "csv",
+            "tabelle"
+        ]
+    }
 }

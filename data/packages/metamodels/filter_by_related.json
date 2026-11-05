@@ -14,14 +14,18 @@
             "summary": {
                 "en": "Filters items by properties of a related MetaModel."
             },
-            "keywords": [
-                "relation",
-                "relationen",
-                "parent",
-                "child",
-                "verknüpft",
-                "by related"
-            ],
+            "keywords": {
+                "en": [
+                    "relation",
+                    "parent",
+                    "child",
+                    "by related"
+                ],
+                "de": [
+                    "relationen",
+                    "verknüpft"
+                ]
+            },
             "docs": "manual/component/filter/by-related.html"
         }
     ]

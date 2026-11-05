@@ -5,11 +5,16 @@
         "en": "Redirect from the detail page to the list or error 404"
     },
     "path": "cookbook/templates/fe_redirect_to_list.html",
-    "keywords": [
-        "redirect",
-        "weiterleitung",
-        "404",
-        "detail",
-        "not found"
-    ]
+    "keywords": {
+        "en": [
+            "redirect",
+            "404",
+            "detail",
+            "not found"
+        ],
+        "de": [
+            "weiterleitung",
+            "404"
+        ]
+    }
 }

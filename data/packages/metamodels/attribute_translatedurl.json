@@ -16,17 +16,24 @@
             "summary": {
                 "en": "Multilingual variant: link with a title and a URL."
             },
-            "keywords": [
-                "link",
-                "website",
-                "adresse",
-                "extern",
-                "homepage",
-                "multilingual",
-                "mehrsprachig",
-                "translated",
-                "übersetzt"
-            ],
+            "keywords": {
+                "en": [
+                    "link",
+                    "website",
+                    "homepage",
+                    "multilingual",
+                    "translated"
+                ],
+                "de": [
+                    "link",
+                    "website",
+                    "adresse",
+                    "extern",
+                    "homepage",
+                    "mehrsprachig",
+                    "übersetzt"
+                ]
+            },
             "docs": "manual/component/attribute/translatedurl.html"
         }
     ]

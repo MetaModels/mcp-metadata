@@ -169,6 +169,29 @@ final class BuilderTest extends TestCase
         self::assertStringContainsString('/articles/0/title', $errors[0]);
     }
 
+    public function testKeywordsNeedAnEnglishListPerLanguage(): void
+    {
+        $package = [
+            'name'         => 'metamodels/attribute_text',
+            'availability' => 'unknown',
+            'types'        => [[
+                'kind'     => 'attribute',
+                'type'     => 'text',
+                'summary'  => ['en' => 'Short text.'],
+                'keywords' => ['en' => ['text'], 'de' => ['titel']],
+            ]],
+        ];
+        $this->write('data/packages/metamodels/attribute_text.json', $package);
+        self::assertSame([], (new Builder($this->root))->build()['errors']);
+
+        foreach ([['text', 'titel'], ['de' => ['titel']], ['en' => ['text'], 'deu' => ['titel']]] as $keywords) {
+            $package['types'][0]['keywords'] = $keywords;
+            $this->write('data/packages/metamodels/attribute_text.json', $package);
+
+            self::assertNotSame([], (new Builder($this->root))->build()['errors']);
+        }
+    }
+
     public function testBrokenFilesAreReported(): void
     {
         file_put_contents($this->root . '/data/articles/broken.json', '{not json');

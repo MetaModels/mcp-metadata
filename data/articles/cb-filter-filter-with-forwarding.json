@@ -5,12 +5,16 @@
         "en": "Filter with forwarding"
     },
     "path": "cookbook/filter/filter-with-forwarding.html",
-    "keywords": [
-        "forwarding",
-        "weiterleitung",
-        "redirect",
-        "filter form",
-        "target page",
-        "zielseite"
-    ]
+    "keywords": {
+        "en": [
+            "forwarding",
+            "redirect",
+            "filter form",
+            "target page"
+        ],
+        "de": [
+            "weiterleitung",
+            "zielseite"
+        ]
+    }
 }

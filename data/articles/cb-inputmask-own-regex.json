@@ -5,10 +5,15 @@
         "en": "Input mask: custom regex validation"
     },
     "path": "cookbook/inputmask/own-regex.html",
-    "keywords": [
-        "regex",
-        "validation",
-        "validierung",
-        "pattern"
-    ]
+    "keywords": {
+        "en": [
+            "regex",
+            "validation",
+            "pattern"
+        ],
+        "de": [
+            "regex",
+            "validierung"
+        ]
+    }
 }

@@ -5,17 +5,23 @@
         "en": "Input screens (input forms)"
     },
     "path": "manual/component/dca.html",
-    "keywords": [
-        "input screen",
-        "eingabemaske",
-        "backend form",
-        "formular",
-        "fields",
-        "legend",
-        "palette",
-        "table view",
-        "tabellenansicht",
-        "tabellenform",
-        "showColumns"
-    ]
+    "keywords": {
+        "en": [
+            "input screen",
+            "backend form",
+            "fields",
+            "legend",
+            "palette",
+            "table view",
+            "showColumns"
+        ],
+        "de": [
+            "eingabemaske",
+            "formular",
+            "palette",
+            "tabellenansicht",
+            "tabellenform",
+            "showColumns"
+        ]
+    }
 }

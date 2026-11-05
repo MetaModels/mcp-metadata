@@ -5,11 +5,15 @@
         "en": "Adding an attribute to an existing MetaModel"
     },
     "path": "cookbook/checklists/attribut-new.html",
-    "keywords": [
-        "new attribute",
-        "neues attribut",
-        "add attribute",
-        "database update",
-        "datenbank"
-    ]
+    "keywords": {
+        "en": [
+            "new attribute",
+            "add attribute",
+            "database update"
+        ],
+        "de": [
+            "neues attribut",
+            "datenbank"
+        ]
+    }
 }

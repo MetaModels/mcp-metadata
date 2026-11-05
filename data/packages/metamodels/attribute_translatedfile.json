@@ -16,19 +16,25 @@
             "summary": {
                 "en": "Multilingual variant: a file or image picker per language, only for files that differ by language (image with text, data sheet). Files that are the same in every language use file."
             },
-            "keywords": [
-                "image",
-                "bild",
-                "datei",
-                "upload",
-                "gallery",
-                "galerie",
-                "pdf",
-                "multilingual",
-                "mehrsprachig",
-                "translated",
-                "übersetzt"
-            ],
+            "keywords": {
+                "en": [
+                    "image",
+                    "upload",
+                    "gallery",
+                    "pdf",
+                    "multilingual",
+                    "translated"
+                ],
+                "de": [
+                    "bild",
+                    "datei",
+                    "upload",
+                    "galerie",
+                    "pdf",
+                    "mehrsprachig",
+                    "übersetzt"
+                ]
+            },
             "docs": "manual/component/attribute/translatedfile.html"
         }
     ]

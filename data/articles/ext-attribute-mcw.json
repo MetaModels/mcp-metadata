@@ -5,12 +5,17 @@
         "en": "Multi-column wizard attribute"
     },
     "path": "manual/extended/attribute_mcw.html",
-    "keywords": [
-        "table",
-        "tabelle",
-        "mcw",
-        "multi column wizard"
-    ],
+    "keywords": {
+        "en": [
+            "table",
+            "mcw",
+            "multi column wizard"
+        ],
+        "de": [
+            "tabelle",
+            "mcw"
+        ]
+    },
     "types": [
         {
             "kind": "attribute",

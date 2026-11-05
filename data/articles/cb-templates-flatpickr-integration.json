@@ -5,14 +5,19 @@
         "en": "Date picker for the from-to filter rule (Flatpickr)"
     },
     "path": "cookbook/templates/flatpickr-integration.html",
-    "keywords": [
-        "date picker",
-        "datepicker",
-        "flatpickr",
-        "datum",
-        "kalender",
-        "calendar"
-    ],
+    "keywords": {
+        "en": [
+            "date picker",
+            "datepicker",
+            "flatpickr",
+            "calendar"
+        ],
+        "de": [
+            "flatpickr",
+            "datum",
+            "kalender"
+        ]
+    },
     "types": [
         {
             "kind": "filter",

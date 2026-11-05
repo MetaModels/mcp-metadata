@@ -5,11 +5,15 @@
         "en": "Automatic deletion of records in child tables"
     },
     "path": "cookbook/tips/delete-child-items.html",
-    "keywords": [
-        "delete",
-        "löschen",
-        "child",
-        "cascade",
-        "kindeinträge"
-    ]
+    "keywords": {
+        "en": [
+            "delete",
+            "child",
+            "cascade"
+        ],
+        "de": [
+            "löschen",
+            "kindeinträge"
+        ]
+    }
 }

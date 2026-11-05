@@ -16,17 +16,23 @@
             "summary": {
                 "en": "Single choice from another MetaModel or a Contao table (1:n relation). Works in multilingual MetaModels too and follows the language by itself."
             },
-            "keywords": [
-                "relation",
-                "relationen",
-                "category",
-                "kategorie",
-                "dropdown",
-                "auswahl",
-                "reference",
-                "verknüpfung",
-                "1:n"
-            ],
+            "keywords": {
+                "en": [
+                    "relation",
+                    "category",
+                    "dropdown",
+                    "reference",
+                    "1:n"
+                ],
+                "de": [
+                    "relationen",
+                    "kategorie",
+                    "dropdown",
+                    "auswahl",
+                    "verknüpfung",
+                    "1:n"
+                ]
+            },
             "docs": "manual/component/attribute/select.html"
         }
     ]

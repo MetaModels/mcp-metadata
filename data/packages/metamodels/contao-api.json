@@ -12,12 +12,19 @@
     "plans": [
         "eap"
     ],
-    "keywords": [
-        "api",
-        "rest",
-        "mcp",
-        "schnittstelle",
-        "items"
-    ],
+    "keywords": {
+        "en": [
+            "api",
+            "rest",
+            "mcp",
+            "items"
+        ],
+        "de": [
+            "api",
+            "rest",
+            "mcp",
+            "schnittstelle"
+        ]
+    },
     "docs": "manual/extended/contao-api.html"
 }

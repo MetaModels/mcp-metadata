@@ -16,14 +16,18 @@
             "summary": {
                 "en": "Table of text values with configured columns and any number of rows."
             },
-            "keywords": [
-                "table",
-                "tabelle",
-                "rows",
-                "zeilen",
-                "spalten",
-                "öffnungszeiten"
-            ],
+            "keywords": {
+                "en": [
+                    "table",
+                    "rows"
+                ],
+                "de": [
+                    "tabelle",
+                    "zeilen",
+                    "spalten",
+                    "öffnungszeiten"
+                ]
+            },
             "docs": "manual/component/attribute/tabletext.html"
         }
     ]

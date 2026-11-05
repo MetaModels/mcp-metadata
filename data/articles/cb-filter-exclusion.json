@@ -5,11 +5,15 @@
         "en": "Filter rule as exclusion"
     },
     "path": "cookbook/filter/exclusion.html",
-    "keywords": [
-        "exclude",
-        "ausschließen",
-        "exclusion",
-        "not",
-        "nicht"
-    ]
+    "keywords": {
+        "en": [
+            "exclude",
+            "exclusion",
+            "not"
+        ],
+        "de": [
+            "ausschließen",
+            "nicht"
+        ]
+    }
 }

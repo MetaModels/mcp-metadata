@@ -12,11 +12,17 @@
     "plans": [
         "eap"
     ],
-    "keywords": [
-        "dropzone",
-        "upload",
-        "hochladen",
-        "drag and drop",
-        "datei"
-    ]
+    "keywords": {
+        "en": [
+            "dropzone",
+            "upload",
+            "drag and drop"
+        ],
+        "de": [
+            "dropzone",
+            "upload",
+            "hochladen",
+            "datei"
+        ]
+    }
 }

@@ -17,18 +17,23 @@
             "summary": {
                 "en": "Date, time or both, stored as a Unix timestamp."
             },
-            "keywords": [
-                "date",
-                "datum",
-                "time",
-                "uhrzeit",
-                "zeit",
-                "termin",
-                "event",
-                "frist",
-                "deadline",
-                "kalender"
-            ],
+            "keywords": {
+                "en": [
+                    "date",
+                    "time",
+                    "event",
+                    "deadline"
+                ],
+                "de": [
+                    "datum",
+                    "uhrzeit",
+                    "zeit",
+                    "termin",
+                    "event",
+                    "frist",
+                    "kalender"
+                ]
+            },
             "docs": "manual/component/attribute/timestamp.html"
         }
     ]

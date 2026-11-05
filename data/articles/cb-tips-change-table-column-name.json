@@ -5,12 +5,16 @@
         "en": "Renaming tables or columns"
     },
     "path": "cookbook/tips/change-table-column-name.html",
-    "keywords": [
-        "rename",
-        "umbenennen",
-        "table name",
-        "column name",
-        "tabellenname",
-        "spaltenname"
-    ]
+    "keywords": {
+        "en": [
+            "rename",
+            "table name",
+            "column name"
+        ],
+        "de": [
+            "umbenennen",
+            "tabellenname",
+            "spaltenname"
+        ]
+    }
 }

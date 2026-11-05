@@ -16,18 +16,23 @@
             "summary": {
                 "en": "Multilingual variant: text composed from several other attributes, for example first and last name."
             },
-            "keywords": [
-                "combine",
-                "compose",
-                "concatenate",
-                "kombinieren",
-                "zusammensetzen",
-                "name",
-                "multilingual",
-                "mehrsprachig",
-                "translated",
-                "übersetzt"
-            ],
+            "keywords": {
+                "en": [
+                    "combine",
+                    "compose",
+                    "concatenate",
+                    "name",
+                    "multilingual",
+                    "translated"
+                ],
+                "de": [
+                    "kombinieren",
+                    "zusammensetzen",
+                    "name",
+                    "mehrsprachig",
+                    "übersetzt"
+                ]
+            },
             "docs": "manual/component/attribute/translatedcombinedvalues.html"
         }
     ]

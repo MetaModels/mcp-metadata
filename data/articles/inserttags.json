@@ -5,10 +5,15 @@
         "en": "Insert tags"
     },
     "path": "manual/component/inserttags.html",
-    "keywords": [
-        "insert tag",
-        "inserttag",
-        "einfügemarke",
-        "platzhalter"
-    ]
+    "keywords": {
+        "en": [
+            "insert tag",
+            "inserttag"
+        ],
+        "de": [
+            "inserttag",
+            "einfügemarke",
+            "platzhalter"
+        ]
+    }
 }

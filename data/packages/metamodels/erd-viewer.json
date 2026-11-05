@@ -12,13 +12,19 @@
     "plans": [
         "eap"
     ],
-    "keywords": [
-        "erd",
-        "diagram",
-        "diagramm",
-        "relationen",
-        "datenbankstruktur",
-        "übersicht"
-    ],
+    "keywords": {
+        "en": [
+            "erd",
+            "diagram"
+        ],
+        "de": [
+            "erd",
+            "diagram",
+            "diagramm",
+            "relationen",
+            "datenbankstruktur",
+            "übersicht"
+        ]
+    },
     "docs": "manual/extended/erd-viewer.html"
 }

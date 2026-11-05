@@ -5,11 +5,18 @@
         "en": "MetaModels to Isotope"
     },
     "path": "manual/extended/isotope.html",
-    "keywords": [
-        "isotope",
-        "shop",
-        "ecommerce",
-        "produkte",
-        "products"
-    ]
+    "keywords": {
+        "en": [
+            "isotope",
+            "shop",
+            "ecommerce",
+            "products"
+        ],
+        "de": [
+            "isotope",
+            "shop",
+            "ecommerce",
+            "produkte"
+        ]
+    }
 }

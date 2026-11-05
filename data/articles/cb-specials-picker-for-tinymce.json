@@ -5,13 +5,19 @@
         "en": "jumpTo picker (detail page) for TinyMCE"
     },
     "path": "cookbook/specials/picker-for-tinymce.html",
-    "keywords": [
-        "jumpto",
-        "picker",
-        "tinymce",
-        "detail page",
-        "detailseite",
-        "link",
-        "dcapicker"
-    ]
+    "keywords": {
+        "en": [
+            "jumpto",
+            "picker",
+            "tinymce",
+            "detail page",
+            "link",
+            "dcapicker"
+        ],
+        "de": [
+            "tinymce",
+            "detailseite",
+            "link"
+        ]
+    }
 }

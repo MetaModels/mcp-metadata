@@ -16,18 +16,25 @@
             "summary": {
                 "en": "Multilingual variant: short text up to 255 characters, for names and titles."
             },
-            "keywords": [
-                "title",
-                "titel",
-                "name",
-                "string",
-                "headline",
-                "überschrift",
-                "multilingual",
-                "mehrsprachig",
-                "translated",
-                "übersetzt"
-            ],
+            "keywords": {
+                "en": [
+                    "title",
+                    "name",
+                    "string",
+                    "headline",
+                    "multilingual",
+                    "translated"
+                ],
+                "de": [
+                    "titel",
+                    "name",
+                    "string",
+                    "headline",
+                    "überschrift",
+                    "mehrsprachig",
+                    "übersetzt"
+                ]
+            },
             "docs": "manual/component/attribute/translatedtext.html"
         }
     ]

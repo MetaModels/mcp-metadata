@@ -17,12 +17,17 @@
             "summary": {
                 "en": "Table with a widget per column, such as select or checkbox."
             },
-            "keywords": [
-                "table",
-                "tabelle",
-                "repeater",
-                "multi column"
-            ],
+            "keywords": {
+                "en": [
+                    "table",
+                    "repeater",
+                    "multi column"
+                ],
+                "de": [
+                    "tabelle",
+                    "repeater"
+                ]
+            },
             "docs": "manual/component/attribute/tablemulti.html"
         }
     ]

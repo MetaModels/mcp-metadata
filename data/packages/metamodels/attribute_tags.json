@@ -16,17 +16,24 @@
             "summary": {
                 "en": "Several choices from another MetaModel or a Contao table (m:n relation). Works in multilingual MetaModels too and follows the language by itself."
             },
-            "keywords": [
-                "relation",
-                "relationen",
-                "tags",
-                "schlagworte",
-                "schlagwort",
-                "multiselect",
-                "mehrfachauswahl",
-                "kategorien",
-                "m:n"
-            ],
+            "keywords": {
+                "en": [
+                    "relation",
+                    "tags",
+                    "multiselect",
+                    "m:n"
+                ],
+                "de": [
+                    "relationen",
+                    "tags",
+                    "schlagworte",
+                    "schlagwort",
+                    "multiselect",
+                    "mehrfachauswahl",
+                    "kategorien",
+                    "m:n"
+                ]
+            },
             "docs": "manual/component/attribute/tags.html"
         }
     ]

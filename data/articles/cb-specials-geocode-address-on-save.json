@@ -5,14 +5,18 @@
         "en": "Automatically generating and storing coordinates"
     },
     "path": "cookbook/specials/geocode-address-on-save.html",
-    "keywords": [
-        "geocode",
-        "geocoding",
-        "coordinates",
-        "koordinaten",
-        "address",
-        "adresse"
-    ],
+    "keywords": {
+        "en": [
+            "geocode",
+            "geocoding",
+            "coordinates",
+            "address"
+        ],
+        "de": [
+            "koordinaten",
+            "adresse"
+        ]
+    },
     "types": [
         {
             "kind": "attribute",

@@ -5,10 +5,14 @@
         "en": "Feature overview"
     },
     "path": "manual/features.html",
-    "keywords": [
-        "features",
-        "funktionen",
-        "overview",
-        "übersicht"
-    ]
+    "keywords": {
+        "en": [
+            "features",
+            "overview"
+        ],
+        "de": [
+            "funktionen",
+            "übersicht"
+        ]
+    }
 }

@@ -5,12 +5,16 @@
         "en": "Attributes and all attribute types"
     },
     "path": "manual/component/attribute.html",
-    "keywords": [
-        "attributes",
-        "attribute",
-        "fields",
-        "felder",
-        "columns",
-        "spalten"
-    ]
+    "keywords": {
+        "en": [
+            "attributes",
+            "attribute",
+            "fields",
+            "columns"
+        ],
+        "de": [
+            "felder",
+            "spalten"
+        ]
+    }
 }

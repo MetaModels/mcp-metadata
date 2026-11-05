@@ -5,12 +5,17 @@
         "en": "Filter sets and filter rules"
     },
     "path": "manual/component/filter.html",
-    "keywords": [
-        "filter",
-        "filter rules",
-        "filterregeln",
-        "filter sets",
-        "url parameter",
-        "detail"
-    ]
+    "keywords": {
+        "en": [
+            "filter",
+            "filter rules",
+            "filter sets",
+            "url parameter",
+            "detail"
+        ],
+        "de": [
+            "filter",
+            "filterregeln"
+        ]
+    }
 }

@@ -5,11 +5,18 @@
         "en": "Setting the route priority"
     },
     "path": "cookbook/tips/set-route-priority.html",
-    "keywords": [
-        "route",
-        "priority",
-        "priorität",
-        "routing",
-        "url"
-    ]
+    "keywords": {
+        "en": [
+            "route",
+            "priority",
+            "routing",
+            "url"
+        ],
+        "de": [
+            "route",
+            "priorität",
+            "routing",
+            "url"
+        ]
+    }
 }

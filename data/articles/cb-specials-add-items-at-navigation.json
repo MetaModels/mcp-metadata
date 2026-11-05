@@ -5,12 +5,19 @@
         "en": "Displaying detail pages in the Contao navigation"
     },
     "path": "cookbook/specials/add_items_at_navigation.html",
-    "keywords": [
-        "navigation",
-        "sitemap",
-        "detail pages",
-        "detailseiten",
-        "menu",
-        "menü"
-    ]
+    "keywords": {
+        "en": [
+            "navigation",
+            "sitemap",
+            "detail pages",
+            "menu"
+        ],
+        "de": [
+            "navigation",
+            "sitemap",
+            "detailseiten",
+            "menu",
+            "menü"
+        ]
+    }
 }

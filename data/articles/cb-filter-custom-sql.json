@@ -5,12 +5,17 @@
         "en": "Custom SQL filter rule"
     },
     "path": "cookbook/filter/custom-sql.html",
-    "keywords": [
-        "sql",
-        "custom sql",
-        "query",
-        "abfrage"
-    ],
+    "keywords": {
+        "en": [
+            "sql",
+            "custom sql",
+            "query"
+        ],
+        "de": [
+            "sql",
+            "abfrage"
+        ]
+    },
     "types": [
         {
             "kind": "filter",

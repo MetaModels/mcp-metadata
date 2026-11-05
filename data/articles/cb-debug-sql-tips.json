@@ -5,10 +5,16 @@
         "en": "SQL tips"
     },
     "path": "cookbook/debug/sql-tips.html",
-    "keywords": [
-        "sql",
-        "debug",
-        "query",
-        "fehlersuche"
-    ]
+    "keywords": {
+        "en": [
+            "sql",
+            "debug",
+            "query"
+        ],
+        "de": [
+            "sql",
+            "debug",
+            "fehlersuche"
+        ]
+    }
 }

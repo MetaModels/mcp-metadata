@@ -8,14 +8,18 @@
             "summary": {
                 "en": "Container: an item has to match all rules inside."
             },
-            "keywords": [
-                "and",
-                "und",
-                "combine",
-                "verknüpfen",
-                "group",
-                "gruppe"
-            ],
+            "keywords": {
+                "en": [
+                    "and",
+                    "combine",
+                    "group"
+                ],
+                "de": [
+                    "und",
+                    "verknüpfen",
+                    "gruppe"
+                ]
+            },
             "docs": "manual/component/filter/condition-and.html"
         },
         {
@@ -24,11 +28,15 @@
             "summary": {
                 "en": "Container: an item has to match at least one rule inside."
             },
-            "keywords": [
-                "or",
-                "oder",
-                "alternative"
-            ],
+            "keywords": {
+                "en": [
+                    "or",
+                    "alternative"
+                ],
+                "de": [
+                    "oder"
+                ]
+            },
             "docs": "manual/component/filter/condition-or.html"
         },
         {
@@ -37,11 +45,16 @@
             "summary": {
                 "en": "Filters with your own SQL query that returns item ids."
             },
-            "keywords": [
-                "sql",
-                "query",
-                "abfrage"
-            ],
+            "keywords": {
+                "en": [
+                    "sql",
+                    "query"
+                ],
+                "de": [
+                    "sql",
+                    "abfrage"
+                ]
+            },
             "docs": "manual/component/filter/customsql.html"
         },
         {
@@ -50,12 +63,16 @@
             "summary": {
                 "en": "Runs further rules only if a condition is met."
             },
-            "keywords": [
-                "condition",
-                "bedingung",
-                "expression",
-                "if"
-            ],
+            "keywords": {
+                "en": [
+                    "condition",
+                    "expression",
+                    "if"
+                ],
+                "de": [
+                    "bedingung"
+                ]
+            },
             "docs": "manual/component/filter/expression-rule.html"
         },
         {
@@ -64,12 +81,17 @@
             "summary": {
                 "en": "Fixed list of item ids as the basis of the filter."
             },
-            "keywords": [
-                "ids",
-                "fixed",
-                "festlegen",
-                "vordefiniert"
-            ],
+            "keywords": {
+                "en": [
+                    "ids",
+                    "fixed"
+                ],
+                "de": [
+                    "ids",
+                    "festlegen",
+                    "vordefiniert"
+                ]
+            },
             "docs": "manual/component/filter/idlist.html"
         },
         {
@@ -78,15 +100,22 @@
             "summary": {
                 "en": "Filters by the value of one attribute, taken from the URL or fixed. The usual rule for detail pages."
             },
-            "keywords": [
-                "detail",
-                "alias",
-                "url parameter",
-                "lookup",
-                "einzelansicht",
-                "parameter",
-                "id"
-            ],
+            "keywords": {
+                "en": [
+                    "detail",
+                    "alias",
+                    "url parameter",
+                    "lookup",
+                    "parameter",
+                    "id"
+                ],
+                "de": [
+                    "alias",
+                    "einzelansicht",
+                    "parameter",
+                    "id"
+                ]
+            },
             "docs": "manual/component/filter/simplelookup.html"
         }
     ]

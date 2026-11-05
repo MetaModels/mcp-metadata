@@ -9,15 +9,21 @@
             "en": "https://metamodels.readthedocs.io/en/latest/manual/extended/notelist.html"
         }
     },
-    "keywords": [
-        "merkliste",
-        "wishlist",
-        "watchlist",
-        "favoriten",
-        "warenkorb",
-        "cart",
-        "vergleichsliste"
-    ],
+    "keywords": {
+        "en": [
+            "wishlist",
+            "watchlist",
+            "cart"
+        ],
+        "de": [
+            "merkliste",
+            "wishlist",
+            "watchlist",
+            "favoriten",
+            "warenkorb",
+            "vergleichsliste"
+        ]
+    },
     "docs": "manual/extended/notelist.html",
     "types": [
         {
@@ -26,12 +32,18 @@
             "summary": {
                 "en": "Filters a list by the items on a note list."
             },
-            "keywords": [
-                "notelist",
-                "merkliste",
-                "wishlist",
-                "favoriten"
-            ],
+            "keywords": {
+                "en": [
+                    "notelist",
+                    "wishlist"
+                ],
+                "de": [
+                    "notelist",
+                    "merkliste",
+                    "wishlist",
+                    "favoriten"
+                ]
+            },
             "docs": "manual/extended/notelist.html"
         }
     ]

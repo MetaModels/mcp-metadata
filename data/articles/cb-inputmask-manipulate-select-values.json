@@ -5,13 +5,18 @@
         "en": "Input mask: adding more values to a single select"
     },
     "path": "cookbook/inputmask/manipulate-select-values.html",
-    "keywords": [
-        "select",
-        "values",
-        "werte",
-        "options",
-        "optionen"
-    ],
+    "keywords": {
+        "en": [
+            "select",
+            "values",
+            "options"
+        ],
+        "de": [
+            "select",
+            "werte",
+            "optionen"
+        ]
+    },
     "types": [
         {
             "kind": "attribute",

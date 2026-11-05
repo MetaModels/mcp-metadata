@@ -16,13 +16,18 @@
             "summary": {
                 "en": "Initial letters as a clickable A-Z navigation."
             },
-            "keywords": [
-                "alphabet",
-                "a-z",
-                "initial",
-                "anfangsbuchstabe",
-                "glossar"
-            ],
+            "keywords": {
+                "en": [
+                    "alphabet",
+                    "a-z",
+                    "initial"
+                ],
+                "de": [
+                    "a-z",
+                    "anfangsbuchstabe",
+                    "glossar"
+                ]
+            },
             "docs": "manual/component/filter/register.html"
         }
     ]

@@ -17,14 +17,19 @@
             "summary": {
                 "en": "Whole number, for example a quantity or a stock level."
             },
-            "keywords": [
-                "number",
-                "integer",
-                "zahl",
-                "anzahl",
-                "menge",
-                "bestand"
-            ],
+            "keywords": {
+                "en": [
+                    "number",
+                    "integer"
+                ],
+                "de": [
+                    "integer",
+                    "zahl",
+                    "anzahl",
+                    "menge",
+                    "bestand"
+                ]
+            },
             "docs": "manual/component/attribute/numeric.html"
         }
     ]

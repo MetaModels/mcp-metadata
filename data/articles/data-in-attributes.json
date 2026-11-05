@@ -5,12 +5,16 @@
         "en": "Which attributes can store which data"
     },
     "path": "manual/component/data-in-attributes.html",
-    "keywords": [
-        "data types",
-        "datentypen",
-        "attributes",
-        "attribute",
-        "which attribute",
-        "welches attribut"
-    ]
+    "keywords": {
+        "en": [
+            "data types",
+            "attributes",
+            "attribute",
+            "which attribute"
+        ],
+        "de": [
+            "datentypen",
+            "welches attribut"
+        ]
+    }
 }

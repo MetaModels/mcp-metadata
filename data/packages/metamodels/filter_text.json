@@ -17,13 +17,17 @@
             "summary": {
                 "en": "Frontend text search over attributes."
             },
-            "keywords": [
-                "search",
-                "suche",
-                "textsuche",
-                "keyword",
-                "volltext"
-            ],
+            "keywords": {
+                "en": [
+                    "search",
+                    "keyword"
+                ],
+                "de": [
+                    "suche",
+                    "textsuche",
+                    "volltext"
+                ]
+            },
             "docs": "manual/component/filter/text.html"
         }
     ]

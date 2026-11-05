@@ -17,17 +17,25 @@
             "summary": {
                 "en": "File or image picker for one or several files of the Contao file manager. The same files for every language of a multilingual MetaModel."
             },
-            "keywords": [
-                "image",
-                "bild",
-                "datei",
-                "upload",
-                "gallery",
-                "galerie",
-                "pdf",
-                "download",
-                "foto"
-            ],
+            "keywords": {
+                "en": [
+                    "image",
+                    "upload",
+                    "gallery",
+                    "pdf",
+                    "download",
+                    "foto"
+                ],
+                "de": [
+                    "bild",
+                    "datei",
+                    "upload",
+                    "galerie",
+                    "pdf",
+                    "download",
+                    "foto"
+                ]
+            },
             "docs": "manual/component/attribute/file.html"
         }
     ]

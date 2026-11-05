@@ -5,18 +5,25 @@
         "en": "Event management with an AI agent"
     },
     "path": "cookbook/mcp/event-management.html",
-    "keywords": [
-        "mcp",
-        "ki",
-        "agent",
-        "prompt",
-        "eventverwaltung",
-        "event management",
-        "beispiel",
-        "example",
-        "mehrsprachig",
-        "multilingual",
-        "ansichtsbedingung",
-        "detailseite"
-    ]
+    "keywords": {
+        "en": [
+            "mcp",
+            "agent",
+            "prompt",
+            "event management",
+            "example",
+            "multilingual"
+        ],
+        "de": [
+            "mcp",
+            "ki",
+            "agent",
+            "prompt",
+            "eventverwaltung",
+            "beispiel",
+            "mehrsprachig",
+            "ansichtsbedingung",
+            "detailseite"
+        ]
+    }
 }

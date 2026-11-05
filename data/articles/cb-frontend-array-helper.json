@@ -5,9 +5,14 @@
         "en": "Array helper"
     },
     "path": "cookbook/frontend/array-helper.html",
-    "keywords": [
-        "array",
-        "template",
-        "helper"
-    ]
+    "keywords": {
+        "en": [
+            "array",
+            "template",
+            "helper"
+        ],
+        "de": [
+            "template"
+        ]
+    }
 }

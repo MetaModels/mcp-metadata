@@ -5,13 +5,18 @@
         "en": "Display condition: show when a checkbox is not checked"
     },
     "path": "cookbook/inputmask/checkbox-negation.html",
-    "keywords": [
-        "checkbox",
-        "condition",
-        "bedingung",
-        "negation",
-        "not checked"
-    ],
+    "keywords": {
+        "en": [
+            "checkbox",
+            "condition",
+            "negation",
+            "not checked"
+        ],
+        "de": [
+            "checkbox",
+            "bedingung"
+        ]
+    },
     "types": [
         {
             "kind": "attribute",

@@ -16,17 +16,24 @@
             "summary": {
                 "en": "Coordinates (latitude and longitude) in one column."
             },
-            "keywords": [
-                "coordinates",
-                "koordinaten",
-                "map",
-                "karte",
-                "gps",
-                "geo",
-                "position",
-                "standort",
-                "location"
-            ],
+            "keywords": {
+                "en": [
+                    "coordinates",
+                    "map",
+                    "gps",
+                    "geo",
+                    "position",
+                    "location"
+                ],
+                "de": [
+                    "koordinaten",
+                    "karte",
+                    "gps",
+                    "geo",
+                    "position",
+                    "standort"
+                ]
+            },
             "docs": "manual/component/attribute/latlong.html"
         }
     ]

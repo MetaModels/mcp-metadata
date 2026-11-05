@@ -5,10 +5,16 @@
         "en": "Leaflet maps integration"
     },
     "path": "manual/extended/leaflet.html",
-    "keywords": [
-        "leaflet",
-        "map",
-        "karte",
-        "marker"
-    ]
+    "keywords": {
+        "en": [
+            "leaflet",
+            "map",
+            "marker"
+        ],
+        "de": [
+            "leaflet",
+            "karte",
+            "marker"
+        ]
+    }
 }

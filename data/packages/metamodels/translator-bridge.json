@@ -9,13 +9,19 @@
             "en": "https://metamodels.readthedocs.io/en/latest/manual/extended/translator-bridge.html"
         }
     },
-    "keywords": [
-        "deepl",
-        "translation",
-        "übersetzung",
-        "übersetzen",
-        "chatgpt",
-        "mehrsprachig"
-    ],
+    "keywords": {
+        "en": [
+            "deepl",
+            "translation",
+            "chatgpt"
+        ],
+        "de": [
+            "deepl",
+            "übersetzung",
+            "übersetzen",
+            "chatgpt",
+            "mehrsprachig"
+        ]
+    },
     "docs": "manual/extended/translator-bridge.html"
 }

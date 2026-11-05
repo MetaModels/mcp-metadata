@@ -5,10 +5,14 @@
         "en": "File usage integration"
     },
     "path": "manual/extended/file-usage.html",
-    "keywords": [
-        "file usage",
-        "dateiverwendung",
-        "files",
-        "dateien"
-    ]
+    "keywords": {
+        "en": [
+            "file usage",
+            "files"
+        ],
+        "de": [
+            "dateiverwendung",
+            "dateien"
+        ]
+    }
 }

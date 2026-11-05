@@ -5,12 +5,16 @@
         "en": "Predefined content element for editors"
     },
     "path": "cookbook/specials/ce_element_for_editors.html",
-    "keywords": [
-        "editors",
-        "redakteure",
-        "content element",
-        "inhaltselement",
-        "predefined",
-        "vorgefertigt"
-    ]
+    "keywords": {
+        "en": [
+            "editors",
+            "content element",
+            "predefined"
+        ],
+        "de": [
+            "redakteure",
+            "inhaltselement",
+            "vorgefertigt"
+        ]
+    }
 }
