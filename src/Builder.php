@@ -74,6 +74,7 @@ final class Builder
         $paths    = [];
         foreach ([...($metadata['packages'] ?? []), ...($metadata['types'] ?? [])] as $row) {
             $paths[] = is_array($row) ? ($row['docs'] ?? null) : null;
+            $paths[] = is_array($row) && is_array($row['access'] ?? null) ? ($row['access']['page'] ?? null) : null;
         }
         foreach ($metadata['articles'] ?? [] as $article) {
             $paths[] = is_array($article) ? ($article['path'] ?? null) : null;

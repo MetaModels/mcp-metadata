@@ -29,7 +29,7 @@ markup, the links are `https`, and the schema does not allow other fields.
 | Value | Meaning |
 | --- | --- |
 | `public` | `composer require` works for everybody. |
-| `early-access` | Only for supporters, `access.url` points to a page for humans (never credentials). The AI does not suggest `composer require`. |
+| `early-access` | Only for supporters, `access` points to a page for humans (never credentials): `access.page` is a page of the handbook (a path, the address per language is built from `handbook.urls`), `access.url` an external address by language. The AI does not suggest `composer require`. |
 | `planned` | Does not exist yet. |
 | `unknown` | Not stated yet. The AI suggests `composer require` and says that many extensions are still part of the Early Adopter Program (EAP): if Composer cannot find the package or refuses access, the user has to ask about access. |
 
@@ -37,7 +37,7 @@ markup, the links are `https`, and the schema does not allow other fields.
 
 `plans` names the supporter plans that include an `early-access` package: `basic-1` (the reduced plan for small
 projects) and `eap` (the full Early Adopter Program). Both are described on the fundraising page that `access.url`
-points to. A package with a fundraising of its own has no `plans`, its `access.url` is the page in the handbook.
+points to. A package with a fundraising of its own has no `plans`, its `access.page` is the page in the handbook.
 
 ## Layout
 

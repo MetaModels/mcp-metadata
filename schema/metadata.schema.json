@@ -194,15 +194,28 @@
                     ]
                 },
                 "access": {
-                    "description": "How to get a package that is not public. A page for humans, never credentials.",
+                    "description": "How to get a package that is not public. A page for humans, never credentials: either a page of the handbook (page) or an external address (url).",
                     "type": "object",
                     "additionalProperties": false,
-                    "required": [
-                        "url"
+                    "oneOf": [
+                        {
+                            "required": [
+                                "url"
+                            ]
+                        },
+                        {
+                            "required": [
+                                "page"
+                            ]
+                        }
                     ],
                     "properties": {
                         "url": {
                             "$ref": "#/$defs/url"
+                        },
+                        "page": {
+                            "$ref": "#/$defs/path",
+                            "description": "Page of the handbook, the address per language is built from handbook.urls."
                         },
                         "repository": {
                             "type": "string",

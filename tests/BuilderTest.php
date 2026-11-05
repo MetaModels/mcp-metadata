@@ -192,6 +192,34 @@ final class BuilderTest extends TestCase
         }
     }
 
+    public function testAccessIsAPageOfTheHandbookOrAnAddress(): void
+    {
+        $package = [
+            'name'         => 'metamodels/attribute_text',
+            'availability' => 'early-access',
+            'types'        => [[
+                'kind'    => 'attribute',
+                'type'    => 'text',
+                'summary' => ['en' => 'Short text.'],
+            ]],
+        ];
+        $page = 'manual/extended/text.html';
+        $url  = ['en' => 'https://example.org/support'];
+
+        foreach ([['page' => $page], ['url' => $url]] as $access) {
+            $this->write('data/packages/metamodels/attribute_text.json', ['access' => $access] + $package);
+            self::assertSame([], (new Builder($this->root))->build()['errors']);
+        }
+        foreach ([[], ['page' => $page, 'url' => $url], ['page' => 'https://evil.example/x']] as $access) {
+            $this->write('data/packages/metamodels/attribute_text.json', ['access' => $access] + $package);
+            self::assertNotSame([], (new Builder($this->root))->build()['errors']);
+        }
+
+        $this->write('data/packages/metamodels/attribute_text.json', ['access' => ['page' => $page]] + $package);
+        $builder = new Builder($this->root);
+        self::assertContains('https://example.org/de/' . $page, $builder->urls($builder->build()['metadata']));
+    }
+
     public function testBrokenFilesAreReported(): void
     {
         file_put_contents($this->root . '/data/articles/broken.json', '{not json');

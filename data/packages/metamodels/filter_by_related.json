@@ -2,9 +2,7 @@
     "name": "metamodels/filter_by_related",
     "availability": "early-access",
     "access": {
-        "url": {
-            "en": "https://metamodels.readthedocs.io/en/latest/manual/extended/filter-by-related.html"
-        }
+        "page": "manual/extended/filter-by-related.html"
     },
     "docs": "manual/extended/filter-by-related.html",
     "types": [

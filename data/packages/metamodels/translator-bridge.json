@@ -5,9 +5,7 @@
         "en": "Machine translation buttons (for example DeepL) in the backend for multilingual attributes."
     },
     "access": {
-        "url": {
-            "en": "https://metamodels.readthedocs.io/en/latest/manual/extended/translator-bridge.html"
-        }
+        "page": "manual/extended/translator-bridge.html"
     },
     "keywords": {
         "en": [
