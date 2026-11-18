@@ -111,14 +111,15 @@ bin/sync-lines                             reads the lines of the packages from 
 bin/check-handbook                         compares the data with the overview of attributes in the handbook
 ```
 
-`bin/build` writes `build/metadata.json`, the file that is published. It checks the references between the parts (the
+`bin/build` writes `build/metadata.json`, the file that is published, and `build/metadata.min.json`, the same content
+without white space (about half the size) for readers that have to take the whole file into their context. It checks the references between the parts (the
 name of a package is its file name, the id of an article is its file name, no type twice, articles are about types that
 exist) and the result against the schema.
 
 ```
 composer install
 bin/build --check     # only check
-bin/build             # write build/metadata.json
+bin/build             # write build/metadata.json and build/metadata.min.json
 bin/build --urls      # the addresses of the handbook pages, for the link check
 ```
 
@@ -140,7 +141,9 @@ in here.
 ## Publishing
 
 On every push to `main` the file is built and published with GitHub Pages:
-`https://metamodels.github.io/mcp-metadata/metadata.json`. `mcp-admin` takes the address from its option
+`https://metamodels.github.io/mcp-metadata/metadata.json`, next to it the same content without white space as
+`https://metamodels.github.io/mcp-metadata/metadata.min.json` (for an AI that reads the file itself, without MCP).
+`mcp-admin` takes the address from its option
 `meta_models_mcp_admin.metadata.url`.
 
 ## Requirements

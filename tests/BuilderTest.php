@@ -11,8 +11,11 @@ use PHPUnit\Framework\TestCase;
 use function dirname;
 use function file_put_contents;
 use function is_dir;
+use function json_decode;
 use function json_encode;
 use function mkdir;
+use function strlen;
+use function substr_count;
 use function sys_get_temp_dir;
 use function uniqid;
 
@@ -331,6 +334,20 @@ final class BuilderTest extends TestCase
 
         $this->write('data/packages/metamodels/attribute_text.json', $package([['metamodels' => '2', 'requires' => []]]));
         self::assertNotSame([], (new Builder($this->root))->build()['errors']);
+    }
+
+    public function testTheMinifiedFileHasTheSameContentWithoutWhiteSpace(): void
+    {
+        $builder  = new Builder($this->root);
+        $metadata = $builder->build()['metadata'];
+
+        $pretty   = $builder->encode($metadata);
+        $minified = $builder->encode($metadata, true);
+
+        self::assertSame(json_decode($pretty, true), json_decode($minified, true));
+        self::assertLessThan(strlen($pretty), strlen($minified));
+        self::assertSame(1, substr_count($minified, "\n"));
+        self::assertStringContainsString('https://example.org/de/', $minified);
     }
 
     public function testBrokenFilesAreReported(): void

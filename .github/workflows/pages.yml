@@ -27,7 +27,7 @@ jobs:
 
       - run: composer install --prefer-dist --no-progress --no-dev
 
-      - name: Build metadata.json
+      - name: Build metadata.json and metadata.min.json
         run: php bin/build --output=site/metadata.json
 
       - uses: actions/configure-pages@v6

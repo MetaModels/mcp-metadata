@@ -12,7 +12,8 @@ require \dirname(__DIR__) . '/vendor/autoload.php';
  *
  *   --check   only check the sources, write nothing
  *   --urls    print the addresses of the handbook pages and of the access pages, one per line (for the link check)
- *   --output  where to write the file (default build/metadata.json)
+ *   --output  where to write the file (default build/metadata.json); the file without white space is written next to
+ *             it as <name>.min.json
  */
 $root   = \dirname(__DIR__);
 $output = $root . '/build/metadata.json';
@@ -61,16 +62,22 @@ if ($check) {
     exit(0);
 }
 
-$json = \json_encode($metadata, JSON_THROW_ON_ERROR | JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) . "\n";
+$minified = \str_ends_with($output, '.json') ? \substr($output, 0, -\strlen('.json')) . '.min.json' : $output . '.min.json';
+$files    = [
+    $output   => $builder->encode($metadata),
+    $minified => $builder->encode($metadata, true),
+];
 if (!\is_dir(\dirname($output)) && !\mkdir(\dirname($output), 0777, true) && !\is_dir(\dirname($output))) {
     \fwrite(STDERR, \sprintf("Cannot create the directory of \"%s\".\n", $output));
 
     exit(1);
 }
-if (false === \file_put_contents($output, $json)) {
-    \fwrite(STDERR, \sprintf("Cannot write \"%s\".\n", $output));
+foreach ($files as $file => $json) {
+    if (false === \file_put_contents($file, $json)) {
+        \fwrite(STDERR, \sprintf("Cannot write \"%s\".\n", $file));
 
-    exit(1);
+        exit(1);
+    }
 }
 
-\printf("Wrote %s (%d packages, %d types, %d articles).\n", $output, \count($metadata['packages']), \count($metadata['types']), \count($metadata['articles']));
+\printf("Wrote %s (%d packages, %d types, %d articles).\n", \implode(' and ', \array_keys($files)), \count($metadata['packages']), \count($metadata['types']), \count($metadata['articles']));

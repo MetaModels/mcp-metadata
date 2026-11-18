@@ -64,6 +64,19 @@ final class Builder
     /**
      * @param array<string, mixed> $metadata
      *
+     * @return string The file as it is published: readable, or without any white space (about half the size) for a
+     *                reader that has to take the whole file into its context.
+     */
+    public function encode(array $metadata, bool $minified = false): string
+    {
+        $flags = JSON_THROW_ON_ERROR | JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE;
+
+        return json_encode($metadata, $flags | ($minified ? 0 : JSON_PRETTY_PRINT)) . "\n";
+    }
+
+    /**
+     * @param array<string, mixed> $metadata
+     *
      * @return list<string> The https addresses in the metadata, for the link check: the pages of the handbook in every
      *                      language, and the pages that tell how to get a package.
      */
