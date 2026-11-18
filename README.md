@@ -44,6 +44,17 @@ an attribute type of this file) and optionally how many attributes it takes (`at
 example 2 for a range between two attributes). Filter rules that take no attribute (containers, `idlist`, `customsql`)
 have none.
 
+The values of a type are those of the newest line of its package (2.6). The type's own `lines` states them for an older
+line, an entry per line with `capabilities` (attribute) or `works_with` (filter), the line has to be one of the lines of
+the package and not its newest one. A line without an entry has no stated values, they are not the ones of the newest
+line. The build checks the entries like the values of the type itself.
+
+```json
+"lines": [
+    {"metamodels": "2.5", "capabilities": {"multilingual": true, "multiple": false}}
+]
+```
+
 A package can name `conflicts` (Composer constraints, like `conflict` in `composer.json`).
 
 Not part of it: whether an attribute can be sorted or searched. The code does not tell that reliably and the handbook
