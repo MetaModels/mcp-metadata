@@ -1,0 +1,56 @@
+#!/usr/bin/env php
+<?php
+
+declare(strict_types=1);
+
+use MetaModels\McpMetadata\Builder;
+use MetaModels\McpMetadata\HandbookCheck;
+use MetaModels\McpMetadata\HandbookTable;
+
+require \dirname(__DIR__) . '/vendor/autoload.php';
+
+/*
+ * Usage: bin/check-handbook [--file=page.html]
+ *
+ * Compares frontend editing, file usage and the filter rules per attribute with the overview "Datentypen als Attribute
+ * anlegen" of the handbook (German). Needs a connection unless --file names a saved copy of the page.
+ */
+$root = \dirname(__DIR__);
+$file = null;
+foreach (\array_slice($argv, 1) as $argument) {
+    if (\str_starts_with($argument, '--file=')) {
+        $file = \substr($argument, \strlen('--file='));
+    } else {
+        \fwrite(STDERR, \sprintf("Unknown argument \"%s\".\n", $argument));
+
+        exit(2);
+    }
+}
+
+$result = (new Builder($root))->build();
+if ([] !== $result['errors']) {
+    \fwrite(STDERR, \implode("\n", $result['errors']) . "\nThe sources are not valid, run bin/build --check.\n");
+
+    exit(1);
+}
+
+$source = $file ?? ($result['metadata']['handbook']['urls']['de'] ?? '') . 'manual/component/data-in-attributes.html';
+$html   = @\file_get_contents($source, false, \stream_context_create(['http' => ['timeout' => 20]]));
+if (false === $html) {
+    \fwrite(STDERR, \sprintf("Cannot read \"%s\".\n", $source));
+
+    exit(1);
+}
+
+$table  = (new HandbookTable())->parse($html);
+$errors = [...$table['errors'], ...(new HandbookCheck())->compare($result['metadata'], $table['types'])];
+if ([] === $table['types']) {
+    $errors[] = 'The page has no table of attributes (did the layout change?).';
+}
+if ([] !== $errors) {
+    \fwrite(STDERR, \implode("\n", $errors) . \sprintf("\n%d difference(s) to %s.\n", \count($errors), $source));
+
+    exit(1);
+}
+
+\printf("OK: %d attributes of the handbook table match the data.\n", \count($table['types']));

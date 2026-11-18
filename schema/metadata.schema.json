@@ -246,6 +246,10 @@
                 },
                 "docs": {
                     "$ref": "#/$defs/path"
+                },
+                "conflicts": {
+                    "$ref": "#/$defs/constraints",
+                    "description": "Packages that must not be installed together with this one (the \"conflict\" of composer.json)."
                 }
             },
             "allOf": [
@@ -334,8 +338,54 @@
                 },
                 "replaced_by": {
                     "$ref": "#/$defs/typeRef"
+                },
+                "capabilities": {
+                    "$ref": "#/$defs/capabilities"
+                },
+                "works_with": {
+                    "$ref": "#/$defs/worksWith"
                 }
-            }
+            },
+            "allOf": [
+                {
+                    "if": {
+                        "properties": {
+                            "kind": {
+                                "const": "filter"
+                            }
+                        },
+                        "required": [
+                            "kind"
+                        ]
+                    },
+                    "then": {
+                        "not": {
+                            "required": [
+                                "capabilities"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "kind": {
+                                "const": "attribute"
+                            }
+                        },
+                        "required": [
+                            "kind"
+                        ]
+                    },
+                    "then": {
+                        "not": {
+                            "required": [
+                                "works_with"
+                            ]
+                        }
+                    }
+                }
+            ]
         },
         "article": {
             "description": "A page of the handbook about a topic (kind topic, a page of the manual such as relations or several languages) or about a task (kind recipe, a page of the cookbook). Only a pointer, the text stays in the handbook.",
@@ -376,6 +426,118 @@
                 },
                 "requires": {
                     "$ref": "#/$defs/constraints"
+                }
+            }
+        },
+        "capabilities": {
+            "description": "What an attribute can do, for planning. Values come from the code of the attribute and from the handbook page on data in attributes.",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "multilingual": {
+                    "type": "boolean",
+                    "description": "True for the translated variants: one value per language, stored in a language table. Select and tags follow the language of a multilingual MetaModel by themselves and are not marked."
+                },
+                "multiple": {
+                    "type": "boolean",
+                    "description": "Can hold several values per item (possibly by a setting, such as several files)."
+                },
+                "datasources": {
+                    "type": "array",
+                    "minItems": 1,
+                    "uniqueItems": true,
+                    "items": {
+                        "enum": [
+                            "metamodel",
+                            "table",
+                            "file",
+                            "fixed"
+                        ]
+                    },
+                    "description": "Where the values come from: another MetaModel, a Contao table, the file manager or a fixed list (countries, languages). Left out when the user types the value."
+                },
+                "file_usage": {
+                    "type": "boolean",
+                    "description": "The attribute shows up in the file usage list of Contao."
+                },
+                "frontend_editing": {
+                    "$ref": "#/$defs/frontendEditing"
+                }
+            }
+        },
+        "frontendEditing": {
+            "description": "Whether members can edit the attribute in the frontend (metamodels/contao-frontend-editing).",
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+                "support"
+            ],
+            "properties": {
+                "support": {
+                    "enum": [
+                        "yes",
+                        "extra-package",
+                        "no"
+                    ],
+                    "description": "extra-package: works only when the packages of requires are installed as well."
+                },
+                "requires": {
+                    "$ref": "#/$defs/constraints",
+                    "description": "Packages needed in addition when support is extra-package."
+                }
+            },
+            "allOf": [
+                {
+                    "if": {
+                        "properties": {
+                            "support": {
+                                "const": "extra-package"
+                            }
+                        },
+                        "required": [
+                            "support"
+                        ]
+                    },
+                    "then": {
+                        "required": [
+                            "requires"
+                        ]
+                    }
+                }
+            ]
+        },
+        "worksWith": {
+            "description": "Which attributes a filter rule can be applied to.",
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+                "attribute_types"
+            ],
+            "properties": {
+                "attribute_types": {
+                    "type": "array",
+                    "minItems": 1,
+                    "uniqueItems": true,
+                    "items": {
+                        "type": "string",
+                        "pattern": "^[a-z0-9_]+$"
+                    },
+                    "description": "Names of attribute types. Must be types of kind attribute."
+                },
+                "attribute_count": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                        "min": {
+                            "type": "integer",
+                            "minimum": 1
+                        },
+                        "max": {
+                            "type": "integer",
+                            "minimum": 1
+                        }
+                    },
+                    "description": "How many attributes the rule takes, for example 2 for a range between two attributes."
                 }
             }
         }

@@ -16,13 +16,47 @@ The file has these parts (format version 1, see `schema/metadata.schema.json`):
 - `handbook`: the base language of the handbook (German) and its address per language. A page is named by its path,
   which is the same in every language, so `address + path` is the link.
 - `packages`: the Composer packages, with a summary, keywords, the page in the handbook and the availability.
-- `types`: the attribute and filter types of a package, with summary, keywords, the page in the handbook and abilities
-  that came with a later version (`features`).
+- `types`: the attribute and filter types of a package, with summary, keywords, the page in the handbook, abilities
+  that came with a later version (`features`) and, for planning, `capabilities` of an attribute and `works_with` of a
+  filter (see below).
 - `articles`: pages of the handbook about a topic (`topic`, such as relations or several languages) or a task
   (`recipe` of the cookbook). Only title, path and keywords, the text stays in the handbook.
 
 Everything is data, not instructions: the texts end up in the context of an AI. They are short plain texts without
 markup, the links are `https`, and the schema does not allow other fields.
+
+### Capabilities and works_with
+
+Facts that decide whether a type fits a task. They are optional, a type without them just says nothing.
+
+`capabilities` of an attribute type:
+
+| Field | Meaning |
+| --- | --- |
+| `multilingual` | `true` for the `translated*` variants: one value per language. Select and tags follow the language of a multilingual MetaModel by themselves, so they are `false`. The build checks that this matches the name of the type. |
+| `multiple` | Can hold several values per item (possibly by a setting, such as several files). |
+| `datasources` | Where the values come from: `metamodel`, `table`, `file` or `fixed` (a list such as countries). Left out when the user types the value. |
+| `file_usage` | Shows up in the file usage list of Contao. |
+| `frontend_editing` | `support` is `yes`, `extra-package` or `no`. With `extra-package`, `requires` names the packages needed in addition (`contao-community-alliance/contao-multicolumnwizard-frontend-bundle` for attributes that work with the MultiColumnWizard, `contao-community-alliance/contao-textfield-multiple-bundle` for attributes with several inputs). |
+
+`works_with` of a filter type names the attribute types the rule can be applied to (`attribute_types`, each has to be
+an attribute type of this file) and optionally how many attributes it takes (`attribute_count`, `min`/`max`, for
+example 2 for a range between two attributes). Filter rules that take no attribute (containers, `idlist`, `customsql`)
+have none.
+
+A package can name `conflicts` (Composer constraints, like `conflict` in `composer.json`).
+
+Not part of it: whether an attribute can be sorted or searched. The code does not tell that reliably and the handbook
+does not state it.
+
+`bin/check-handbook` compares `frontend_editing`, `file_usage` and `works_with` with the overview "Datentypen als
+Attribute anlegen" of the handbook (needs a connection, runs with the link check). Both have to tell the same; a
+difference is an error. A new filter rule on that page has to be added to `HandbookTable::FILTERS` first.
+
+```
+bin/check-handbook                  # fetch the German page and compare
+bin/check-handbook --file=page.html # compare with a saved copy
+```
 
 ### Availability
 
@@ -47,6 +81,7 @@ data/packages/<vendor>/<package>.json      a package with its types
 data/articles/<id>.json                    a page of the handbook
 schema/metadata.schema.json                the format
 bin/build                                  puts the files together and checks them
+bin/check-handbook                         compares the data with the overview of attributes in the handbook
 ```
 
 `bin/build` writes `build/metadata.json`, the file that is published. It checks the references between the parts (the

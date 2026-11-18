@@ -182,6 +182,10 @@ final class Builder
             $known[$key] = true;
         }
 
+        foreach ($metadata['types'] as $type) {
+            $this->checkType($type, $known, $errors);
+        }
+
         foreach ($metadata['articles'] as $article) {
             foreach (is_array($article['types'] ?? null) ? $article['types'] : [] as $ref) {
                 $key = (is_array($ref) ? ($ref['kind'] ?? '') . ':' . ($ref['type'] ?? '') : '?');
@@ -189,6 +193,28 @@ final class Builder
                     $errors[] = sprintf('The article "%s" is about the unknown type "%s".', $article['id'] ?? '?', $key);
                 }
             }
+        }
+    }
+
+    /**
+     * @param array<string, mixed> $type
+     * @param array<string, true>  $known The types by "kind:type".
+     * @param list<string>         $errors
+     */
+    private function checkType(array $type, array $known, array &$errors): void
+    {
+        $name = ($type['kind'] ?? '') . ':' . ($type['type'] ?? '');
+
+        foreach (is_array($type['works_with']['attribute_types'] ?? null) ? $type['works_with']['attribute_types'] : [] as $attribute) {
+            if (!isset($known['attribute:' . $attribute])) {
+                $errors[] = sprintf('The type "%s" works with the unknown attribute type "%s".', $name, $attribute);
+            }
+        }
+
+        // The translated variants are the ones that keep a value per language, so the two must not disagree.
+        $multilingual = $type['capabilities']['multilingual'] ?? null;
+        if (null !== $multilingual && $multilingual !== str_starts_with((string) ($type['type'] ?? ''), 'translated')) {
+            $errors[] = sprintf('The type "%s": multilingual does not match the name of the type.', $name);
         }
     }
 

@@ -1,7 +1,7 @@
 name: Links
 
 # The handbook pages of every language have to exist. Anchors are not part of the paths, so a renamed heading does not
-# break anything; a moved page does.
+# break anything; a moved page does. The data also has to match the overview of attributes in the handbook.
 on:
   pull_request:
     paths:
@@ -42,3 +42,9 @@ jobs:
             fi
           done < urls.txt
           exit $failed
+
+      # Frontend editing, file usage and the filter rules per attribute are also stated in the handbook overview
+      # "Datentypen als Attribute anlegen"; the data has to tell the same.
+      - name: Compare with the overview of the handbook
+        if: always()
+        run: php bin/check-handbook

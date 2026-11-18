@@ -220,6 +220,93 @@ final class BuilderTest extends TestCase
         self::assertContains('https://example.org/de/' . $page, $builder->urls($builder->build()['metadata']));
     }
 
+    /**
+     * @param array<string, mixed> $type
+     *
+     * @return list<string>
+     */
+    private function errorsOfType(array $type): array
+    {
+        $this->write('data/packages/metamodels/filter_range.json', [
+            'name'         => 'metamodels/filter_range',
+            'availability' => 'unknown',
+            'types'        => [$type + ['summary' => ['en' => 'x']]],
+        ]);
+
+        return (new Builder($this->root))->build()['errors'];
+    }
+
+    public function testAFilterMayNameTheAttributesItWorksWith(): void
+    {
+        self::assertSame([], $this->errorsOfType([
+            'kind'       => 'filter',
+            'type'       => 'range',
+            'works_with' => ['attribute_types' => ['text'], 'attribute_count' => ['min' => 2, 'max' => 2]],
+        ]));
+    }
+
+    public function testAFilterCannotWorkWithAnUnknownAttributeType(): void
+    {
+        self::assertSame(
+            ['The type "filter:range" works with the unknown attribute type "nope".'],
+            $this->errorsOfType(['kind' => 'filter', 'type' => 'range', 'works_with' => ['attribute_types' => ['nope']]])
+        );
+    }
+
+    public function testCapabilitiesBelongToAttributesAndWorksWithToFilters(): void
+    {
+        self::assertNotSame([], $this->errorsOfType(['kind' => 'filter', 'type' => 'range', 'capabilities' => ['multiple' => false]]));
+        self::assertNotSame([], $this->errorsOfType(['kind' => 'attribute', 'type' => 'range', 'works_with' => ['attribute_types' => ['text']]]));
+    }
+
+    public function testFrontendEditingWithAnExtraPackageNamesIt(): void
+    {
+        $attribute = static fn (array $editing): array => [
+            'kind'         => 'attribute',
+            'type'         => 'range',
+            'capabilities' => ['frontend_editing' => $editing],
+        ];
+
+        self::assertSame([], $this->errorsOfType($attribute(['support' => 'yes'])));
+        self::assertSame(
+            [],
+            $this->errorsOfType($attribute(['support' => 'extra-package', 'requires' => ['vendor/package' => '^2.6']]))
+        );
+        self::assertNotSame([], $this->errorsOfType($attribute(['support' => 'extra-package'])));
+        self::assertNotSame([], $this->errorsOfType($attribute(['support' => 'maybe'])));
+    }
+
+    public function testOnlyTranslatedTypesAreMultilingual(): void
+    {
+        $attribute = static fn (string $type, bool $multilingual): array => [
+            'kind'         => 'attribute',
+            'type'         => $type,
+            'capabilities' => ['multilingual' => $multilingual],
+        ];
+
+        self::assertSame([], $this->errorsOfType($attribute('translatedalias', true)));
+        self::assertSame(
+            ['The type "attribute:alias": multilingual does not match the name of the type.'],
+            $this->errorsOfType($attribute('alias', true))
+        );
+        self::assertSame(
+            ['The type "attribute:translatedalias": multilingual does not match the name of the type.'],
+            $this->errorsOfType($attribute('translatedalias', false))
+        );
+    }
+
+    public function testAPackageMayNameConflicts(): void
+    {
+        $this->write('data/packages/metamodels/attribute_text.json', [
+            'name'         => 'metamodels/attribute_text',
+            'availability' => 'unknown',
+            'conflicts'    => ['vendor/other' => '<1.0'],
+            'types'        => [['kind' => 'attribute', 'type' => 'text']],
+        ]);
+
+        self::assertSame([], (new Builder($this->root))->build()['errors']);
+    }
+
     public function testBrokenFilesAreReported(): void
     {
         file_put_contents($this->root . '/data/articles/broken.json', '{not json');
