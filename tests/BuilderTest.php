@@ -336,6 +336,52 @@ final class BuilderTest extends TestCase
         self::assertNotSame([], (new Builder($this->root))->build()['errors']);
     }
 
+    public function testATypeMayStateItsCapabilitiesForAnOlderLine(): void
+    {
+        $package = static fn (array $lines): array => [
+            'name'         => 'metamodels/attribute_text',
+            'availability' => 'unknown',
+            'lines'        => [
+                ['metamodels' => '2.4', 'requires' => ['php' => '^8.2']],
+                ['metamodels' => '2.5', 'requires' => ['php' => '^8.2']],
+                ['metamodels' => '2.6', 'requires' => ['php' => '^8.2']],
+            ],
+            'types'        => [['kind' => 'attribute', 'type' => 'text'], [
+                'kind'         => 'attribute',
+                'type'         => 'translatedtext',
+                'capabilities' => ['multilingual' => true],
+                'lines'        => $lines,
+            ]],
+        ];
+        $check  = function (array $lines) use ($package): array {
+            $this->write('data/packages/metamodels/attribute_text.json', $package($lines));
+
+            return (new Builder($this->root))->build()['errors'];
+        };
+        $values = ['capabilities' => ['multilingual' => true]];
+
+        self::assertSame([], $check([['metamodels' => '2.5'] + $values]));
+        self::assertSame(
+            ['The type "attribute:translatedtext" has values for the line "2.3", the package does not have it.'],
+            $check([['metamodels' => '2.3'] + $values])
+        );
+        self::assertSame(
+            ['The type "attribute:translatedtext": the newest line "2.6" is stated by the type itself, not in lines.'],
+            $check([['metamodels' => '2.6'] + $values])
+        );
+        self::assertSame(
+            ['The type "attribute:translatedtext" has the line "2.5" twice.'],
+            $check([['metamodels' => '2.5'] + $values, ['metamodels' => '2.5'] + $values])
+        );
+        self::assertSame(
+            ['The type "attribute:translatedtext (2.4)": multilingual does not match the name of the type.'],
+            $check([['metamodels' => '2.4', 'capabilities' => ['multilingual' => false]]])
+        );
+        // A line entry needs values, and a filter has no capabilities, not even for an older line.
+        self::assertNotSame([], $check([['metamodels' => '2.5']]));
+        self::assertNotSame([], $check([['metamodels' => '2.5', 'works_with' => ['attribute_types' => ['text']]]]));
+    }
+
     public function testTheMinifiedFileHasTheSameContentWithoutWhiteSpace(): void
     {
         $builder  = new Builder($this->root);

@@ -7,11 +7,14 @@ namespace MetaModels\McpMetadata;
 use Opis\JsonSchema\Errors\ErrorFormatter;
 use Opis\JsonSchema\Validator;
 
+use function array_column;
 use function array_keys;
 use function array_push;
 use function basename;
+use function end;
 use function file_get_contents;
 use function glob;
+use function in_array;
 use function is_array;
 use function is_file;
 use function is_string;
@@ -206,8 +209,14 @@ final class Builder
             $known[$key] = true;
         }
 
+        $lines = [];
+        foreach ($metadata['packages'] as $package) {
+            $lines[$package['name'] ?? ''] = array_column(is_array($package['lines'] ?? null) ? $package['lines'] : [], 'metamodels');
+        }
+
         foreach ($metadata['types'] as $type) {
             $this->checkType($type, $known, $errors);
+            $this->checkTypeLines($type, $lines[$type['package'] ?? ''] ?? [], $known, $errors);
         }
 
         foreach ($metadata['articles'] as $article) {
@@ -222,22 +231,60 @@ final class Builder
 
     /**
      * @param array<string, mixed> $type
+     * @param list<string>         $packageLines The lines of the package of the type, oldest first.
+     * @param array<string, true>  $known        The types by "kind:type".
+     * @param list<string>         $errors
+     */
+    private function checkTypeLines(array $type, array $packageLines, array $known, array &$errors): void
+    {
+        $name = ($type['kind'] ?? '') . ':' . ($type['type'] ?? '');
+        $seen = [];
+        foreach (is_array($type['lines'] ?? null) ? $type['lines'] : [] as $line) {
+            $number = is_array($line) ? (string) ($line['metamodels'] ?? '') : '';
+            if (!in_array($number, $packageLines, true)) {
+                $errors[] = sprintf('The type "%s" has values for the line "%s", the package does not have it.', $name, $number);
+            } elseif ($number === end($packageLines)) {
+                $errors[] = sprintf('The type "%s": the newest line "%s" is stated by the type itself, not in lines.', $name, $number);
+            }
+            if (isset($seen[$number])) {
+                $errors[] = sprintf('The type "%s" has the line "%s" twice.', $name, $number);
+            }
+            $seen[$number] = true;
+            if (is_array($line)) {
+                $this->checkValues($name . ' (' . $number . ')', (string) ($type['type'] ?? ''), $line, $known, $errors);
+            }
+        }
+    }
+
+    /**
+     * @param array<string, mixed> $type
      * @param array<string, true>  $known The types by "kind:type".
      * @param list<string>         $errors
      */
     private function checkType(array $type, array $known, array &$errors): void
     {
         $name = ($type['kind'] ?? '') . ':' . ($type['type'] ?? '');
+        $this->checkValues($name, (string) ($type['type'] ?? ''), $type, $known, $errors);
+    }
 
-        foreach (is_array($type['works_with']['attribute_types'] ?? null) ? $type['works_with']['attribute_types'] : [] as $attribute) {
+    /**
+     * The capabilities and works_with of a type or of one line of it.
+     *
+     * @param array<string, mixed> $values
+     * @param array<string, true>  $known The types by "kind:type".
+     * @param list<string>         $errors
+     */
+    private function checkValues(string $name, string $type, array $values, array $known, array &$errors): void
+    {
+        foreach (is_array($values['works_with']['attribute_types'] ?? null) ? $values['works_with']['attribute_types'] : [] as $attribute) {
             if (!isset($known['attribute:' . $attribute])) {
                 $errors[] = sprintf('The type "%s" works with the unknown attribute type "%s".', $name, $attribute);
             }
         }
 
         // The translated variants are the ones that keep a value per language, so the two must not disagree.
-        $multilingual = $type['capabilities']['multilingual'] ?? null;
-        if (null !== $multilingual && $multilingual !== str_starts_with((string) ($type['type'] ?? ''), 'translated')) {
+        $multilingual = $values['capabilities']['multilingual'] ?? null;
+        if (null !== $multilingual && $multilingual !== str_starts_with($type, 'translated')) {
             $errors[] = sprintf('The type "%s": multilingual does not match the name of the type.', $name);
         }
     }

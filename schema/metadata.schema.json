@@ -348,10 +348,48 @@
                     "$ref": "#/$defs/typeRef"
                 },
                 "capabilities": {
-                    "$ref": "#/$defs/capabilities"
+                    "$ref": "#/$defs/capabilities",
+                    "description": "Of the newest line of the package (2.6). An older line states its own values in lines."
                 },
                 "works_with": {
-                    "$ref": "#/$defs/worksWith"
+                    "$ref": "#/$defs/worksWith",
+                    "description": "Of the newest line of the package (2.6). An older line states its own values in lines."
+                },
+                "lines": {
+                    "description": "The capabilities or works_with of an older release line of MetaModels, where they are known. A line that is not listed has no stated values: they are not the ones of the newest line.",
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                            "metamodels"
+                        ],
+                        "properties": {
+                            "metamodels": {
+                                "type": "string",
+                                "pattern": "^\\d+\\.\\d+$",
+                                "description": "The release line, for example 2.5. Must be a line of the package, not its newest."
+                            },
+                            "capabilities": {
+                                "$ref": "#/$defs/capabilities"
+                            },
+                            "works_with": {
+                                "$ref": "#/$defs/worksWith"
+                            }
+                        },
+                        "anyOf": [
+                            {
+                                "required": [
+                                    "capabilities"
+                                ]
+                            },
+                            {
+                                "required": [
+                                    "works_with"
+                                ]
+                            }
+                        ]
+                    }
                 }
             },
             "allOf": [
@@ -371,6 +409,17 @@
                             "required": [
                                 "capabilities"
                             ]
+                        },
+                        "properties": {
+                            "lines": {
+                                "items": {
+                                    "not": {
+                                        "required": [
+                                            "capabilities"
+                                        ]
+                                    }
+                                }
+                            }
                         }
                     }
                 },
@@ -390,6 +439,17 @@
                             "required": [
                                 "works_with"
                             ]
+                        },
+                        "properties": {
+                            "lines": {
+                                "items": {
+                                    "not": {
+                                        "required": [
+                                            "works_with"
+                                        ]
+                                    }
+                                }
+                            }
                         }
                     }
                 }
