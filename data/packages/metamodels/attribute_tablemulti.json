@@ -29,7 +29,18 @@
                     "repeater"
                 ]
             },
-            "docs": "manual/component/attribute/tablemulti.html"
+            "docs": "manual/component/attribute/tablemulti.html",
+            "capabilities": {
+                "multilingual": false,
+                "multiple": true,
+                "file_usage": true,
+                "frontend_editing": {
+                    "support": "extra-package",
+                    "requires": {
+                        "contao-community-alliance/contao-multicolumnwizard-frontend-bundle": "^2.6"
+                    }
+                }
+            }
         }
     ]
 }

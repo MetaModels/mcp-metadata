@@ -31,7 +31,18 @@
                     "kategorie"
                 ]
             },
-            "docs": "manual/component/filter/select.html"
+            "docs": "manual/component/filter/select.html",
+            "works_with": {
+                "attribute_types": [
+                    "combinedvalues",
+                    "select",
+                    "text",
+                    "token",
+                    "translatedcombinedvalues",
+                    "translatedselect",
+                    "translatedtext"
+                ]
+            }
         }
     ]
 }

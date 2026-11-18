@@ -27,7 +27,19 @@
                     "sprachspalte"
                 ]
             },
-            "docs": "manual/component/attribute/translatedtags.html"
+            "docs": "manual/component/attribute/translatedtags.html",
+            "capabilities": {
+                "multilingual": true,
+                "multiple": true,
+                "datasources": [
+                    "metamodel",
+                    "table"
+                ],
+                "file_usage": false,
+                "frontend_editing": {
+                    "support": "yes"
+                }
+            }
         }
     ]
 }

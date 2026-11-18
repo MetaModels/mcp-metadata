@@ -38,7 +38,15 @@
                     "übersetzt"
                 ]
             },
-            "docs": "manual/component/attribute/translatedlongtext.html"
+            "docs": "manual/component/attribute/translatedlongtext.html",
+            "capabilities": {
+                "multilingual": true,
+                "multiple": false,
+                "file_usage": true,
+                "frontend_editing": {
+                    "support": "yes"
+                }
+            }
         }
     ]
 }

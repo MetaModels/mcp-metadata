@@ -35,7 +35,15 @@
                     "übersetzt"
                 ]
             },
-            "docs": "manual/component/attribute/translatedcheckbox.html"
+            "docs": "manual/component/attribute/translatedcheckbox.html",
+            "capabilities": {
+                "multilingual": true,
+                "multiple": false,
+                "file_usage": false,
+                "frontend_editing": {
+                    "support": "yes"
+                }
+            }
         },
         {
             "kind": "filter",
@@ -56,7 +64,12 @@
                     "mehrsprachig"
                 ]
             },
-            "docs": "manual/component/filter/translated-checkbox.html"
+            "docs": "manual/component/filter/translated-checkbox.html",
+            "works_with": {
+                "attribute_types": [
+                    "translatedcheckbox"
+                ]
+            }
         }
     ]
 }

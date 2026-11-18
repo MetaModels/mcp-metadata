@@ -36,7 +36,18 @@
                     "übersetzt"
                 ]
             },
-            "docs": "manual/component/attribute/translatedfile.html"
+            "docs": "manual/component/attribute/translatedfile.html",
+            "capabilities": {
+                "multilingual": true,
+                "multiple": true,
+                "datasources": [
+                    "file"
+                ],
+                "file_usage": true,
+                "frontend_editing": {
+                    "support": "yes"
+                }
+            }
         }
     ]
 }

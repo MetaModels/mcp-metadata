@@ -30,7 +30,15 @@
                     "name"
                 ]
             },
-            "docs": "manual/component/attribute/combinedvalues.html"
+            "docs": "manual/component/attribute/combinedvalues.html",
+            "capabilities": {
+                "multilingual": false,
+                "multiple": false,
+                "file_usage": false,
+                "frontend_editing": {
+                    "support": "yes"
+                }
+            }
         }
     ]
 }

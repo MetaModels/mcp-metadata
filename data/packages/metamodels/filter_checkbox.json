@@ -35,7 +35,17 @@
                     "checkbox"
                 ]
             },
-            "docs": "manual/component/filter/yes-no.html"
+            "docs": "manual/component/filter/yes-no.html",
+            "works_with": {
+                "attribute_types": [
+                    "checkbox",
+                    "translatedcheckbox"
+                ],
+                "attribute_count": {
+                    "min": 1,
+                    "max": 1
+                }
+            }
         }
     ]
 }

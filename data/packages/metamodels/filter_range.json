@@ -30,7 +30,17 @@
                     "laufzeit"
                 ]
             },
-            "docs": "manual/component/filter/range.html"
+            "docs": "manual/component/filter/range.html",
+            "works_with": {
+                "attribute_types": [
+                    "decimal",
+                    "numeric"
+                ],
+                "attribute_count": {
+                    "min": 2,
+                    "max": 2
+                }
+            }
         },
         {
             "kind": "filter",
@@ -52,7 +62,16 @@
                     "ende"
                 ]
             },
-            "docs": "manual/component/filter/range-date.html"
+            "docs": "manual/component/filter/range-date.html",
+            "works_with": {
+                "attribute_types": [
+                    "timestamp"
+                ],
+                "attribute_count": {
+                    "min": 2,
+                    "max": 2
+                }
+            }
         }
     ]
 }

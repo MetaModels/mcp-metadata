@@ -28,7 +28,15 @@
                     "artikel"
                 ]
             },
-            "docs": "manual/component/attribute/contentarticle.html"
+            "docs": "manual/component/attribute/contentarticle.html",
+            "capabilities": {
+                "multilingual": false,
+                "multiple": true,
+                "file_usage": true,
+                "frontend_editing": {
+                    "support": "no"
+                }
+            }
         }
     ]
 }

@@ -38,7 +38,15 @@
                     "teaser"
                 ]
             },
-            "docs": "manual/component/attribute/longtext.html"
+            "docs": "manual/component/attribute/longtext.html",
+            "capabilities": {
+                "multilingual": false,
+                "multiple": false,
+                "file_usage": true,
+                "frontend_editing": {
+                    "support": "yes"
+                }
+            }
         }
     ]
 }

@@ -34,7 +34,19 @@
                     "1:n"
                 ]
             },
-            "docs": "manual/component/attribute/select.html"
+            "docs": "manual/component/attribute/select.html",
+            "capabilities": {
+                "multilingual": false,
+                "multiple": false,
+                "datasources": [
+                    "metamodel",
+                    "table"
+                ],
+                "file_usage": false,
+                "frontend_editing": {
+                    "support": "yes"
+                }
+            }
         }
     ]
 }

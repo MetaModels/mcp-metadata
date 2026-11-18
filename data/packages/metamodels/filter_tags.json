@@ -31,7 +31,18 @@
                     "tags"
                 ]
             },
-            "docs": "manual/component/filter/tags.html"
+            "docs": "manual/component/filter/tags.html",
+            "works_with": {
+                "attribute_types": [
+                    "combinedvalues",
+                    "tags",
+                    "text",
+                    "token",
+                    "translatedcombinedvalues",
+                    "translatedtags",
+                    "translatedtext"
+                ]
+            }
         }
     ]
 }

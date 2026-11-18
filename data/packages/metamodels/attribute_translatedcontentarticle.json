@@ -32,7 +32,15 @@
                     "übersetzt"
                 ]
             },
-            "docs": "manual/component/attribute/translatedcontentarticle.html"
+            "docs": "manual/component/attribute/translatedcontentarticle.html",
+            "capabilities": {
+                "multilingual": true,
+                "multiple": true,
+                "file_usage": true,
+                "frontend_editing": {
+                    "support": "no"
+                }
+            }
         }
     ]
 }

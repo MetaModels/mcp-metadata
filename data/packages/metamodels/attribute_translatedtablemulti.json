@@ -33,7 +33,18 @@
                     "übersetzt"
                 ]
             },
-            "docs": "manual/component/attribute/translatedtablemulti.html"
+            "docs": "manual/component/attribute/translatedtablemulti.html",
+            "capabilities": {
+                "multilingual": true,
+                "multiple": true,
+                "file_usage": true,
+                "frontend_editing": {
+                    "support": "extra-package",
+                    "requires": {
+                        "contao-community-alliance/contao-multicolumnwizard-frontend-bundle": "^2.6"
+                    }
+                }
+            }
         }
     ]
 }

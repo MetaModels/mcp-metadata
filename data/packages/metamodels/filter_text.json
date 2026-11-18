@@ -29,7 +29,20 @@
                     "volltext"
                 ]
             },
-            "docs": "manual/component/filter/text.html"
+            "docs": "manual/component/filter/text.html",
+            "works_with": {
+                "attribute_types": [
+                    "alias",
+                    "combinedvalues",
+                    "longtext",
+                    "text",
+                    "token",
+                    "translatedalias",
+                    "translatedcombinedvalues",
+                    "translatedlongtext",
+                    "translatedtext"
+                ]
+            }
         }
     ]
 }

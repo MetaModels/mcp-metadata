@@ -24,7 +24,13 @@
                     "verknüpft"
                 ]
             },
-            "docs": "manual/component/filter/by-related.html"
+            "docs": "manual/component/filter/by-related.html",
+            "works_with": {
+                "attribute_types": [
+                    "select",
+                    "tags"
+                ]
+            }
         }
     ]
 }

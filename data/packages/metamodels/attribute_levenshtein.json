@@ -50,7 +50,24 @@
                     "suche"
                 ]
             },
-            "docs": "manual/component/filter/levenshtein.html"
+            "docs": "manual/component/filter/levenshtein.html",
+            "works_with": {
+                "attribute_types": [
+                    "alias",
+                    "combinedvalues",
+                    "longtext",
+                    "tabletext",
+                    "text",
+                    "token",
+                    "translatedalias",
+                    "translatedcombinedvalues",
+                    "translatedlongtext",
+                    "translatedtabletext",
+                    "translatedtext",
+                    "translatedurl",
+                    "url"
+                ]
+            }
         }
     ]
 }

@@ -29,7 +29,18 @@
                     "iso"
                 ]
             },
-            "docs": "manual/component/attribute/country.html"
+            "docs": "manual/component/attribute/country.html",
+            "capabilities": {
+                "multilingual": false,
+                "multiple": false,
+                "datasources": [
+                    "fixed"
+                ],
+                "file_usage": false,
+                "frontend_editing": {
+                    "support": "yes"
+                }
+            }
         }
     ]
 }

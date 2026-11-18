@@ -116,7 +116,18 @@
                     "id"
                 ]
             },
-            "docs": "manual/component/filter/simplelookup.html"
+            "docs": "manual/component/filter/simplelookup.html",
+            "works_with": {
+                "attribute_types": [
+                    "alias",
+                    "combinedvalues",
+                    "text",
+                    "token",
+                    "translatedalias",
+                    "translatedcombinedvalues",
+                    "translatedtext"
+                ]
+            }
         }
     ]
 }

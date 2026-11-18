@@ -37,7 +37,18 @@
                     "foto"
                 ]
             },
-            "docs": "manual/component/attribute/file.html"
+            "docs": "manual/component/attribute/file.html",
+            "capabilities": {
+                "multilingual": false,
+                "multiple": true,
+                "datasources": [
+                    "file"
+                ],
+                "file_usage": true,
+                "frontend_editing": {
+                    "support": "yes"
+                }
+            }
         }
     ]
 }

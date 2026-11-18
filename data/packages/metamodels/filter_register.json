@@ -29,7 +29,16 @@
                     "glossar"
                 ]
             },
-            "docs": "manual/component/filter/register.html"
+            "docs": "manual/component/filter/register.html",
+            "works_with": {
+                "attribute_types": [
+                    "combinedvalues",
+                    "text",
+                    "token",
+                    "translatedcombinedvalues",
+                    "translatedtext"
+                ]
+            }
         }
     ]
 }

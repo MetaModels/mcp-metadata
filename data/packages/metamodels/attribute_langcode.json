@@ -27,7 +27,18 @@
                     "locale"
                 ]
             },
-            "docs": "manual/component/attribute/langcode.html"
+            "docs": "manual/component/attribute/langcode.html",
+            "capabilities": {
+                "multilingual": false,
+                "multiple": false,
+                "datasources": [
+                    "fixed"
+                ],
+                "file_usage": false,
+                "frontend_editing": {
+                    "support": "yes"
+                }
+            }
         }
     ]
 }
