@@ -14,6 +14,7 @@
     "lines": [
         {
             "metamodels": "2.4",
+            "availability": "early-access",
             "requires": {
                 "contao-community-alliance/dc-general": "^2.4",
                 "contao-community-alliance/events-contao-bindings": "^5.0",
@@ -25,6 +26,7 @@
         },
         {
             "metamodels": "2.5",
+            "availability": "early-access",
             "requires": {
                 "contao-community-alliance/dc-general": "^2.5",
                 "contao-community-alliance/events-contao-bindings": "^5.0",

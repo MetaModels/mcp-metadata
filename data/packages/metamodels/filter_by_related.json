@@ -8,6 +8,7 @@
     "lines": [
         {
             "metamodels": "2.5",
+            "availability": "early-access",
             "requires": {
                 "contao-community-alliance/dc-general": "^2.5",
                 "contao-community-alliance/translator": "^2.5",

@@ -14,6 +14,7 @@
     "lines": [
         {
             "metamodels": "2.4",
+            "availability": "early-access",
             "requires": {
                 "contao-community-alliance/dc-general": "^2.4",
                 "contao/core-bundle": "^5.3 <5.7",
@@ -23,6 +24,7 @@
         },
         {
             "metamodels": "2.5",
+            "availability": "early-access",
             "requires": {
                 "contao-community-alliance/dc-general": "^2.5",
                 "contao-community-alliance/translator": "^2.5",
