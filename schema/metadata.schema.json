@@ -349,14 +349,14 @@
                 },
                 "capabilities": {
                     "$ref": "#/$defs/capabilities",
-                    "description": "Of the newest line of the package (2.6). An older line states its own values in lines."
+                    "description": "Of the type in every release line of the package: the lines of the 2.x branch only add to it (semantic versioning). What differs for one line is stated in lines."
                 },
                 "works_with": {
                     "$ref": "#/$defs/worksWith",
-                    "description": "Of the newest line of the package (2.6). An older line states its own values in lines."
+                    "description": "Of the type in every release line of the package: the lines of the 2.x branch only add to it (semantic versioning). What differs for one line is stated in lines."
                 },
                 "lines": {
-                    "description": "The capabilities or works_with of an older release line of MetaModels, where they are known. A line that is not listed has no stated values: they are not the ones of the newest line.",
+                    "description": "What differs for an older release line of MetaModels from the values of the type, for example the version of the packages for the frontend editing. An entry replaces capabilities or works_with of the type for that line as a whole. A line that is not listed has the values of the type.",
                     "type": "array",
                     "items": {
                         "type": "object",

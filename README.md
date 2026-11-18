@@ -44,14 +44,19 @@ an attribute type of this file) and optionally how many attributes it takes (`at
 example 2 for a range between two attributes). Filter rules that take no attribute (containers, `idlist`, `customsql`)
 have none.
 
-The values of a type are those of the newest line of its package (2.6). The type's own `lines` states them for an older
-line, an entry per line with `capabilities` (attribute) or `works_with` (filter), the line has to be one of the lines of
-the package and not its newest one. A line without an entry has no stated values, they are not the ones of the newest
-line. The build checks the entries like the values of the type itself.
+The values of a type hold for every release line of its package: the lines of the 2.x branch only add to what a type
+can do (semantic versioning), what came later is a `feature`. The type's own `lines` states what differs for an older
+line, an entry per line with `capabilities` (attribute) or `works_with` (filter) that replaces the values of the type
+for that line as a whole. The line has to be one of the lines of the package and not its newest one, a line without an
+entry has the values of the type. The build checks the entries like the values of the type itself.
+
+Used for the version of the packages in `frontend_editing.requires`: the type states `^2.6`, the entries for 2.4 and 2.5
+name `^2.4` and `^2.5`, the branch of the line the package exists for.
 
 ```json
 "lines": [
-    {"metamodels": "2.5", "capabilities": {"multilingual": true, "multiple": false}}
+    {"metamodels": "2.5", "capabilities": {"multilingual": false, "multiple": false, "file_usage": false,
+        "frontend_editing": {"support": "extra-package", "requires": {"vendor/bundle": "^2.5"}}}}
 ]
 ```
 
