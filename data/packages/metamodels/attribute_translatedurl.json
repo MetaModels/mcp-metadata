@@ -80,7 +80,37 @@
                         "contao-community-alliance/contao-textfield-multiple-bundle": "^2.6"
                     }
                 }
-            }
+            },
+            "lines": [
+                {
+                    "metamodels": "2.4",
+                    "capabilities": {
+                        "multilingual": true,
+                        "multiple": false,
+                        "file_usage": false,
+                        "frontend_editing": {
+                            "support": "extra-package",
+                            "requires": {
+                                "contao-community-alliance/contao-textfield-multiple-bundle": "^2.4"
+                            }
+                        }
+                    }
+                },
+                {
+                    "metamodels": "2.5",
+                    "capabilities": {
+                        "multilingual": true,
+                        "multiple": false,
+                        "file_usage": false,
+                        "frontend_editing": {
+                            "support": "extra-package",
+                            "requires": {
+                                "contao-community-alliance/contao-textfield-multiple-bundle": "^2.5"
+                            }
+                        }
+                    }
+                }
+            ]
         }
     ]
 }

@@ -71,7 +71,37 @@
                         "contao-community-alliance/contao-multicolumnwizard-frontend-bundle": "^2.6"
                     }
                 }
-            }
+            },
+            "lines": [
+                {
+                    "metamodels": "2.4",
+                    "capabilities": {
+                        "multilingual": false,
+                        "multiple": true,
+                        "file_usage": true,
+                        "frontend_editing": {
+                            "support": "extra-package",
+                            "requires": {
+                                "contao-community-alliance/contao-multicolumnwizard-frontend-bundle": "^2.4"
+                            }
+                        }
+                    }
+                },
+                {
+                    "metamodels": "2.5",
+                    "capabilities": {
+                        "multilingual": false,
+                        "multiple": true,
+                        "file_usage": true,
+                        "frontend_editing": {
+                            "support": "extra-package",
+                            "requires": {
+                                "contao-community-alliance/contao-multicolumnwizard-frontend-bundle": "^2.5"
+                            }
+                        }
+                    }
+                }
+            ]
         }
     ]
 }
