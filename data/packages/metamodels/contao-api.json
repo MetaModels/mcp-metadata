@@ -27,5 +27,15 @@
             "schnittstelle"
         ]
     },
-    "docs": "manual/extended/contao-api.html"
+    "docs": "manual/extended/contao-api.html",
+    "lines": [
+        {
+            "metamodels": "2.6",
+            "requires": {
+                "contao/core-bundle": "^6.0",
+                "metamodels/core": "^2.6@dev",
+                "php": "^8.4"
+            }
+        }
+    ]
 }

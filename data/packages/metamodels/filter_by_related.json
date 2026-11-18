@@ -5,6 +5,28 @@
         "page": "manual/extended/filter-by-related.html"
     },
     "docs": "manual/extended/filter-by-related.html",
+    "lines": [
+        {
+            "metamodels": "2.5",
+            "requires": {
+                "contao-community-alliance/dc-general": "^2.5",
+                "contao-community-alliance/translator": "^2.5",
+                "contao/core-bundle": "^5.7",
+                "metamodels/core": "^2.5",
+                "php": "^8.4"
+            }
+        },
+        {
+            "metamodels": "2.6",
+            "requires": {
+                "contao-community-alliance/dc-general": "^2.6@dev",
+                "contao-community-alliance/translator": "^2.7",
+                "contao/core-bundle": "^6.0",
+                "metamodels/core": "^2.6@dev",
+                "php": "^8.4"
+            }
+        }
+    ],
     "types": [
         {
             "kind": "filter",

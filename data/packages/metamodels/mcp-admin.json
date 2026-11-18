@@ -32,5 +32,16 @@
             "metamodel anlegen"
         ]
     },
-    "docs": "manual/extended/mcp-admin.html"
+    "docs": "manual/extended/mcp-admin.html",
+    "lines": [
+        {
+            "metamodels": "2.6",
+            "requires": {
+                "contao-community-alliance/meta-palettes": "^2.2@dev",
+                "contao/core-bundle": "^6.0",
+                "metamodels/core": "^2.6@dev",
+                "php": "^8.4"
+            }
+        }
+    ]
 }
