@@ -173,6 +173,17 @@ final class Builder
             $packages[$package['name'] ?? ''] = true;
         }
 
+        foreach ($metadata['packages'] as $package) {
+            $seen = [];
+            foreach (is_array($package['lines'] ?? null) ? $package['lines'] : [] as $line) {
+                $name = is_array($line) ? (string) ($line['metamodels'] ?? '') : '';
+                if (isset($seen[$name])) {
+                    $errors[] = sprintf('The package "%s" has the line "%s" twice.', $package['name'] ?? '?', $name);
+                }
+                $seen[$name] = true;
+            }
+        }
+
         $known = [];
         foreach ($metadata['types'] as $type) {
             $key = ($type['kind'] ?? '') . ':' . ($type['type'] ?? '');

@@ -1,0 +1,72 @@
+#!/usr/bin/env php
+<?php
+
+declare(strict_types=1);
+
+use MetaModels\McpMetadata\LineSync;
+
+require \dirname(__DIR__) . '/vendor/autoload.php';
+
+/*
+ * Usage: bin/sync-lines [--packages-dir=<dir>] [--packagist] [--check]
+ *
+ * Writes the `lines` of every package in data/packages: what each release line of MetaModels (data/lines.json) needs,
+ * read from the composer.json of the branch of that line in the clone of the package. The clones are expected next to
+ * this repo (--packages-dir), run `git fetch` there first.
+ *
+ *   --packagist  a line with a stable release on Packagist gets the availability `public`
+ *   --check      change nothing, exit 1 if a file would change
+ */
+$root        = \dirname(__DIR__);
+$packagesDir = \dirname($root);
+$packagist   = false;
+$check       = false;
+foreach (\array_slice($argv, 1) as $argument) {
+    if (\str_starts_with($argument, '--packages-dir=')) {
+        $packagesDir = \substr($argument, \strlen('--packages-dir='));
+    } elseif ('--packagist' === $argument) {
+        $packagist = true;
+    } elseif ('--check' === $argument) {
+        $check = true;
+    } else {
+        \fwrite(STDERR, \sprintf("Unknown argument \"%s\".\n", $argument));
+
+        exit(2);
+    }
+}
+
+$config = \json_decode((string) \file_get_contents($root . '/data/lines.json'), true);
+if (!\is_array($config)) {
+    \fwrite(STDERR, "data/lines.json is missing or not valid JSON.\n");
+
+    exit(1);
+}
+
+$sync    = new LineSync($packagesDir, $config);
+$changed = [];
+foreach (\glob($root . '/data/packages/*/*.json') ?: [] as $file) {
+    $package = \json_decode((string) \file_get_contents($file), true);
+    if (!\is_array($package) || !\is_string($package['name'] ?? null)) {
+        \fwrite(STDERR, \sprintf("%s: not a package file.\n", $file));
+
+        exit(1);
+    }
+
+    $lines  = $sync->lines($package['name']);
+    $public = $packagist ? $sync->publicLines($package['name']) : null;
+    $json   = \json_encode(
+        $sync->merge($package, $lines, $public),
+        JSON_THROW_ON_ERROR | JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE
+    ) . "\n";
+    if ($json === \file_get_contents($file)) {
+        continue;
+    }
+
+    $changed[] = $package['name'];
+    if (!$check) {
+        \file_put_contents($file, $json);
+    }
+}
+
+\printf("%d package file(s) %s.\n", \count($changed), $check ? 'would change' : 'changed');
+exit($check && [] !== $changed ? 1 : 0);

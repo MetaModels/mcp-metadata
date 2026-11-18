@@ -1,0 +1,37 @@
+{
+    "lines": [
+        "2.4",
+        "2.5",
+        "2.6"
+    ],
+    "ref": "feature/%s.0",
+    "requires": [
+        "php",
+        "contao/core-bundle",
+        "metamodels/",
+        "contao-community-alliance/"
+    ],
+    "overrides": {
+        "metamodels/core": {
+            "2.4": [
+                "support/2.4"
+            ],
+            "2.5": [
+                "release/2.5"
+            ],
+            "2.6": [
+                "release/2.6.0"
+            ]
+        },
+        "metamodels/attribute_latlong": {
+            "2.6": [
+                "feature/contao6"
+            ]
+        },
+        "metamodels/translator-bridge": {
+            "2.6": [
+                "feature/contao6"
+            ]
+        }
+    }
+}

@@ -307,6 +307,32 @@ final class BuilderTest extends TestCase
         self::assertSame([], (new Builder($this->root))->build()['errors']);
     }
 
+    public function testAPackageHasEachLineOnce(): void
+    {
+        $package = static fn (array $lines): array => [
+            'name'         => 'metamodels/attribute_text',
+            'availability' => 'unknown',
+            'lines'        => $lines,
+            'types'        => [['kind' => 'attribute', 'type' => 'text']],
+        ];
+        $line = static fn (string $metamodels): array => [
+            'metamodels' => $metamodels,
+            'requires'   => ['php' => '^8.2', 'contao/core-bundle' => '^5.3 <5.7'],
+        ];
+
+        $this->write('data/packages/metamodels/attribute_text.json', $package([$line('2.4'), $line('2.6')]));
+        self::assertSame([], (new Builder($this->root))->build()['errors']);
+
+        $this->write('data/packages/metamodels/attribute_text.json', $package([$line('2.4'), $line('2.4')]));
+        self::assertSame(
+            ['The package "metamodels/attribute_text" has the line "2.4" twice.'],
+            (new Builder($this->root))->build()['errors']
+        );
+
+        $this->write('data/packages/metamodels/attribute_text.json', $package([['metamodels' => '2', 'requires' => []]]));
+        self::assertNotSame([], (new Builder($this->root))->build()['errors']);
+    }
+
     public function testBrokenFilesAreReported(): void
     {
         file_put_contents($this->root . '/data/articles/broken.json', '{not json');

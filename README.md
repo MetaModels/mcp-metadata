@@ -58,6 +58,31 @@ bin/check-handbook                  # fetch the German page and compare
 bin/check-handbook --file=page.html # compare with a saved copy
 ```
 
+### Release lines
+
+The catalog covers the lines of MetaModels from 2.4 on (2.4 with Contao 5.3, 2.5, 2.6), listed in `data/lines.json`. A
+package has `lines`, one entry per line it exists for:
+
+| Field | Meaning |
+| --- | --- |
+| `metamodels` | The line, for example `2.4`. |
+| `requires` | What that line needs, from the `composer.json` of the branch of the line: `php`, `contao/core-bundle`, `metamodels/*` and `contao-community-alliance/*`. The framework packages are left out. |
+| `availability` | How to get the package for this line. Left out when it is not stated: the `availability` of the package itself is the one of the newest line, do not take it for an older one. `bin/sync-lines --packagist` sets `public` for a line with a stable release on Packagist. |
+
+A package without an entry for a line does not exist there. Types follow their package, so a type exists in the lines
+of its package. The handbook pages are the same for all lines.
+
+The values are read, not written by hand: `bin/sync-lines` reads the `composer.json` of the branch `feature/<line>.0`
+(or the branch named in `data/lines.json` under `overrides`, for example for `metamodels/core`) in the clone of every
+package. The clones have to lie next to this repo (`--packages-dir`), run `git fetch` there first. It needs the
+clones, so it runs on a developer machine, not in the checks.
+
+```
+bin/sync-lines                  # write the lines
+bin/sync-lines --packagist      # also ask Packagist for public releases
+bin/sync-lines --check          # change nothing, exit 1 if a file would change
+```
+
 ### Availability
 
 | Value | Meaning |
@@ -77,10 +102,12 @@ points to. A package with a fundraising of its own has no `plans`, its `access.p
 
 ```
 data/handbook.json                         where the handbook is, per language
-data/packages/<vendor>/<package>.json      a package with its types
+data/packages/<vendor>/<package>.json      a package with its lines and types
+data/lines.json                            the release lines and the branches they are read from
 data/articles/<id>.json                    a page of the handbook
 schema/metadata.schema.json                the format
 bin/build                                  puts the files together and checks them
+bin/sync-lines                             reads the lines of the packages from their clones
 bin/check-handbook                         compares the data with the overview of attributes in the handbook
 ```
 
