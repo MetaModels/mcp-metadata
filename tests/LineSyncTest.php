@@ -124,6 +124,14 @@ final class LineSyncTest extends TestCase
         self::assertSame(['public', null], [$merged['lines'][0]['availability'], $merged['lines'][1]['availability'] ?? null]);
     }
 
+    public function testMergeMakesAnOlderLineWithoutAReleaseEarlyAccessWhenPackagistWasAsked(): void
+    {
+        $lines  = [['metamodels' => '2.4', 'requires' => []], ['metamodels' => '2.6', 'requires' => []]];
+        $merged = (new LineSync($this->dir, self::CONFIG))->merge(['name' => 'a', 'types' => []], $lines, []);
+
+        self::assertSame(['early-access', null], [$merged['lines'][0]['availability'], $merged['lines'][1]['availability'] ?? null]);
+    }
+
     public function testMergeDropsTheLinesOfAPackageThatHasNone(): void
     {
         $merged = (new LineSync($this->dir, self::CONFIG))->merge(['name' => 'a', 'lines' => [['x']], 'types' => []], [], null);

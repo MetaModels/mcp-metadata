@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace MetaModels\McpMetadata;
 
+use function array_key_last;
 use function array_unique;
 use function array_values;
 use function basename;
@@ -18,6 +19,7 @@ use function ksort;
 use function preg_match;
 use function shell_exec;
 use function sprintf;
+use function str_contains;
 use function str_ends_with;
 use function str_starts_with;
 use function stream_context_create;
@@ -63,7 +65,9 @@ final class LineSync
 
     /**
      * Puts the lines into the package, in front of its types. A line keeps the availability it had; with the lines that
-     * have a release on Packagist the availability becomes `public`.
+     * have a release on Packagist the availability becomes `public`. If Packagist was asked, an older line without a
+     * release there is `early-access`: what is not public for an older line is only available in the early access.
+     * The newest line has no own availability, the one of the package is its availability.
      *
      * @param array<string, mixed>                                              $package
      * @param list<array{metamodels: string, requires: array<string, string>}> $lines
@@ -82,9 +86,7 @@ final class LineSync
 
         $merged = [];
         foreach ($lines as $line) {
-            $availability = null !== $public && in_array($line['metamodels'], $public, true)
-                ? 'public'
-                : ($known[$line['metamodels']] ?? null);
+            $availability = $this->availability($line['metamodels'], $known[$line['metamodels']] ?? null, $public);
             $merged[] = ['metamodels' => $line['metamodels']]
                 + (null === $availability ? [] : ['availability' => $availability])
                 + ['requires' => $line['requires']];
@@ -126,17 +128,21 @@ final class LineSync
     }
 
     /**
-     * @return list<string> The lines (2.4, 2.5, ...) with a stable release of the package on Packagist, which means
-     *                      `composer require` works for everybody. Empty if the package is not there.
+     * @return list<string>|null The lines (2.4, 2.5, ...) with a stable release of the package on Packagist, which
+     *                            means `composer require` works for everybody. Empty if the package is not there,
+     *                            null if Packagist did not answer (so nothing is derived from a network error).
      */
-    public function publicLines(string $package): array
+    public function publicLines(string $package): ?array
     {
         $json = @file_get_contents(
             'https://repo.packagist.org/p2/' . $package . '.json',
             false,
             stream_context_create(['http' => ['timeout' => 20]])
         );
-        $data = false === $json ? null : json_decode($json, true);
+        if (false === $json) {
+            return $this->notFound($http_response_header ?? []) ? [] : null;
+        }
+        $data = json_decode($json, true);
         $versions = is_array($data) && is_array($data['packages'][$package] ?? null) ? $data['packages'][$package] : [];
 
         $lines = [];
@@ -150,6 +156,29 @@ final class LineSync
         usort($lines, static fn (string $a, string $b): int => version_compare($a, $b));
 
         return $lines;
+    }
+
+    /**
+     * @param list<string> $headers
+     */
+    private function notFound(array $headers): bool
+    {
+        return isset($headers[0]) && str_contains($headers[0], ' 404');
+    }
+
+    /**
+     * @param list<string>|null $public
+     */
+    private function availability(string $line, ?string $known, ?array $public): ?string
+    {
+        if (null === $public) {
+            return $known;
+        }
+        if (in_array($line, $public, true)) {
+            return 'public';
+        }
+
+        return $known ?? ($line === $this->config['lines'][array_key_last($this->config['lines'])] ? null : 'early-access');
     }
 
     private function isRelevant(string $name): bool

@@ -67,7 +67,7 @@ package has `lines`, one entry per line it exists for:
 | --- | --- |
 | `metamodels` | The line, for example `2.4`. |
 | `requires` | What that line needs, from the `composer.json` of the branch of the line: `php`, `contao/core-bundle`, `metamodels/*` and `contao-community-alliance/*`. The framework packages are left out. |
-| `availability` | How to get the package for this line. Left out when it is not stated: the `availability` of the package itself is the one of the newest line, do not take it for an older one. `bin/sync-lines --packagist` sets `public` for a line with a stable release on Packagist. |
+| `availability` | How to get the package for this line. Left out when it is not stated: the `availability` of the package itself is the one of the newest line, do not take it for an older one. `bin/sync-lines --packagist` sets `public` for a line with a stable release on Packagist and `early-access` for an older line without one. |
 
 A package without an entry for a line does not exist there. Types follow their package, so a type exists in the lines
 of its package. The handbook pages are the same for all lines.
@@ -79,7 +79,7 @@ clones, so it runs on a developer machine, not in the checks.
 
 ```
 bin/sync-lines                  # write the lines
-bin/sync-lines --packagist      # also ask Packagist for public releases
+bin/sync-lines --packagist      # also ask Packagist: public release = public, older line without one = early-access
 bin/sync-lines --check          # change nothing, exit 1 if a file would change
 ```
 
